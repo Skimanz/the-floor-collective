@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Floor Collective — Timber Floor Specialists, Queenstown</title>
+<meta name="description" content="Queenstown's timber floor specialists. Installation, sanding, finishing, repairs and staircase flooring for residential and commercial properties.">
+<link rel="canonical" href="https://thefloorcollective.co.nz/">
+<meta property="og:title" content="The Floor Collective — Timber Floor Specialists, Queenstown">
+<meta property="og:description" content="Specialist timber floor installation, sanding, and restoration for residential and commercial properties across Queenstown.">
+<meta property="og:image" content="https://thefloorcollective.co.nz/images/og-image.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://thefloorcollective.co.nz/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23B5602A'/><rect x='20' y='30' width='12' height='40' fill='white' opacity='0.9'/><rect x='36' y='30' width='12' height='40' fill='white' opacity='0.7'/><rect x='52' y='30' width='12' height='40' fill='white' opacity='0.9'/><rect x='68' y='30' width='12' height='40' fill='white' opacity='0.6'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "The Floor Collective",
+  "description": "Specialist timber floor installation, sanding, finishing, repairs and staircase flooring in Queenstown, NZ",
+  "url": "https://thefloorcollective.co.nz",
+  "telephone": "021XXXXXXX",
+  "email": "info@thefloorcollective.co.nz",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Queenstown",
+    "addressRegion": "Otago",
+    "addressCountry": "NZ"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Queenstown"
+  },
+  "priceRange": "$$",
+  "openingHours": "Mo-Fr 07:00-17:00",
+  "sameAs": []
+}
+</script>
+<style>
+/* INDEX-SPECIFIC STYLES */
+.hero { min-height:100vh; display:grid; grid-template-columns:1fr 1fr; padding-top:68px; }
+.hero-left { display:flex; flex-direction:column; justify-content:center; padding:80px 60px 80px 48px; background:var(--linen); }
+.hero-eyebrow { font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:var(--terra); margin-bottom:28px; display:flex; align-items:center; gap:14px; }
+.hero-eyebrow::before { content:''; width:28px; height:1px; background:var(--terra); display:block; flex-shrink:0; }
+.hero-title { font-family:var(--font-display); font-size:clamp(52px,6vw,80px); font-weight:400; line-height:1.05; color:var(--charcoal); margin-bottom:28px; letter-spacing:-0.01em; }
+.hero-title em { font-style:italic; color:var(--terra); }
+.hero-body { font-size:16px; font-weight:300; color:var(--mid); max-width:400px; margin-bottom:44px; line-height:1.75; }
+.hero-actions { display:flex; gap:14px; flex-wrap:wrap; }
+.hero-services { display:flex; gap:0; margin-top:52px; padding-top:40px; border-top:1px solid var(--border); }
+.hero-service-item { flex:1; padding-right:24px; }
+.hero-service-item + .hero-service-item { padding-left:24px; border-left:1px solid var(--border); }
+.hero-service-label { font-size:10px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted); margin-bottom:4px; }
+.hero-service-name { font-family:var(--font-display); font-size:16px; font-weight:600; color:var(--charcoal); }
+.hero-right { position:relative; overflow:hidden; background:var(--sand); min-height:600px; }
+.hero-img { width:100%; height:100%; object-fit:cover; position:absolute; inset:0; }
+.hero-img-placeholder { width:100%; height:100%; position:absolute; inset:0; background:linear-gradient(160deg,#C4A882 0%,#8B6347 40%,#5C3D1E 100%); display:flex; align-items:flex-end; padding:48px; }
+.hero-img-caption { font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.4); }
+.hero-badge { position:absolute; bottom:48px; left:-1px; background:var(--warm-white); padding:20px 28px; border-left:3px solid var(--terra); }
+.hero-badge-num { font-family:var(--font-display); font-size:36px; font-weight:600; color:var(--charcoal); line-height:1; }
+.hero-badge-label { font-size:11px; color:var(--muted); letter-spacing:0.06em; margin-top:4px; }
+
+.services-strip { background:var(--charcoal); padding:0 48px; display:grid; grid-template-columns:repeat(5,1fr); border-top:1px solid rgba(255,255,255,0.06); }
+.strip-item { padding:32px 24px; display:flex; align-items:center; gap:14px; border-right:1px solid rgba(255,255,255,0.08); }
+.strip-item:first-child { padding-left:0; }
+.strip-item:last-child { border-right:none; }
+.strip-dot { width:6px; height:6px; background:var(--terra); border-radius:50%; flex-shrink:0; }
+.strip-label { font-size:12px; font-weight:400; color:rgba(255,255,255,0.55); letter-spacing:0.04em; white-space:nowrap; }
+
+.about-intro { background:var(--warm-white); padding:100px 48px; display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; }
+.about-intro-visual { position:relative; height:520px; }
+.about-img-main { position:absolute; top:0; left:0; width:78%; height:85%; object-fit:cover; background:linear-gradient(135deg,#B8956A 0%,#7A5535 100%); }
+.about-img-accent { position:absolute; bottom:0; right:0; width:45%; height:45%; object-fit:cover; background:var(--sand); border:6px solid var(--warm-white); }
+.about-pull { position:absolute; bottom:60px; left:-20px; background:var(--charcoal); color:var(--warm-white); padding:20px 28px; max-width:200px; }
+.about-pull-text { font-family:var(--font-display); font-size:15px; font-style:italic; line-height:1.5; color:rgba(255,255,255,0.85); }
+.about-para { font-size:15px; font-weight:300; color:var(--mid); line-height:1.8; margin-bottom:20px; }
+
+.services-section { background:var(--linen); padding:100px 48px; }
+.services-header { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:end; margin-bottom:60px; }
+.services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:var(--border); }
+.service-card { background:var(--linen); padding:44px 36px; transition:background 0.25s; position:relative; }
+.service-card:hover { background:var(--sand); }
+.service-card::after { content:''; position:absolute; top:0; left:0; right:0; height:2px; background:transparent; transition:background 0.25s; }
+.service-card:hover::after { background:var(--terra); }
+.service-card--cta { background:var(--charcoal); display:flex; flex-direction:column; justify-content:center; align-items:flex-start; }
+.service-card--cta:hover { background:#1a1714; }
+.service-card--cta::after { display:none; }
+.service-card--cta-text { font-family:var(--font-display); font-size:22px; font-weight:400; color:var(--warm-white); line-height:1.3; margin-bottom:24px; font-style:italic; }
+.service-icon-wrap { width:40px; height:40px; margin-bottom:24px; display:flex; align-items:center; justify-content:center; }
+.service-icon-wrap svg { width:32px; height:32px; stroke:var(--terra); fill:none; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
+.service-name { font-family:var(--font-display); font-size:22px; font-weight:600; color:var(--charcoal); margin-bottom:12px; line-height:1.2; }
+.service-desc { font-size:14px; font-weight:300; color:var(--mid); line-height:1.7; }
+.service-tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:20px; }
+.tag { font-size:10px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:var(--terra); border:1px solid rgba(181,96,42,0.25); padding:4px 10px; }
+
+.gallery-preview { background:var(--charcoal); padding:100px 48px; }
+.gallery-preview .eyebrow { color:rgba(255,255,255,0.35); }
+.gallery-preview .eyebrow::before { background:rgba(255,255,255,0.35); }
+.gallery-header { display:flex; align-items:flex-end; justify-content:space-between; margin-bottom:40px; }
+.gallery-header-link { display:inline-flex; align-items:center; gap:8px; font-size:12px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.6); transition:color 0.2s; margin-bottom:4px; }
+.gallery-header-link:hover { color:var(--warm-white); }
+.gallery-header-link::after { content:'→'; }
+.gallery-grid { display:grid; grid-template-columns:2fr 1fr 1fr; grid-template-rows:280px 280px; gap:4px; }
+.gallery-item { overflow:hidden; position:relative; }
+.gallery-item:first-child { grid-row:1/3; }
+.gallery-img-placeholder { width:100%; height:100%; object-fit:cover; transition:transform 0.5s ease; }
+.gallery-item:hover .gallery-img-placeholder { transform:scale(1.03); }
+.g1 { background:linear-gradient(160deg,#8B6347 0%,#5C3D1E 100%); }
+.g2 { background:linear-gradient(160deg,#C4A882 0%,#8B6347 100%); }
+.g3 { background:linear-gradient(160deg,#A07850 0%,#7A5535 100%); }
+.g4 { background:linear-gradient(160deg,#7A5535 0%,#4A3018 100%); }
+.g5 { background:linear-gradient(160deg,#B8956A 0%,#8B6347 100%); }
+.ph-label { display:flex; align-items:center; justify-content:center; height:100%; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.25); }
+.gallery-overlay { position:absolute; inset:0; background:rgba(40,37,32,0); display:flex; align-items:flex-end; padding:20px; transition:background 0.3s; }
+.gallery-item:hover .gallery-overlay { background:rgba(40,37,32,0.35); }
+.gallery-overlay-label { font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0); transition:color 0.3s; }
+.gallery-item:hover .gallery-overlay-label { color:rgba(255,255,255,0.8); }
+
+.process-section { background:var(--sand); padding:100px 48px; }
+.process-header { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:end; margin-bottom:72px; }
+.process-steps { display:grid; grid-template-columns:repeat(4,1fr); gap:0; position:relative; overflow:hidden; }
+.process-steps::before { content:''; position:absolute; top:16px; left:8px; right:8px; height:1px; background:var(--border); }
+.process-step { padding:0 8px; }
+.step-marker { width:32px; height:32px; border:1px solid var(--border); background:var(--warm-white); display:flex; align-items:center; justify-content:center; margin-bottom:28px; position:relative; z-index:1; }
+.step-num { font-family:var(--font-display); font-size:14px; font-weight:600; color:var(--terra); }
+.step-title { font-family:var(--font-display); font-size:20px; font-weight:600; color:var(--charcoal); margin-bottom:10px; line-height:1.2; }
+.step-desc { font-size:13px; font-weight:300; color:var(--mid); line-height:1.7; }
+
+.testimonials { background:var(--warm-white); padding:100px 48px; }
+.testimonials-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:var(--border); margin-top:52px; }
+.testimonial-card { background:var(--warm-white); padding:36px 32px; }
+.testimonial-quote { font-family:var(--font-display); font-size:18px; font-style:italic; color:var(--charcoal); line-height:1.5; margin-bottom:20px; }
+.testimonial-quote::before { content:'\201C'; font-size:32px; color:var(--terra); line-height:0; vertical-align:-12px; margin-right:4px; }
+.testimonial-author { font-size:12px; font-weight:500; letter-spacing:0.06em; text-transform:uppercase; color:var(--muted); }
+.testimonial-location { font-size:12px; font-weight:300; color:var(--muted); }
+
+@media (max-width:1024px) {
+  .hero { grid-template-columns:1fr; min-height:auto; }
+  .hero-right { min-height:400px; }
+  .hero-left { padding:60px 48px; }
+  .about-intro { grid-template-columns:1fr; gap:48px; }
+  .about-intro-visual { height:360px; }
+  .services-header { grid-template-columns:1fr; gap:20px; }
+  .process-header { grid-template-columns:1fr; gap:20px; }
+  .gallery-grid { grid-template-columns:1fr 1fr; grid-template-rows:auto; }
+  .gallery-item:first-child { grid-row:auto; }
+  .footer-top { grid-template-columns:1fr 1fr; }
+  .testimonials-grid { grid-template-columns:1fr; }
+}
+@media (max-width:768px) {
+  .services-strip { padding:0 20px; grid-template-columns:1fr; }
+  .strip-item { padding:20px 0; border-right:none; border-bottom:1px solid rgba(255,255,255,0.08); }
+  .strip-item:last-child { border-bottom:none; }
+  .about-intro { padding:72px 20px; }
+  .services-section { padding:72px 20px; }
+  .services-grid { grid-template-columns:1fr; }
+  .gallery-preview { padding:72px 20px; }
+  .gallery-grid { grid-template-columns:1fr 1fr; }
+  .process-section { padding:72px 20px; }
+  .process-steps { grid-template-columns:1fr 1fr; gap:40px; }
+  .process-steps::before { display:none; }
+  .hero-left { padding:48px 20px 60px; }
+  .hero-services { flex-direction:column; gap:16px; }
+  .hero-service-item + .hero-service-item { border-left:none; border-top:1px solid var(--border); padding-left:0; padding-top:16px; }
+  .testimonials { padding:72px 20px; }
+}
+</style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div class="menu-backdrop" id="menuBackdrop" aria-hidden="true"></div>
+
+<nav aria-label="Main navigation">
+  <a href="index.html" class="nav-logo" aria-label="The Floor Collective — Home">
+    <span class="nav-logo-main">The Floor Collective</span>
+    <span class="nav-logo-sub">Queenstown Floor Specialists</span>
+  </a>
+  <div class="nav-right">
+    <a href="tel:+64XXXXXXXXX" class="nav-phone" aria-label="Call us">021 XXX XXXX</a>
+    <ul class="nav-links" role="list">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Our Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
+    </ul>
+  </div>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+  <a href="services.html">Services</a>
+  <a href="gallery.html">Our Work</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Get a Quote</a>
+  <a href="tel:+64XXXXXXXXX">021 XXX XXXX</a>
+</div>
+
+<main id="main-content">
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="hero-left">
+    <p class="hero-eyebrow" aria-hidden="true">Queenstown Floor Specialists</p>
+    <h1 class="hero-title" id="hero-heading">
+      Floors finished<br>to last <em>a lifetime</em>
+    </h1>
+    <p class="hero-body">
+      Specialist timber floor installation, sanding, and restoration for residential and commercial properties across Queenstown.
+    </p>
+    <div class="hero-actions">
+      <a href="contact.html" class="btn btn-dark">Get a Free Quote</a>
+      <a href="services.html" class="btn btn-outline">Our Services</a>
+    </div>
+    <div class="hero-services" aria-label="Key specialties">
+      <div class="hero-service-item">
+        <p class="hero-service-label">Specialty</p>
+        <p class="hero-service-name">Timber Installation</p>
+      </div>
+      <div class="hero-service-item">
+        <p class="hero-service-label">Finish</p>
+        <p class="hero-service-name">Sanding & Coating</p>
+      </div>
+      <div class="hero-service-item">
+        <p class="hero-service-label">Location</p>
+        <p class="hero-service-name">Queenstown, NZ</p>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right" aria-hidden="true">
+    <div class="hero-img-placeholder">
+      <!-- Replace with: <img src="images/hero.jpg" alt="Timber floor installation Queenstown" class="hero-img" loading="eager"> -->
+      <span class="hero-img-caption">hero.jpg — replace with your photo</span>
+    </div>
+    <div class="hero-badge">
+      <div class="hero-badge-num">100%</div>
+      <div class="hero-badge-label">Specialist installation</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES STRIP -->
+<div class="services-strip" aria-label="Services overview">
+  <div class="strip-item"><div class="strip-dot" aria-hidden="true"></div><span class="strip-label">Timber Installation</span></div>
+  <div class="strip-item"><div class="strip-dot" aria-hidden="true"></div><span class="strip-label">Laminate Flooring</span></div>
+  <div class="strip-item"><div class="strip-dot" aria-hidden="true"></div><span class="strip-label">Sanding & Finishing</span></div>
+  <div class="strip-item"><div class="strip-dot" aria-hidden="true"></div><span class="strip-label">Repairs & Restoration</span></div>
+  <div class="strip-item"><div class="strip-dot" aria-hidden="true"></div><span class="strip-label">Staircase Flooring</span></div>
+</div>
+
+<!-- ABOUT INTRO -->
+<section class="about-intro" aria-labelledby="about-heading">
+  <div class="about-intro-visual fade-up" aria-hidden="true">
+    <div class="about-img-main">
+      <!-- Replace with: <img src="images/about-main.jpg" alt="" loading="lazy"> -->
+    </div>
+    <div class="about-img-accent">
+      <!-- Replace with: <img src="images/about-detail.jpg" alt="" loading="lazy"> -->
+    </div>
+    <div class="about-pull">
+      <p class="about-pull-text">"A floor you'll love for decades."</p>
+    </div>
+  </div>
+  <div class="about-intro-content fade-up">
+    <p class="eyebrow" aria-hidden="true">Who we are</p>
+    <h2 class="section-title" id="about-heading">Focused on <em>one thing</em></h2>
+    <p class="about-para">The Floor Collective is a Queenstown-based flooring specialist focused exclusively on timber floor installation, sanding, and restoration for residential and commercial properties.</p>
+    <p class="about-para">Every job is handled personally, with care and attention to detail from start to finish.</p>
+    <p class="about-para">We bring specialist trade experience to every project — the kind of attention to detail that results in a floor you'll love for decades.</p>
+    <a href="about.html" class="about-link">More about us</a>
+  </div>
+</section>
+
+<!-- SERVICES GRID -->
+<section class="services-section" aria-labelledby="services-heading">
+  <div class="services-header">
+    <div>
+      <p class="eyebrow" aria-hidden="true">What we do</p>
+      <h2 class="section-title" id="services-heading">Every service,<br><em>expertly done</em></h2>
+    </div>
+    <p class="section-body">From first board to final coat — we handle every stage of your flooring project with precision and care.</p>
+  </div>
+  <div class="services-grid">
+    <article class="service-card fade-up">
+      <div class="service-icon-wrap"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="6" width="5" height="20" rx="0.5"/><rect x="11" y="6" width="5" height="20" rx="0.5"/><rect x="18" y="6" width="5" height="20" rx="0.5"/><rect x="25" y="6" width="3" height="20" rx="0.5"/></svg></div>
+      <h3 class="service-name">Timber Installation</h3>
+      <p class="service-desc">Expert installation of solid hardwood and engineered timber floors. Subfloor preparation included — we ensure the base is right before a single board goes down.</p>
+      <div class="service-tags" aria-label="Includes"><span class="tag">Solid hardwood</span><span class="tag">Engineered</span><span class="tag">Subfloor prep</span></div>
+    </article>
+    <article class="service-card fade-up">
+      <div class="service-icon-wrap"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="7" width="26" height="4" rx="0.5"/><rect x="3" y="14" width="26" height="4" rx="0.5"/><rect x="3" y="21" width="26" height="4" rx="0.5"/></svg></div>
+      <h3 class="service-name">Laminate Flooring</h3>
+      <p class="service-desc">Residential and commercial grade laminate — installed to manufacturer specification for a finish that performs and lasts. Supply and install available.</p>
+      <div class="service-tags" aria-label="Includes"><span class="tag">Residential grade</span><span class="tag">Commercial grade</span><span class="tag">Supply & install</span></div>
+    </article>
+    <article class="service-card fade-up">
+      <div class="service-icon-wrap"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="20" width="24" height="6" rx="0.5"/><path d="M8 20 L8 8 Q8 6 10 6 L22 6 Q24 6 24 8 L24 20"/><line x1="12" y1="14" x2="20" y2="14"/></svg></div>
+      <h3 class="service-name">Sanding & Finishing</h3>
+      <p class="service-desc">Dustless sanding equipment protects your home. Then we help you choose the right finish — oil, polyurethane, or hardwax — for your floor and lifestyle.</p>
+      <div class="service-tags" aria-label="Includes"><span class="tag">Dustless sanding</span><span class="tag">Oil finish</span><span class="tag">Polyurethane</span><span class="tag">Hardwax</span></div>
+    </article>
+    <article class="service-card fade-up">
+      <div class="service-icon-wrap"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 26 L6 10 L14 10 L14 16 L22 16 L22 10 L26 10 L26 26"/><line x1="4" y1="26" x2="28" y2="26"/><rect x="10" y="20" width="12" height="6"/></svg></div>
+      <h3 class="service-name">Repairs & Restoration</h3>
+      <p class="service-desc">Worn, damaged, or tired floors brought back to life. Board replacement, gap filling, re-coating, and colour matching — we make repairs seamless.</p>
+      <div class="service-tags" aria-label="Includes"><span class="tag">Board replacement</span><span class="tag">Gap filling</span><span class="tag">Re-coating</span></div>
+    </article>
+    <article class="service-card fade-up">
+      <div class="service-icon-wrap"><svg viewBox="0 0 32 32" aria-hidden="true"><polyline points="4,26 4,20 10,20 10,14 16,14 16,8 22,8 22,4 28,4"/><line x1="4" y1="26" x2="28" y2="26"/></svg></div>
+      <h3 class="service-name">Staircase Flooring</h3>
+      <p class="service-desc">Stairs are the centrepiece of any home. We clad treads, risers, and nosings in matching or complementary timber to complete the look from floor to floor.</p>
+      <div class="service-tags" aria-label="Includes"><span class="tag">Treads & risers</span><span class="tag">Nosings</span><span class="tag">Timber matching</span></div>
+    </article>
+    <div class="service-card service-card--cta fade-up">
+      <p class="service-card--cta-text">"Not sure what your floor needs?"</p>
+      <a href="contact.html" class="btn btn-light">Ask us →</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" aria-labelledby="testimonials-heading">
+  <p class="eyebrow" aria-hidden="true">What clients say</p>
+  <h2 class="section-title" id="testimonials-heading">Trusted by <em>Queenstown homeowners</em></h2>
+  <div class="testimonials-grid">
+    <article class="testimonial-card">
+      <blockquote class="testimonial-quote">The finish is absolutely beautiful. Every detail was perfect and the team were professional from start to finish.</blockquote>
+      <p class="testimonial-author">Sarah M.</p>
+      <p class="testimonial-location">Frankton, Queenstown</p>
+    </article>
+    <article class="testimonial-card">
+      <blockquote class="testimonial-quote">Our old floor was completely transformed. Couldn't believe the difference the sanding and new oil finish made.</blockquote>
+      <p class="testimonial-author">James &amp; Kate R.</p>
+      <p class="testimonial-location">Arrowtown</p>
+    </article>
+    <article class="testimonial-card">
+      <blockquote class="testimonial-quote">Highly recommend. The staircase cladding matched our existing floors perfectly. Exceptional craftmanship.</blockquote>
+      <p class="testimonial-author">Mark T.</p>
+      <p class="testimonial-location">Lake Hayes Estate</p>
+    </article>
+  </div>
+</section>
+
+<!-- GALLERY PREVIEW -->
+<section class="gallery-preview" aria-labelledby="gallery-heading">
+  <div class="gallery-header">
+    <div>
+      <p class="eyebrow" aria-hidden="true">Our work</p>
+      <h2 class="section-title" style="color:var(--warm-white);" id="gallery-heading">The finish <em>speaks</em></h2>
+      <p class="section-body" style="color:rgba(255,255,255,0.45);margin-top:12px;">Every job we're proud to put our name to.</p>
+    </div>
+    <a href="gallery.html" class="gallery-header-link">View all work</a>
+  </div>
+  <div class="gallery-grid" role="list" aria-label="Project gallery">
+    <div class="gallery-item" role="listitem"><div class="gallery-img-placeholder g1"><div class="ph-label">Photo coming soon</div></div><div class="gallery-overlay"><span class="gallery-overlay-label">Timber installation</span></div></div>
+    <div class="gallery-item" role="listitem"><div class="gallery-img-placeholder g2"><div class="ph-label">Photo coming soon</div></div><div class="gallery-overlay"><span class="gallery-overlay-label">Sanding & finish</span></div></div>
+    <div class="gallery-item" role="listitem"><div class="gallery-img-placeholder g3"><div class="ph-label">Photo coming soon</div></div><div class="gallery-overlay"><span class="gallery-overlay-label">Staircase</span></div></div>
+    <div class="gallery-item" role="listitem"><div class="gallery-img-placeholder g4"><div class="ph-label">Photo coming soon</div></div><div class="gallery-overlay"><span class="gallery-overlay-label">Laminate</span></div></div>
+    <div class="gallery-item" role="listitem"><div class="gallery-img-placeholder g5"><div class="ph-label">Photo coming soon</div></div><div class="gallery-overlay"><span class="gallery-overlay-label">Restoration</span></div></div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process-section" aria-labelledby="process-heading">
+  <div class="process-header">
+    <div>
+      <p class="eyebrow" aria-hidden="true">How it works</p>
+      <h2 class="section-title" id="process-heading">Simple from <em>start to finish</em></h2>
+    </div>
+    <p class="section-body">No surprises, no hidden costs. Just a straightforward process that gets your floor done right.</p>
+  </div>
+  <ol class="process-steps" aria-label="Our process">
+    <li class="process-step fade-up">
+      <div class="step-marker" aria-hidden="true"><span class="step-num">1</span></div>
+      <h3 class="step-title">Free site visit</h3>
+      <p class="step-desc">We come to you, assess the space, and talk through your options and budget — at no cost.</p>
+    </li>
+    <li class="process-step fade-up">
+      <div class="step-marker" aria-hidden="true"><span class="step-num">2</span></div>
+      <h3 class="step-title">Written quote</h3>
+      <p class="step-desc">A clear, itemised quote covering materials, labour, and timeline. No surprises.</p>
+    </li>
+    <li class="process-step fade-up">
+      <div class="step-marker" aria-hidden="true"><span class="step-num">3</span></div>
+      <h3 class="step-title">Installation</h3>
+      <p class="step-desc">We get to work. Your home is protected and left clean at the end of each day.</p>
+    </li>
+    <li class="process-step fade-up">
+      <div class="step-marker" aria-hidden="true"><span class="step-num">4</span></div>
+      <h3 class="step-title">Final walkthrough</h3>
+      <p class="step-desc">We walk through together. You're happy, we're done. It's that simple.</p>
+    </li>
+  </ol>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <h2 class="cta-band-title">Ready for a floor you'll <em>love for decades?</em></h2>
+  <a href="contact.html" class="btn btn-light">Get a Free Quote →</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <p class="footer-logo-main">The Floor Collective</p>
+      <p class="footer-logo-sub">Queenstown Floor Specialists</p>
+      <p class="footer-tagline">Specialist timber floor installation, sanding, and restoration. Queenstown, New Zealand.</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <p class="footer-col-title">Navigation</p>
+      <ul class="footer-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Our Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Get a Quote</a></li>
+      </ul>
+    </nav>
+    <div>
+      <p class="footer-col-title">Contact</p>
+      <p class="footer-contact-item"><a href="tel:+64XXXXXXXXX">021 XXX XXXX</a></p>
+      <p class="footer-contact-item"><a href="mailto:info@thefloorcollective.co.nz">info@thefloorcollective.co.nz</a></p>
+      <p class="footer-contact-item">Queenstown, New Zealand</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 The Floor Collective. All rights reserved.</span>
+    <span class="footer-credit">Site by <a href="https://strandmedia.co.nz">Strand Media</a></span>
+  </div>
+</footer>
+
+</main>
+<script src="js/shared.js"></script>
+</body>
+</html>
