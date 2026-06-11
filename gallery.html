@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Our Work — The Floor Collective | Queenstown Floor Gallery</title>
-<meta name="description" content="Gallery of timber floor installation, sanding, laminate, and restoration projects by The Floor Collective in Queenstown.">
+<meta name="description" content="Gallery of timber floor installation, sanding, laminate, restoration and decking projects by The Floor Collective in Queenstown.">
 <link rel="canonical" href="https://thefloorcollective.co.nz/gallery.html">
 <meta property="og:title" content="Our Work — The Floor Collective">
-<meta property="og:description" content="Gallery of flooring projects in Queenstown — installation, sanding, repairs and staircase flooring.">
+<meta property="og:description" content="Gallery of flooring projects in Queenstown — installation, sanding, repairs, staircase and decking.">
 <meta property="og:image" content="https://thefloorcollective.co.nz/images/og-image.jpg">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://thefloorcollective.co.nz/gallery.html">
@@ -23,17 +23,16 @@
 .page-hero-title { font-family:var(--font-display); font-size:clamp(44px,5.5vw,72px); font-weight:400; line-height:1.05; color:var(--charcoal); margin-bottom:16px; letter-spacing:-0.01em; }
 .page-hero-title em { font-style:italic; color:var(--terra); }
 .page-hero-body { font-size:16px; font-weight:300; color:var(--mid); max-width:560px; line-height:1.75; }
-
 .filter-bar { padding:28px 48px; background:var(--warm-white); border-bottom:1px solid var(--border); display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
 .filter-btn { font-family:var(--font-body); font-size:12px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; padding:8px 20px; border:1px solid var(--border); background:transparent; color:var(--mid); cursor:pointer; transition:all 0.2s; }
 .filter-btn:hover { border-color:var(--charcoal); color:var(--charcoal); }
 .filter-btn.active { background:var(--charcoal); color:var(--warm-white); border-color:var(--charcoal); }
-
 .gallery-section { padding:60px 48px 100px; }
 .masonry-grid { columns:3; column-gap:12px; }
 .masonry-item { break-inside:avoid; margin-bottom:12px; position:relative; overflow:hidden; cursor:pointer; transition:opacity 0.3s; }
 .masonry-item.hidden { opacity:0; height:0; margin:0; overflow:hidden; pointer-events:none; }
-.masonry-img { width:100%; display:block; transition:transform 0.5s ease; }
+.masonry-img { width:100%; display:block; transition:transform 0.5s ease; object-fit:cover; }
+.masonry-ph { width:100%; display:block; }
 .masonry-item:hover .masonry-img { transform:scale(1.04); }
 .masonry-overlay { position:absolute; inset:0; background:rgba(40,37,32,0); transition:background 0.3s; display:flex; flex-direction:column; justify-content:flex-end; padding:24px; }
 .masonry-item:hover .masonry-overlay { background:rgba(40,37,32,0.5); }
@@ -41,38 +40,23 @@
 .masonry-item:hover .masonry-label { color:rgba(255,255,255,0.9); }
 .masonry-tag { font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0); transition:color 0.3s; margin-top:4px; }
 .masonry-item:hover .masonry-tag { color:rgba(255,255,255,0.55); }
-.g-ph { display:block; width:100%; }
 .gp1 { background:linear-gradient(160deg,#8B6347 0%,#5C3D1E 100%); aspect-ratio:4/5; }
 .gp2 { background:linear-gradient(160deg,#C4A882 0%,#8B6347 100%); aspect-ratio:3/4; }
 .gp3 { background:linear-gradient(160deg,#A07850 0%,#5C3D1E 100%); aspect-ratio:1/1; }
 .gp4 { background:linear-gradient(160deg,#6B4728 0%,#3E2810 100%); aspect-ratio:4/3; }
-.gp5 { background:linear-gradient(160deg,#B8956A 0%,#7A5535 100%); aspect-ratio:3/4; }
-.gp6 { background:linear-gradient(160deg,#7A5535 0%,#4A3018 100%); aspect-ratio:5/4; }
-.gp7 { background:linear-gradient(160deg,#9B7550 0%,#6B4728 100%); aspect-ratio:2/3; }
-.gp8 { background:linear-gradient(160deg,#C4A882 0%,#7A5535 100%); aspect-ratio:4/3; }
-.gp9 { background:linear-gradient(160deg,#5C3D1E 0%,#3A2410 100%); aspect-ratio:3/4; }
-.ph-inner { display:flex; align-items:center; justify-content:center; height:100%; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.2); }
-
+.gp5 { background:linear-gradient(160deg,#5C7A3E 0%,#3A5225 100%); aspect-ratio:3/4; }
 .video-section { background:var(--charcoal); padding:80px 48px; }
 .video-eyebrow { font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:rgba(255,255,255,0.3); display:flex; align-items:center; gap:14px; margin-bottom:20px; }
 .video-eyebrow::before { content:''; width:28px; height:1px; background:rgba(255,255,255,0.3); display:block; }
 .video-title { font-family:var(--font-display); font-size:clamp(28px,3.5vw,44px); font-weight:400; color:var(--warm-white); margin-bottom:36px; }
 .video-title em { font-style:italic; color:var(--terra); }
-.video-grid { display:grid; grid-template-columns:2fr 1fr; gap:4px; }
 .video-main { position:relative; background:#1a1410; aspect-ratio:16/9; overflow:hidden; }
 .video-placeholder { width:100%; height:100%; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:16px; background:linear-gradient(160deg,#3A2410 0%,#1A0E06 100%); }
 .video-play { width:64px; height:64px; border:2px solid rgba(255,255,255,0.3); border-radius:50%; display:flex; align-items:center; justify-content:center; transition:border-color 0.2s; cursor:pointer; background:transparent; }
 .video-play:hover { border-color:var(--terra); }
 .video-play::after { content:''; width:0; height:0; border-style:solid; border-width:10px 0 10px 18px; border-color:transparent transparent transparent rgba(255,255,255,0.7); margin-left:4px; }
 .video-caption { font-size:12px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.3); }
-.video-side { display:flex; flex-direction:column; gap:4px; }
-.video-side-item { flex:1; background:linear-gradient(160deg,#4A3018 0%,#2A1808 100%); display:flex; align-items:center; justify-content:center; flex-direction:column; gap:10px; cursor:pointer; transition:opacity 0.2s; }
-.video-side-item:hover { opacity:0.8; }
-.video-side-play { width:40px; height:40px; border:1.5px solid rgba(255,255,255,0.2); border-radius:50%; display:flex; align-items:center; justify-content:center; }
-.video-side-play::after { content:''; width:0; height:0; border-style:solid; border-width:6px 0 6px 11px; border-color:transparent transparent transparent rgba(255,255,255,0.5); margin-left:3px; }
-.video-side-label { font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:rgba(255,255,255,0.3); }
-
-@media (max-width:1024px) { .masonry-grid { columns:2; } .video-grid { grid-template-columns:1fr; } .video-side { flex-direction:row; } }
+@media (max-width:1024px) { .masonry-grid { columns:2; } }
 @media (max-width:768px) {
   .page-hero { padding:100px 20px 48px; }
   .filter-bar { padding:20px; }
@@ -93,7 +77,7 @@
     <span class="nav-logo-sub">Queenstown Floor Specialists</span>
   </a>
   <div class="nav-right">
-    <a href="tel:+64XXXXXXXXX" class="nav-phone">021 XXX XXXX</a>
+    <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" class="nav-phone" target="_blank" rel="noopener">WhatsApp us</a>
     <ul class="nav-links" role="list">
       <li><a href="services.html">Services</a></li>
       <li><a href="gallery.html" class="active" aria-current="page">Our Work</a></li>
@@ -108,14 +92,14 @@
   <a href="gallery.html" aria-current="page">Our Work</a>
   <a href="about.html">About</a>
   <a href="contact.html">Get a Quote</a>
-  <a href="tel:+64XXXXXXXXX">021 XXX XXXX</a>
+  <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener">WhatsApp us</a>
 </div>
 
 <main id="main-content">
 <div class="page-hero">
   <p class="page-hero-eyebrow" aria-hidden="true">Portfolio</p>
   <h1 class="page-hero-title">The finish <em>speaks for itself</em></h1>
-  <p class="page-hero-body">Every project we take on, we're proud to put our name to.</p>
+  <p class="page-hero-body">Every project we take on, we're proud to put our name to — indoors and out.</p>
 </div>
 
 <div class="filter-bar" role="group" aria-label="Filter gallery by service">
@@ -124,45 +108,64 @@
   <button class="filter-btn" onclick="filterGallery('sanding',this)" aria-pressed="false">Sanding & Finishing</button>
   <button class="filter-btn" onclick="filterGallery('repairs',this)" aria-pressed="false">Repairs</button>
   <button class="filter-btn" onclick="filterGallery('staircases',this)" aria-pressed="false">Staircases</button>
+  <button class="filter-btn" onclick="filterGallery('decking',this)" aria-pressed="false">Decking</button>
 </div>
 
 <section class="gallery-section" aria-label="Project gallery">
   <div class="masonry-grid" id="galleryGrid">
     <article class="masonry-item fade-up" data-category="installation">
-      <div class="g-ph gp1 masonry-img"><div class="ph-inner">Photo coming soon</div></div>
+      <img src="images/gallery-timber-1.jpg" alt="Solid hardwood timber floor installation" class="masonry-img" loading="lazy">
       <div class="masonry-overlay"><p class="masonry-label">Queenstown Residence</p><p class="masonry-tag">Solid timber installation</p></div>
     </article>
     <article class="masonry-item fade-up" data-category="sanding">
-      <div class="g-ph gp2 masonry-img"><div class="ph-inner">Photo coming soon</div></div>
-      <div class="masonry-overlay"><p class="masonry-label">Arrowtown Home</p><p class="masonry-tag">Sanding & oil finish</p></div>
+      <img src="images/gallery-sand-1.jpg" alt="Floor sanding and oil finish" class="masonry-img" loading="lazy">
+      <div class="masonry-overlay"><p class="masonry-label">28 Myles Way</p><p class="masonry-tag">Sanding & oil finish</p></div>
     </article>
     <article class="masonry-item fade-up" data-category="installation">
-      <div class="g-ph gp3 masonry-img"><div class="ph-inner">Photo coming soon</div></div>
+      <img src="images/gallery-lam-1.jpg" alt="Commercial laminate installation" class="masonry-img" loading="lazy">
       <div class="masonry-overlay"><p class="masonry-label">Auckland Rental Unit</p><p class="masonry-tag">Commercial laminate</p></div>
     </article>
     <article class="masonry-item fade-up" data-category="staircases">
-      <div class="g-ph gp4 masonry-img"><div class="ph-inner">Photo coming soon</div></div>
-      <div class="masonry-overlay"><p class="masonry-label">Private Residence</p><p class="masonry-tag">Staircase cladding</p></div>
+      <img src="images/gallery-stair-1.jpg" alt="Staircase timber cladding" class="masonry-img" loading="lazy">
+      <div class="masonry-overlay"><p class="masonry-label">Fisher Point Drive</p><p class="masonry-tag">Staircase cladding</p></div>
     </article>
     <article class="masonry-item fade-up" data-category="sanding">
-      <div class="g-ph gp5 masonry-img"><div class="ph-inner">Photo coming soon</div></div>
-      <div class="masonry-overlay"><p class="masonry-label">Queenstown Residence</p><p class="masonry-tag">Polyurethane finish</p></div>
+      <img src="images/gallery-sand-2.jpg" alt="Floor sanding Queenstown" class="masonry-img" loading="lazy">
+      <div class="masonry-overlay"><p class="masonry-label">28 Myles Way</p><p class="masonry-tag">Sanding & finish</p></div>
     </article>
     <article class="masonry-item fade-up" data-category="repairs">
-      <div class="g-ph gp6 masonry-img"><div class="ph-inner">Photo coming soon</div></div>
-      <div class="masonry-overlay"><p class="masonry-label">Frankton Home</p><p class="masonry-tag">Board replacement & restoration</p></div>
+      <img src="images/gallery-repair-1.jpg" alt="Floor restoration Avondale" class="masonry-img" loading="lazy">
+      <div class="masonry-overlay"><p class="masonry-label">Avondale</p><p class="masonry-tag">Board restoration</p></div>
     </article>
     <article class="masonry-item fade-up" data-category="installation">
-      <div class="g-ph gp7 masonry-img"><div class="ph-inner">Photo coming soon</div></div>
-      <div class="masonry-overlay"><p class="masonry-label">Queenstown Residence</p><p class="masonry-tag">Engineered timber</p></div>
+      <img src="images/gallery-timber-2.jpg" alt="Engineered timber floor installation" class="masonry-img" loading="lazy">
+      <div class="masonry-overlay"><p class="masonry-label">Felton Mathew</p><p class="masonry-tag">Engineered timber</p></div>
     </article>
     <article class="masonry-item fade-up" data-category="installation">
-      <div class="g-ph gp8 masonry-img"><div class="ph-inner">Photo coming soon</div></div>
+      <img src="images/gallery-lam-2.jpg" alt="Residential laminate installation" class="masonry-img" loading="lazy">
       <div class="masonry-overlay"><p class="masonry-label">Auckland Rental Unit</p><p class="masonry-tag">Residential laminate</p></div>
     </article>
     <article class="masonry-item fade-up" data-category="sanding">
-      <div class="g-ph gp9 masonry-img"><div class="ph-inner">Photo coming soon</div></div>
-      <div class="masonry-overlay"><p class="masonry-label">Private Residence</p><p class="masonry-tag">Hardwax oil finish</p></div>
+      <img src="images/gallery-sand-3.jpg" alt="Floor sanding in progress" class="masonry-img" loading="lazy">
+      <div class="masonry-overlay"><p class="masonry-label">Felton Mathew</p><p class="masonry-tag">Sanding in progress</p></div>
+    </article>
+    <article class="masonry-item fade-up" data-category="installation">
+      <img src="images/gallery-timber-3.jpg" alt="Finished timber floor 204 FPD" class="masonry-img" loading="lazy">
+      <div class="masonry-overlay"><p class="masonry-label">Fisher Point Drive</p><p class="masonry-tag">Timber installation</p></div>
+    </article>
+    <article class="masonry-item fade-up" data-category="installation">
+      <img src="images/gallery-lam-3.jpg" alt="Laminate floor installation 109FPD" class="masonry-img" loading="lazy">
+      <div class="masonry-overlay"><p class="masonry-label">Fisher Point Drive</p><p class="masonry-tag">Laminate installation</p></div>
+    </article>
+    <article class="masonry-item fade-up" data-category="repairs">
+      <img src="images/gallery-repair-2.jpg" alt="Floor repair and restoration" class="masonry-img" loading="lazy">
+      <div class="masonry-overlay"><p class="masonry-label">204 Fisher Point</p><p class="masonry-tag">Restoration</p></div>
+    </article>
+    <article class="masonry-item fade-up" data-category="decking">
+      <div class="masonry-ph gp5" style="aspect-ratio:4/3;">
+        <!-- Replace with: <img src="images/gallery-deck-1.jpg" alt="Nail-free timber decking installation" class="masonry-img" loading="lazy"> -->
+      </div>
+      <div class="masonry-overlay"><p class="masonry-label">Decking project</p><p class="masonry-tag">Nail-free timber decking</p></div>
     </article>
   </div>
 </section>
@@ -170,22 +173,10 @@
 <section class="video-section" aria-labelledby="video-heading">
   <p class="video-eyebrow" aria-hidden="true">Behind the craft</p>
   <h2 class="video-title" id="video-heading">Watch the <em>process</em></h2>
-  <div class="video-grid">
-    <div class="video-main">
-      <div class="video-placeholder">
-        <button class="video-play" aria-label="Play floor sanding video"></button>
-        <p class="video-caption">Floor sanding — replace with your video</p>
-      </div>
-    </div>
-    <div class="video-side">
-      <div class="video-side-item" role="button" tabindex="0" aria-label="Play installation process video">
-        <div class="video-side-play" aria-hidden="true"></div>
-        <p class="video-side-label">Installation process</p>
-      </div>
-      <div class="video-side-item" role="button" tabindex="0" aria-label="Play finishing and coating video">
-        <div class="video-side-play" aria-hidden="true"></div>
-        <p class="video-side-label">Finishing & coating</p>
-      </div>
+  <div class="video-main">
+    <div class="video-placeholder">
+      <button class="video-play" aria-label="Play floor sanding video"></button>
+      <p class="video-caption">Floor sanding — video coming soon</p>
     </div>
   </div>
 </section>
@@ -200,7 +191,7 @@
     <div>
       <p class="footer-logo-main">The Floor Collective</p>
       <p class="footer-logo-sub">Queenstown Floor Specialists</p>
-      <p class="footer-tagline">Specialist timber floor installation, sanding, and restoration. Queenstown, New Zealand.</p>
+      <p class="footer-tagline">Specialist timber floor installation, sanding, restoration and outdoor decking. Queenstown, New Zealand.</p>
     </div>
     <nav aria-label="Footer navigation">
       <p class="footer-col-title">Navigation</p>
@@ -210,8 +201,8 @@
     </nav>
     <div>
       <p class="footer-col-title">Contact</p>
-      <p class="footer-contact-item"><a href="tel:+64XXXXXXXXX">021 XXX XXXX</a></p>
-      <p class="footer-contact-item"><a href="mailto:info@thefloorcollective.co.nz">info@thefloorcollective.co.nz</a></p>
+      <p class="footer-contact-item"><a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener">WhatsApp us</a></p>
+      <p class="footer-contact-item"><a href="mailto:ashjohns@me.com?subject=Flooring%20Enquiry">Email us</a></p>
       <p class="footer-contact-item">Queenstown, New Zealand</p>
     </div>
   </div>
@@ -224,15 +215,10 @@
 <script src="js/shared.js"></script>
 <script>
 function filterGallery(category, btn) {
-  document.querySelectorAll('.filter-btn').forEach(b => {
-    b.classList.remove('active');
-    b.setAttribute('aria-pressed','false');
-  });
-  btn.classList.add('active');
-  btn.setAttribute('aria-pressed','true');
+  document.querySelectorAll('.filter-btn').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed','false'); });
+  btn.classList.add('active'); btn.setAttribute('aria-pressed','true');
   document.querySelectorAll('.masonry-item').forEach(item => {
-    const show = category === 'all' || item.dataset.category === category;
-    item.classList.toggle('hidden', !show);
+    item.classList.toggle('hidden', category !== 'all' && item.dataset.category !== category);
   });
 }
 </script>

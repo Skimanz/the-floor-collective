@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Services — The Floor Collective | Queenstown Floor Specialists</title>
-<meta name="description" content="Timber floor installation, laminate, sanding and finishing, repairs and restoration, and staircase flooring in Queenstown. Free quotes.">
+<meta name="description" content="Timber floor installation, laminate, sanding, repairs, staircase flooring, nail-free timber decking and aluminium deck framing in Queenstown.">
 <link rel="canonical" href="https://thefloorcollective.co.nz/services.html">
 <meta property="og:title" content="Services — The Floor Collective">
-<meta property="og:description" content="Specialist flooring services in Queenstown: timber installation, laminate, sanding, repairs and staircase flooring.">
+<meta property="og:description" content="Specialist indoor and outdoor flooring services in Queenstown — installation, sanding, repairs, decking and framing.">
 <meta property="og:image" content="https://thefloorcollective.co.nz/images/og-image.jpg">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://thefloorcollective.co.nz/services.html">
@@ -24,18 +24,22 @@
 .page-hero-title em { font-style:italic; color:var(--terra); }
 .page-hero-body { font-size:16px; font-weight:300; color:rgba(255,255,255,0.45); line-height:1.75; }
 
+.section-divider { padding:48px 48px 0; background:var(--linen); }
+.section-divider h2 { font-family:var(--font-display); font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted); padding-bottom:16px; border-bottom:1px solid var(--border); }
+
 .service-detail { display:grid; grid-template-columns:1fr 1fr; min-height:500px; }
 .service-detail.reverse { direction:rtl; }
 .service-detail.reverse > * { direction:ltr; }
 .service-detail-img { position:relative; overflow:hidden; min-height:420px; }
+.service-detail-img img { width:100%; height:100%; object-fit:cover; position:absolute; inset:0; }
 .service-detail-content { padding:72px 60px; display:flex; flex-direction:column; justify-content:center; }
-.service-detail-content.bg-linen { background:var(--linen); }
-.service-detail-content.bg-warm { background:var(--warm-white); }
-.service-detail-content.bg-sand { background:var(--sand); }
-.service-detail-content.bg-charcoal { background:var(--charcoal); }
-.service-detail-content.bg-charcoal .section-title { color:var(--warm-white); }
-.service-detail-content.bg-charcoal .eyebrow { color:rgba(255,255,255,0.35); }
-.service-detail-content.bg-charcoal .eyebrow::before { background:rgba(255,255,255,0.35); }
+.bg-linen { background:var(--linen); }
+.bg-warm { background:var(--warm-white); }
+.bg-sand { background:var(--sand); }
+.bg-charcoal { background:var(--charcoal); }
+.bg-charcoal .section-title { color:var(--warm-white); }
+.bg-charcoal .eyebrow { color:rgba(255,255,255,0.35); }
+.bg-charcoal .eyebrow::before { background:rgba(255,255,255,0.35); }
 .service-detail-title { font-family:var(--font-display); font-size:clamp(30px,3vw,42px); font-weight:400; line-height:1.1; color:var(--charcoal); margin-bottom:20px; letter-spacing:-0.01em; }
 .service-detail-title em { font-style:italic; color:var(--terra); }
 .service-body { font-size:15px; font-weight:300; color:var(--mid); line-height:1.8; margin-bottom:16px; }
@@ -47,11 +51,14 @@
 .includes-list li { display:flex; align-items:flex-start; gap:12px; font-size:14px; font-weight:300; color:var(--mid); line-height:1.5; }
 .includes-list li.on-dark { color:rgba(255,255,255,0.55); }
 .includes-list li::before { content:''; width:5px; height:5px; background:var(--terra); border-radius:50%; margin-top:7px; flex-shrink:0; }
-.img-placeholder-s1 { background:linear-gradient(160deg,#8B6347 0%,#5C3D1E 100%); width:100%; height:100%; position:absolute; inset:0; display:flex; align-items:flex-end; padding:32px; }
-.img-placeholder-s2 { background:linear-gradient(160deg,#C4A882 0%,#8B6347 100%); width:100%; height:100%; position:absolute; inset:0; display:flex; align-items:flex-end; padding:32px; }
-.img-placeholder-s3 { background:linear-gradient(160deg,#A07850 0%,#5C3D1E 100%); width:100%; height:100%; position:absolute; inset:0; display:flex; align-items:flex-end; padding:32px; }
-.img-placeholder-s4 { background:linear-gradient(160deg,#6B4728 0%,#3E2810 100%); width:100%; height:100%; position:absolute; inset:0; display:flex; align-items:flex-end; padding:32px; }
-.img-placeholder-s5 { background:linear-gradient(160deg,#B8956A 0%,#7A5535 100%); width:100%; height:100%; position:absolute; inset:0; display:flex; align-items:flex-end; padding:32px; }
+.img-ph { width:100%; height:100%; position:absolute; inset:0; display:flex; align-items:flex-end; padding:32px; }
+.img-ph-s1 { background:linear-gradient(160deg,#8B6347 0%,#5C3D1E 100%); }
+.img-ph-s2 { background:linear-gradient(160deg,#C4A882 0%,#8B6347 100%); }
+.img-ph-s3 { background:linear-gradient(160deg,#A07850 0%,#5C3D1E 100%); }
+.img-ph-s4 { background:linear-gradient(160deg,#6B4728 0%,#3E2810 100%); }
+.img-ph-s5 { background:linear-gradient(160deg,#B8956A 0%,#7A5535 100%); }
+.img-ph-s6 { background:linear-gradient(160deg,#5C7A3E 0%,#3A5225 100%); }
+.img-ph-s7 { background:linear-gradient(160deg,#4A6B8A 0%,#2A4560 100%); }
 .img-caption { font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.3); }
 
 .finishes-section { background:var(--sand); padding:80px 48px; }
@@ -68,12 +75,14 @@
   .service-detail-content { padding:48px; }
   .page-hero { grid-template-columns:1fr; gap:28px; padding:120px 48px 60px; }
   .finishes-grid { grid-template-columns:1fr 1fr; }
+  .section-divider { padding:40px 48px 0; }
 }
 @media (max-width:768px) {
   .page-hero { padding:100px 20px 48px; }
   .service-detail-content { padding:48px 20px; }
   .finishes-section { padding:60px 20px; }
   .finishes-grid { grid-template-columns:1fr; }
+  .section-divider { padding:32px 20px 0; }
 }
 </style>
 </head>
@@ -86,7 +95,7 @@
     <span class="nav-logo-sub">Queenstown Floor Specialists</span>
   </a>
   <div class="nav-right">
-    <a href="tel:+64XXXXXXXXX" class="nav-phone">021 XXX XXXX</a>
+    <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" class="nav-phone" target="_blank" rel="noopener">WhatsApp us</a>
     <ul class="nav-links" role="list">
       <li><a href="services.html" class="active" aria-current="page">Services</a></li>
       <li><a href="gallery.html">Our Work</a></li>
@@ -101,7 +110,7 @@
   <a href="gallery.html">Our Work</a>
   <a href="about.html">About</a>
   <a href="contact.html">Get a Quote</a>
-  <a href="tel:+64XXXXXXXXX">021 XXX XXXX</a>
+  <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener">WhatsApp us</a>
 </div>
 
 <main id="main-content">
@@ -110,12 +119,17 @@
     <p class="page-hero-eyebrow" aria-hidden="true">What we do</p>
     <h1 class="page-hero-title">Services built around <em>your floor</em></h1>
   </div>
-  <p class="page-hero-body">We focus exclusively on floor installation and finishing — specialist knowledge applied to every job we take on.</p>
+  <p class="page-hero-body">Indoor or outdoor — we focus exclusively on floor and deck installation and finishing. Specialist knowledge applied to every job.</p>
 </div>
+
+<!-- INDOOR FLOORING -->
+<div class="section-divider"><h2>Indoor Flooring</h2></div>
 
 <section id="timber" aria-labelledby="timber-heading">
   <div class="service-detail">
-    <div class="service-detail-img"><div class="img-placeholder-s1"><span class="img-caption">service-timber.jpg</span></div></div>
+    <div class="service-detail-img">
+      <img src="images/service-timber.jpg" alt="Timber floor installation Queenstown" loading="lazy">
+    </div>
     <div class="service-detail-content bg-warm fade-up">
       <p class="eyebrow" aria-hidden="true">Service 01</p>
       <h2 class="service-detail-title" id="timber-heading">Timber Floor <em>Installation</em></h2>
@@ -139,7 +153,9 @@
 
 <section id="laminate" aria-labelledby="laminate-heading">
   <div class="service-detail reverse">
-    <div class="service-detail-img"><div class="img-placeholder-s2"><span class="img-caption">service-laminate.jpg</span></div></div>
+    <div class="service-detail-img">
+      <img src="images/service-laminate.jpg" alt="Laminate flooring installation" loading="lazy">
+    </div>
     <div class="service-detail-content bg-linen fade-up">
       <p class="eyebrow" aria-hidden="true">Service 02</p>
       <h2 class="service-detail-title" id="laminate-heading">Laminate <em>Flooring</em></h2>
@@ -163,7 +179,9 @@
 
 <section id="sanding" aria-labelledby="sanding-heading">
   <div class="service-detail">
-    <div class="service-detail-img"><div class="img-placeholder-s3"><span class="img-caption">service-sanding.jpg</span></div></div>
+    <div class="service-detail-img">
+      <img src="images/service-sanding.jpg" alt="Floor sanding Queenstown" loading="lazy">
+    </div>
     <div class="service-detail-content bg-sand fade-up">
       <p class="eyebrow" aria-hidden="true">Service 03</p>
       <h2 class="service-detail-title" id="sanding-heading">Sanding & <em>Finishing</em></h2>
@@ -184,7 +202,9 @@
 
 <section id="repairs" aria-labelledby="repairs-heading">
   <div class="service-detail reverse">
-    <div class="service-detail-img"><div class="img-placeholder-s4"><span class="img-caption">service-repairs.jpg</span></div></div>
+    <div class="service-detail-img">
+      <img src="images/service-repairs.jpg" alt="Floor repairs Queenstown" loading="lazy">
+    </div>
     <div class="service-detail-content bg-charcoal fade-up">
       <p class="eyebrow" aria-hidden="true">Service 04</p>
       <h2 class="service-detail-title" id="repairs-heading" style="color:var(--warm-white);">Repairs & <em>Restoration</em></h2>
@@ -206,7 +226,9 @@
 
 <section id="staircases" aria-labelledby="staircases-heading">
   <div class="service-detail">
-    <div class="service-detail-img"><div class="img-placeholder-s5"><span class="img-caption">service-stairs.jpg</span></div></div>
+    <div class="service-detail-img">
+      <img src="images/service-stairs.jpg" alt="Staircase flooring Queenstown" loading="lazy">
+    </div>
     <div class="service-detail-content bg-warm fade-up">
       <p class="eyebrow" aria-hidden="true">Service 05</p>
       <h2 class="service-detail-title" id="staircases-heading">Staircase <em>Flooring</em></h2>
@@ -219,6 +241,66 @@
           <li>Timber matching to existing floors</li>
           <li>New build and retrofit</li>
           <li>Sanding and finishing of stair timber</li>
+        </ul>
+      </div>
+      <a href="contact.html" class="btn btn-dark">Get a Quote →</a>
+    </div>
+  </div>
+</section>
+
+<!-- OUTDOOR FLOORING -->
+<div class="section-divider"><h2>Outdoor Flooring Installations</h2></div>
+
+<section id="decking" aria-labelledby="decking-heading">
+  <div class="service-detail reverse">
+    <div class="service-detail-img">
+      <div class="img-ph img-ph-s6">
+        <!-- Replace with: <img src="images/service-decking.jpg" alt="Nail-free timber decking installation" loading="lazy"> -->
+        <span class="img-caption">service-decking.jpg — coming soon</span>
+      </div>
+    </div>
+    <div class="service-detail-content bg-linen fade-up">
+      <p class="eyebrow" aria-hidden="true">Service 06</p>
+      <h2 class="service-detail-title" id="decking-heading">Nail-Free Timber <em>Decking</em></h2>
+      <p class="service-body">We install the ShadowDeck™ nail-free timber decking system — a premium hidden fastener solution that creates a seamless, screw-free surface. No visible nails or screws. Barefoot friendly. Built to last outdoors.</p>
+      <p class="service-body">Pre-grooved Kwila hardwood boards clip into hidden fasteners for a clean, professional finish that allows the timber to naturally expand and contract with the seasons.</p>
+      <div class="service-includes">
+        <p class="service-includes-title">Includes</p>
+        <ul class="includes-list">
+          <li>ShadowDeck™ system installation</li>
+          <li>Pre-grooved Kwila timber boards</li>
+          <li>Hidden fastener fixing</li>
+          <li>Picture framing and edge finishing</li>
+          <li>Staircase tread installation</li>
+        </ul>
+      </div>
+      <a href="contact.html" class="btn btn-dark">Get a Quote →</a>
+    </div>
+  </div>
+</section>
+
+<section id="framing" aria-labelledby="framing-heading">
+  <div class="service-detail">
+    <div class="service-detail-img">
+      <div class="img-ph img-ph-s7">
+        <!-- Replace with: <img src="images/service-framing.jpg" alt="Aluminium deck framing installation" loading="lazy"> -->
+        <span class="img-caption">service-framing.jpg — coming soon</span>
+      </div>
+    </div>
+    <div class="service-detail-content bg-sand fade-up">
+      <p class="eyebrow" aria-hidden="true">Service 07</p>
+      <h2 class="service-detail-title" id="framing-heading">Aluminium Deck <em>Framing</em></h2>
+      <p class="service-body">We install the SuperSpan™ aluminium subframing system — the professional's choice for outdoor decking. Lightweight, corrosion-resistant, and PS1 certified by EQ Struc for building consent applications.</p>
+      <p class="service-body">The clever design lets you switch between timber decking and tiles without changing your framing. Height-adjustable Nurajack pedestals make installation fast, precise, and up to 80% faster than traditional timber framing.</p>
+      <div class="service-includes">
+        <p class="service-includes-title">Features</p>
+        <ul class="includes-list">
+          <li>SuperSpan™ aluminium joist and bearer installation</li>
+          <li>PS1 certified — suitable for building consent</li>
+          <li>Nurajack pedestal installation and levelling</li>
+          <li>Compatible with timber decking and tiles</li>
+          <li>30mm, 60mm and 120mm profile options</li>
+          <li>Low-clearance builds from 30mm</li>
         </ul>
       </div>
       <a href="contact.html" class="btn btn-dark">Get a Quote →</a>
@@ -258,7 +340,7 @@
     <div>
       <p class="footer-logo-main">The Floor Collective</p>
       <p class="footer-logo-sub">Queenstown Floor Specialists</p>
-      <p class="footer-tagline">Specialist timber floor installation, sanding, and restoration. Queenstown, New Zealand.</p>
+      <p class="footer-tagline">Specialist timber floor installation, sanding, restoration and outdoor decking. Queenstown, New Zealand.</p>
     </div>
     <nav aria-label="Footer navigation">
       <p class="footer-col-title">Navigation</p>
@@ -272,8 +354,8 @@
     </nav>
     <div>
       <p class="footer-col-title">Contact</p>
-      <p class="footer-contact-item"><a href="tel:+64XXXXXXXXX">021 XXX XXXX</a></p>
-      <p class="footer-contact-item"><a href="mailto:info@thefloorcollective.co.nz">info@thefloorcollective.co.nz</a></p>
+      <p class="footer-contact-item"><a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener">WhatsApp us</a></p>
+      <p class="footer-contact-item"><a href="mailto:ashjohns@me.com?subject=Flooring%20Enquiry">Email us</a></p>
       <p class="footer-contact-item">Queenstown, New Zealand</p>
     </div>
   </div>

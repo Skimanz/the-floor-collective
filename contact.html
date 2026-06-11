@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Get a Free Quote — The Floor Collective | Queenstown</title>
-<meta name="description" content="Get a free, no-obligation quote for timber floor installation, sanding, laminate, repairs and staircase flooring in Queenstown. We respond within one business day.">
+<meta name="description" content="Get a free, no-obligation quote for timber floor installation, sanding, laminate, repairs, staircase and decking in Queenstown. We respond within one business day.">
 <link rel="canonical" href="https://thefloorcollective.co.nz/contact.html">
 <meta property="og:title" content="Get a Free Quote — The Floor Collective">
-<meta property="og:description" content="Free, no-obligation quote for flooring in Queenstown. We respond within one business day.">
+<meta property="og:description" content="Free, no-obligation flooring quote in Queenstown. WhatsApp or email us today.">
 <meta property="og:image" content="https://thefloorcollective.co.nz/images/og-image.jpg">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://thefloorcollective.co.nz/contact.html">
@@ -29,27 +29,25 @@
 .contact-detail-value { font-size:15px; font-weight:300; color:rgba(255,255,255,0.65); }
 .contact-detail-value a { color:rgba(255,255,255,0.65); transition:color 0.2s; }
 .contact-detail-value a:hover { color:var(--warm-white); }
+.contact-quick { display:flex; gap:12px; margin-top:40px; }
+.btn-whatsapp { display:inline-flex; align-items:center; gap:8px; background:#25D366; color:white; padding:12px 24px; font-family:var(--font-body); font-size:13px; font-weight:500; letter-spacing:0.06em; text-transform:uppercase; transition:opacity 0.2s; text-decoration:none; }
+.btn-whatsapp:hover { opacity:0.9; }
+.btn-email { display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.1); color:var(--warm-white); padding:12px 24px; font-family:var(--font-body); font-size:13px; font-weight:500; letter-spacing:0.06em; text-transform:uppercase; transition:background 0.2s; text-decoration:none; }
+.btn-email:hover { background:rgba(255,255,255,0.18); }
 .contact-service-list { margin-top:60px; padding-top:52px; border-top:1px solid rgba(255,255,255,0.08); }
 .contact-service-list-title { font-size:10px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.2); margin-bottom:16px; }
 .stags { display:flex; flex-wrap:wrap; gap:8px; }
 .stag { font-size:11px; font-weight:400; letter-spacing:0.06em; color:rgba(255,255,255,0.35); border:1px solid rgba(255,255,255,0.1); padding:6px 14px; }
-
 .contact-right { background:var(--warm-white); padding:80px 48px 80px 60px; display:flex; flex-direction:column; justify-content:center; }
 .form-title { font-family:var(--font-display); font-size:28px; font-weight:400; color:var(--charcoal); margin-bottom:8px; }
-.form-subtitle { font-size:14px; font-weight:300; color:var(--mid); margin-bottom:8px; }
+.form-subtitle { font-size:14px; font-weight:300; color:var(--mid); margin-bottom:6px; }
 .form-required-note { font-size:11px; color:var(--muted); margin-bottom:32px; }
 .form-row { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
 .form-group { margin-bottom:20px; }
 .form-label { display:block; font-size:10px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted); margin-bottom:8px; }
-.form-input, .form-select, .form-textarea {
-  width:100%; background:var(--linen); border:1px solid var(--border);
-  color:var(--charcoal); padding:13px 16px; font-family:var(--font-body);
-  font-size:14px; font-weight:300; outline:none; transition:border-color 0.2s;
-  -webkit-appearance:none;
-}
-.form-input:focus, .form-select:focus, .form-textarea:focus { border-color:var(--terra); }
+.form-input,.form-select,.form-textarea { width:100%; background:var(--linen); border:1px solid var(--border); color:var(--charcoal); padding:13px 16px; font-family:var(--font-body); font-size:14px; font-weight:300; outline:none; transition:border-color 0.2s; -webkit-appearance:none; }
+.form-input:focus,.form-select:focus,.form-textarea:focus { border-color:var(--terra); }
 .form-textarea { resize:vertical; min-height:120px; }
-.form-select { cursor:pointer; }
 .form-fieldset { border:none; margin:0 0 20px; padding:0; }
 .form-fieldset legend { font-size:10px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted); margin-bottom:12px; display:block; width:100%; }
 .checkbox-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
@@ -60,9 +58,8 @@
 .form-note { font-size:12px; font-weight:300; color:var(--muted); margin-top:12px; }
 .success-msg { display:none; background:var(--sand); border-left:3px solid var(--terra); padding:20px 24px; margin-top:20px; }
 .success-msg p { font-size:14px; font-weight:400; color:var(--charcoal); }
-
 @media (max-width:1024px) { .contact-wrap { grid-template-columns:1fr; } .contact-left { padding:60px 48px; } .contact-right { padding:60px 48px; } }
-@media (max-width:768px) { .contact-left { padding:48px 20px; } .contact-right { padding:48px 20px; } .form-row { grid-template-columns:1fr; } .checkbox-grid { grid-template-columns:1fr; } }
+@media (max-width:768px) { .contact-left { padding:48px 20px; } .contact-right { padding:48px 20px; } .form-row { grid-template-columns:1fr; } .checkbox-grid { grid-template-columns:1fr; } .contact-quick { flex-direction:column; } }
 </style>
 </head>
 <body>
@@ -74,7 +71,7 @@
     <span class="nav-logo-sub">Queenstown Floor Specialists</span>
   </a>
   <div class="nav-right">
-    <a href="tel:+64XXXXXXXXX" class="nav-phone">021 XXX XXXX</a>
+    <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" class="nav-phone" target="_blank" rel="noopener">WhatsApp us</a>
     <ul class="nav-links" role="list">
       <li><a href="services.html">Services</a></li>
       <li><a href="gallery.html">Our Work</a></li>
@@ -89,7 +86,7 @@
   <a href="gallery.html">Our Work</a>
   <a href="about.html">About</a>
   <a href="contact.html" aria-current="page">Get a Quote</a>
-  <a href="tel:+64XXXXXXXXX">021 XXX XXXX</a>
+  <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener">WhatsApp us</a>
 </div>
 
 <main id="main-content">
@@ -98,25 +95,21 @@
     <div>
       <p class="contact-eyebrow" aria-hidden="true">Free quote</p>
       <h1 class="contact-title">Let's talk about your <em>floor</em></h1>
-      <p class="contact-body">Fill in the form and we'll be in touch within one business day to arrange a free site visit and quote. No obligations.</p>
+      <p class="contact-body">Fill in the form or reach out directly — we'll be in touch within one business day to arrange a free site visit. No obligations.</p>
       <address class="contact-details">
         <div>
-          <p class="contact-detail-label">Phone</p>
-          <p class="contact-detail-value"><a href="tel:+64XXXXXXXXX">021 XXX XXXX</a></p>
-        </div>
-        <div>
-          <p class="contact-detail-label">Email</p>
-          <p class="contact-detail-value"><a href="mailto:info@thefloorcollective.co.nz">info@thefloorcollective.co.nz</a></p>
+          <p class="contact-detail-label">Response time</p>
+          <p class="contact-detail-value">Within one business day</p>
         </div>
         <div>
           <p class="contact-detail-label">Location</p>
           <p class="contact-detail-value">Queenstown, New Zealand</p>
         </div>
-        <div>
-          <p class="contact-detail-label">Response time</p>
-          <p class="contact-detail-value">Within one business day</p>
-        </div>
       </address>
+      <div class="contact-quick">
+        <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" class="btn-whatsapp" target="_blank" rel="noopener">WhatsApp us</a>
+        <a href="mailto:ashjohns@me.com?subject=Flooring%20Enquiry" class="btn-email">Email us</a>
+      </div>
     </div>
     <div class="contact-service-list">
       <p class="contact-service-list-title">Services</p>
@@ -126,6 +119,8 @@
         <span class="stag">Sanding & Finishing</span>
         <span class="stag">Repairs</span>
         <span class="stag">Staircases</span>
+        <span class="stag">Timber Decking</span>
+        <span class="stag">Deck Framing</span>
       </div>
     </div>
   </div>
@@ -134,7 +129,6 @@
     <h2 class="form-title">Request a free quote</h2>
     <p class="form-subtitle">Tell us about your project and we'll come to you.</p>
     <p class="form-required-note">* Required fields</p>
-
     <form id="contactForm" action="https://formspree.io/f/xdavladk" method="POST" novalidate>
       <div class="form-row">
         <div class="form-group">
@@ -168,6 +162,8 @@
           <label class="checkbox-item"><input type="checkbox" name="service" value="Sanding and finishing"> Sanding & finishing</label>
           <label class="checkbox-item"><input type="checkbox" name="service" value="Repairs and restoration"> Repairs & restoration</label>
           <label class="checkbox-item"><input type="checkbox" name="service" value="Staircase flooring"> Staircase flooring</label>
+          <label class="checkbox-item"><input type="checkbox" name="service" value="Nail-free timber decking"> Nail-free decking</label>
+          <label class="checkbox-item"><input type="checkbox" name="service" value="Aluminium deck framing"> Deck framing</label>
           <label class="checkbox-item"><input type="checkbox" name="service" value="Not sure yet"> Not sure yet</label>
         </div>
       </fieldset>
@@ -179,7 +175,7 @@
         <label class="form-label" for="message">Anything else we should know?</label>
         <textarea class="form-textarea" id="message" name="message" placeholder="Timeframe, existing floor type, other details…"></textarea>
       </div>
-      <input type="hidden" name="_subject" value="New quote request — The Floor Collective">
+      <input type="hidden" name="_subject" value="Flooring Enquiry — The Floor Collective">
       <button type="submit" class="form-submit">Send quote request →</button>
       <p class="form-note">Free site visit. No obligation. We'll be in touch within one business day.</p>
     </form>
@@ -194,7 +190,7 @@
     <div>
       <p class="footer-logo-main">The Floor Collective</p>
       <p class="footer-logo-sub">Queenstown Floor Specialists</p>
-      <p class="footer-tagline">Specialist timber floor installation, sanding, and restoration. Queenstown, New Zealand.</p>
+      <p class="footer-tagline">Specialist timber floor installation, sanding, restoration and outdoor decking. Queenstown, New Zealand.</p>
     </div>
     <nav aria-label="Footer navigation">
       <p class="footer-col-title">Navigation</p>
@@ -204,8 +200,8 @@
     </nav>
     <div>
       <p class="footer-col-title">Contact</p>
-      <p class="footer-contact-item"><a href="tel:+64XXXXXXXXX">021 XXX XXXX</a></p>
-      <p class="footer-contact-item"><a href="mailto:info@thefloorcollective.co.nz">info@thefloorcollective.co.nz</a></p>
+      <p class="footer-contact-item"><a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener">WhatsApp us</a></p>
+      <p class="footer-contact-item"><a href="mailto:ashjohns@me.com?subject=Flooring%20Enquiry">Email us</a></p>
       <p class="footer-contact-item">Queenstown, New Zealand</p>
     </div>
   </div>
@@ -231,12 +227,12 @@ document.getElementById('contactForm').addEventListener('submit', async function
     } else {
       btn.textContent = 'Send quote request →';
       btn.disabled = false;
-      alert('Something went wrong. Please email us directly at info@thefloorcollective.co.nz');
+      alert('Something went wrong. Please WhatsApp or email us directly.');
     }
   } catch(err) {
     btn.textContent = 'Send quote request →';
     btn.disabled = false;
-    alert('Something went wrong. Please call us on 021 XXX XXXX');
+    alert('Something went wrong. Please WhatsApp or email us directly.');
   }
 });
 </script>
