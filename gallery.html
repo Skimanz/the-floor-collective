@@ -18,33 +18,35 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<a href="#main-content" class="skip-link">Skip to main content</a>
-<div class="menu-backdrop" id="menuBackdrop" aria-hidden="true"></div>
-<nav aria-label="Main navigation">
-  <div class="nav-inner">
-  <a href="index.html" class="nav-logo" aria-label="The Floor Collective — Home">
-    <span class="nav-logo-main">The Floor Collective</span>
-    <span class="nav-logo-sub">Queenstown Floor Specialists</span>
+<header style="position:sticky;top:0;z-index:1000;background:#FDFCFA;border-bottom:1px solid rgba(40,37,32,0.12);font-family:'DM Sans',system-ui,sans-serif;">
+<div style="max-width:1280px;margin:0 auto;padding:0 48px;height:68px;display:flex;align-items:center;justify-content:space-between;">
+  <a href="index.html" style="display:flex;flex-direction:column;line-height:1.1;text-decoration:none;">
+    <span style="font-family:'Cormorant Garamond',Georgia,serif;font-size:20px;font-weight:600;color:#282520;letter-spacing:0.01em;">The Floor Collective</span>
+    <span style="font-size:10px;font-weight:400;color:#6B6260;letter-spacing:0.14em;text-transform:uppercase;">Queenstown Floor Specialists</span>
   </a>
-  <div class="nav-right">
-    <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" class="nav-phone" target="_blank" rel="noopener">WhatsApp us</a>
-    <ul class="nav-links" role="list">
-      <li><a href="services.html">Services</a></li>
-      <li><a href="gallery.html" class="active" aria-current="page">Our Work</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
-    </ul>
-  </div>
-  <button class="hamburger" onclick="toggleMenu()" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
-  </div>
-</nav>
-<div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
-  <a href="services.html">Services</a>
-  <a href="gallery.html" aria-current="page">Our Work</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Get a Quote</a>
-  <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener">WhatsApp us</a>
+  <nav id="mainNav" style="display:flex;align-items:center;gap:8px;">
+    <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener" style="font-size:13px;font-weight:500;color:#5A5550;letter-spacing:0.02em;padding:8px 12px;text-decoration:none;">WhatsApp us</a>
+    <a href="services.html" style="font-size:13px;font-weight:400;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 12px;text-decoration:none;">Services</a>
+    <a href="gallery.html" style="font-size:13px;font-weight:400;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 12px;text-decoration:none;">Our Work</a>
+    <a href="about.html" style="font-size:13px;font-weight:400;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 12px;text-decoration:none;">About</a>
+    <a href="contact.html" style="font-size:12px;font-weight:500;color:#FDFCFA;letter-spacing:0.08em;text-transform:uppercase;padding:10px 24px;background:#282520;text-decoration:none;">Get a Quote</a>
+  </nav>
+  <button onclick="toggleTFCMenu()" aria-label="Open menu" id="tfcBurger" style="display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;">
+    <span style="width:24px;height:2px;background:#282520;display:block;"></span>
+    <span style="width:24px;height:2px;background:#282520;display:block;"></span>
+    <span style="width:24px;height:2px;background:#282520;display:block;"></span>
+  </button>
 </div>
+<div id="tfcMobileMenu" style="display:none;background:#FDFCFA;border-top:1px solid rgba(40,37,32,0.1);padding:12px 24px 20px;">
+  <a href="services.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">Services</a>
+  <a href="gallery.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">Our Work</a>
+  <a href="about.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">About</a>
+  <a href="contact.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">Get a Quote</a>
+  <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener" style="display:block;padding:13px 0;font-size:14px;color:#B5602A;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;">WhatsApp us</a>
+</div>
+<style>@media(max-width:860px){#mainNav{display:none!important;}#tfcBurger{display:flex!important;}}</style>
+</header>
+<script>function toggleTFCMenu(){var m=document.getElementById("tfcMobileMenu");m.style.display=m.style.display==="block"?"none":"block";}</script>
 
 <main id="main-content">
 <div class="page-hero-gallery">
