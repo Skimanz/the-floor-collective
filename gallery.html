@@ -16,57 +16,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-<style>
-.page-hero { padding:140px 48px 80px; border-bottom:1px solid var(--border); }
-.page-hero-eyebrow { font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:var(--terra); display:flex; align-items:center; gap:14px; margin-bottom:20px; }
-.page-hero-eyebrow::before { content:''; width:28px; height:1px; background:var(--terra); display:block; }
-.page-hero-title { font-family:var(--font-display); font-size:clamp(44px,5.5vw,72px); font-weight:400; line-height:1.05; color:var(--charcoal); margin-bottom:16px; letter-spacing:-0.01em; }
-.page-hero-title em { font-style:italic; color:var(--terra); }
-.page-hero-body { font-size:16px; font-weight:300; color:var(--mid); max-width:560px; line-height:1.75; }
-.filter-bar { padding:28px 48px; background:var(--warm-white); border-bottom:1px solid var(--border); display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
-.filter-btn { font-family:var(--font-body); font-size:12px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; padding:8px 20px; border:1px solid var(--border); background:transparent; color:var(--mid); cursor:pointer; transition:all 0.2s; }
-.filter-btn:hover { border-color:var(--charcoal); color:var(--charcoal); }
-.filter-btn.active { background:var(--charcoal); color:var(--warm-white); border-color:var(--charcoal); }
-.gallery-section { padding:60px 48px 100px; }
-.masonry-grid { columns:3; column-gap:12px; }
-.masonry-item { break-inside:avoid; margin-bottom:12px; position:relative; overflow:hidden; cursor:pointer; transition:opacity 0.3s; }
-.masonry-item.hidden { opacity:0; height:0; margin:0; overflow:hidden; pointer-events:none; }
-.masonry-img { width:100%; display:block; transition:transform 0.5s ease; object-fit:cover; }
-.masonry-ph { width:100%; display:block; }
-.masonry-item:hover .masonry-img { transform:scale(1.04); }
-.masonry-overlay { position:absolute; inset:0; background:rgba(40,37,32,0); transition:background 0.3s; display:flex; flex-direction:column; justify-content:flex-end; padding:24px; }
-.masonry-item:hover .masonry-overlay { background:rgba(40,37,32,0.5); }
-.masonry-label { font-family:var(--font-display); font-size:18px; font-weight:600; color:rgba(255,255,255,0); transition:color 0.3s; line-height:1.2; }
-.masonry-item:hover .masonry-label { color:rgba(255,255,255,0.9); }
-.masonry-tag { font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0); transition:color 0.3s; margin-top:4px; }
-.masonry-item:hover .masonry-tag { color:rgba(255,255,255,0.55); }
-.gp1 { background:linear-gradient(160deg,#8B6347 0%,#5C3D1E 100%); aspect-ratio:4/5; }
-.gp2 { background:linear-gradient(160deg,#C4A882 0%,#8B6347 100%); aspect-ratio:3/4; }
-.gp3 { background:linear-gradient(160deg,#A07850 0%,#5C3D1E 100%); aspect-ratio:1/1; }
-.gp4 { background:linear-gradient(160deg,#6B4728 0%,#3E2810 100%); aspect-ratio:4/3; }
-.gp5 { background:linear-gradient(160deg,#5C7A3E 0%,#3A5225 100%); aspect-ratio:3/4; }
-.video-section { background:var(--charcoal); padding:80px 48px; }
-.video-eyebrow { font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:rgba(255,255,255,0.3); display:flex; align-items:center; gap:14px; margin-bottom:20px; }
-.video-eyebrow::before { content:''; width:28px; height:1px; background:rgba(255,255,255,0.3); display:block; }
-.video-title { font-family:var(--font-display); font-size:clamp(28px,3.5vw,44px); font-weight:400; color:var(--warm-white); margin-bottom:36px; }
-.video-title em { font-style:italic; color:var(--terra); }
-.video-main { position:relative; background:#1a1410; aspect-ratio:16/9; overflow:hidden; }
-.video-placeholder { width:100%; height:100%; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:16px; background:linear-gradient(160deg,#3A2410 0%,#1A0E06 100%); }
-.video-play { width:64px; height:64px; border:2px solid rgba(255,255,255,0.3); border-radius:50%; display:flex; align-items:center; justify-content:center; transition:border-color 0.2s; cursor:pointer; background:transparent; }
-.video-play:hover { border-color:var(--terra); }
-.video-play::after { content:''; width:0; height:0; border-style:solid; border-width:10px 0 10px 18px; border-color:transparent transparent transparent rgba(255,255,255,0.7); margin-left:4px; }
-.video-caption { font-size:12px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.3); }
-@media (max-width:1024px) { .masonry-grid { columns:2; } }
-@media (max-width:768px) {
-  .page-hero { padding:100px 20px 48px; }
-  .filter-bar { padding:20px; }
-  .gallery-section { padding:40px 20px 72px; }
-  .masonry-grid { columns:2; column-gap:8px; }
-  .masonry-item { margin-bottom:8px; }
-  .video-section { padding:60px 20px; }
-}
-@media (max-width:480px) { .masonry-grid { columns:1; } }
-</style>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -98,10 +47,12 @@
 </div>
 
 <main id="main-content">
-<div class="page-hero">
+<div class="page-hero-gallery">
+  <div class="page-hero-gallery-inner">
   <p class="page-hero-eyebrow" aria-hidden="true">Portfolio</p>
   <h1 class="page-hero-title">The finish <em>speaks for itself</em></h1>
   <p class="page-hero-body">Every project we take on, we're proud to put our name to — indoors and out.</p>
+  </div>
 </div>
 
 <div class="filter-bar" role="group" aria-label="Filter gallery by service">
@@ -114,6 +65,7 @@
 </div>
 
 <section class="gallery-section" aria-label="Project gallery">
+  <div class="gallery-section-inner">
   <div class="masonry-grid" id="galleryGrid">
     <article class="masonry-item fade-up" data-category="installation">
       <img src="images/gallery-timber-1.jpg" alt="Solid hardwood timber floor installation" class="masonry-img" loading="lazy">
@@ -170,9 +122,11 @@
       <div class="masonry-overlay"><p class="masonry-label">Decking project</p><p class="masonry-tag">Nail-free timber decking</p></div>
     </article>
   </div>
+  </div>
 </section>
 
 <section class="video-section" aria-labelledby="video-heading">
+  <div class="video-section-inner">
   <p class="video-eyebrow" aria-hidden="true">Behind the craft</p>
   <h2 class="video-title" id="video-heading">Watch the <em>process</em></h2>
   <div class="video-main">
@@ -180,6 +134,7 @@
       <button class="video-play" aria-label="Play floor sanding video"></button>
       <p class="video-caption">Floor sanding — video coming soon</p>
     </div>
+  </div>
   </div>
 </section>
 

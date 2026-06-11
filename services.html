@@ -16,75 +16,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-<style>
-.page-hero { padding:140px 48px 80px; background:var(--charcoal); display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:end; }
-.page-hero-eyebrow { font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:var(--terra); display:flex; align-items:center; gap:14px; margin-bottom:20px; }
-.page-hero-eyebrow::before { content:''; width:28px; height:1px; background:var(--terra); display:block; }
-.page-hero-title { font-family:var(--font-display); font-size:clamp(44px,5.5vw,72px); font-weight:400; line-height:1.05; color:var(--warm-white); letter-spacing:-0.01em; }
-.page-hero-title em { font-style:italic; color:var(--terra); }
-.page-hero-body { font-size:16px; font-weight:300; color:rgba(255,255,255,0.45); line-height:1.75; }
-
-.section-divider { padding:48px 48px 0; background:var(--linen); }
-.section-divider h2 { font-family:var(--font-display); font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted); padding-bottom:16px; border-bottom:1px solid var(--border); }
-
-.service-detail { display:grid; grid-template-columns:1fr 1fr; min-height:500px; }
-.service-detail.reverse { direction:rtl; }
-.service-detail.reverse > * { direction:ltr; }
-.service-detail-img { position:relative; overflow:hidden; min-height:420px; }
-.service-detail-img img { width:100%; height:100%; object-fit:cover; position:absolute; inset:0; }
-.service-detail-content { padding:72px 60px; display:flex; flex-direction:column; justify-content:center; }
-.bg-linen { background:var(--linen); }
-.bg-warm { background:var(--warm-white); }
-.bg-sand { background:var(--sand); }
-.bg-charcoal { background:var(--charcoal); }
-.bg-charcoal .section-title { color:var(--warm-white); }
-.bg-charcoal .eyebrow { color:rgba(255,255,255,0.35); }
-.bg-charcoal .eyebrow::before { background:rgba(255,255,255,0.35); }
-.service-detail-title { font-family:var(--font-display); font-size:clamp(30px,3vw,42px); font-weight:400; line-height:1.1; color:var(--charcoal); margin-bottom:20px; letter-spacing:-0.01em; }
-.service-detail-title em { font-style:italic; color:var(--terra); }
-.service-body { font-size:15px; font-weight:300; color:var(--mid); line-height:1.8; margin-bottom:16px; }
-.service-body.on-dark { color:rgba(255,255,255,0.55); }
-.service-includes { margin:24px 0; }
-.service-includes-title { font-size:10px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted); margin-bottom:14px; }
-.service-includes-title.on-dark { color:rgba(255,255,255,0.3); }
-.includes-list { list-style:none; display:flex; flex-direction:column; gap:10px; }
-.includes-list li { display:flex; align-items:flex-start; gap:12px; font-size:14px; font-weight:300; color:var(--mid); line-height:1.5; }
-.includes-list li.on-dark { color:rgba(255,255,255,0.55); }
-.includes-list li::before { content:''; width:5px; height:5px; background:var(--terra); border-radius:50%; margin-top:7px; flex-shrink:0; }
-.img-ph { width:100%; height:100%; position:absolute; inset:0; display:flex; align-items:flex-end; padding:32px; }
-.img-ph-s1 { background:linear-gradient(160deg,#8B6347 0%,#5C3D1E 100%); }
-.img-ph-s2 { background:linear-gradient(160deg,#C4A882 0%,#8B6347 100%); }
-.img-ph-s3 { background:linear-gradient(160deg,#A07850 0%,#5C3D1E 100%); }
-.img-ph-s4 { background:linear-gradient(160deg,#6B4728 0%,#3E2810 100%); }
-.img-ph-s5 { background:linear-gradient(160deg,#B8956A 0%,#7A5535 100%); }
-.img-ph-s6 { background:linear-gradient(160deg,#5C7A3E 0%,#3A5225 100%); }
-.img-ph-s7 { background:linear-gradient(160deg,#4A6B8A 0%,#2A4560 100%); }
-.img-caption { font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.3); }
-
-.finishes-section { background:var(--sand); padding:80px 48px; }
-.finishes-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:var(--border); margin-top:48px; }
-.finish-card { background:var(--sand); padding:36px 32px; }
-.finish-name { font-family:var(--font-display); font-size:22px; font-weight:600; color:var(--charcoal); margin-bottom:10px; }
-.finish-desc { font-size:14px; font-weight:300; color:var(--mid); line-height:1.7; }
-.finish-tag { display:inline-block; margin-top:16px; font-size:10px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:var(--terra); border:1px solid rgba(181,96,42,0.3); padding:4px 10px; }
-
-@media (max-width:1024px) {
-  .service-detail { grid-template-columns:1fr; }
-  .service-detail.reverse { direction:ltr; }
-  .service-detail-img { min-height:320px; }
-  .service-detail-content { padding:48px; }
-  .page-hero { grid-template-columns:1fr; gap:28px; padding:120px 48px 60px; }
-  .finishes-grid { grid-template-columns:1fr 1fr; }
-  .section-divider { padding:40px 48px 0; }
-}
-@media (max-width:768px) {
-  .page-hero { padding:100px 20px 48px; }
-  .service-detail-content { padding:48px 20px; }
-  .finishes-section { padding:60px 20px; }
-  .finishes-grid { grid-template-columns:1fr; }
-  .section-divider { padding:32px 20px 0; }
-}
-</style>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -116,16 +47,19 @@
 </div>
 
 <main id="main-content">
-<div class="page-hero">
+<div class="page-hero-services">
+  <div class="page-hero-services-inner">
   <div>
     <p class="page-hero-eyebrow" aria-hidden="true">What we do</p>
     <h1 class="page-hero-title">Services built around <em>your floor</em></h1>
   </div>
+</div>
   <p class="page-hero-body">Indoor or outdoor — we focus exclusively on floor and deck installation and finishing. Specialist knowledge applied to every job.</p>
+  </div>
 </div>
 
 <!-- INDOOR FLOORING -->
-<div class="section-divider"><h2>Indoor Flooring</h2></div>
+<div class="section-divider"><div class="section-divider-inner"><h2>Indoor Flooring</h2></div></div>
 
 <section id="timber" aria-labelledby="timber-heading">
   <div class="service-detail">
@@ -251,7 +185,7 @@
 </section>
 
 <!-- OUTDOOR FLOORING -->
-<div class="section-divider"><h2>Outdoor Flooring Installations</h2></div>
+<div class="section-divider"><div class="section-divider-inner"><h2>Outdoor Flooring Installations</h2></div></div>
 
 <section id="decking" aria-labelledby="decking-heading">
   <div class="service-detail reverse">
@@ -311,6 +245,7 @@
 </section>
 
 <section class="finishes-section" aria-labelledby="finishes-heading">
+  <div class="finishes-section-inner">
   <p class="eyebrow" aria-hidden="true">Floor finishes</p>
   <h2 class="section-title" id="finishes-heading">The right finish <em>makes the floor</em></h2>
   <div class="finishes-grid">
@@ -329,6 +264,7 @@
       <p class="finish-desc">Soaks into the timber rather than sitting on top. Creates a matte, close-to-natural finish that breathes with the wood.</p>
       <span class="finish-tag">Matte finish</span>
     </article>
+  </div>
   </div>
 </section>
 
