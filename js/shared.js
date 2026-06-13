@@ -1,4 +1,4 @@
-/* shared.js — The Floor Collective v7
+/* shared.js — The Flooring Collective v7
    Note: Nav is self-contained inline in each HTML file.
    This file handles only: fade-up scroll animations. */
 
