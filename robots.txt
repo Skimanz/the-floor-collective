@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://thefloorcollective.co.nz/sitemap.xml

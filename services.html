@@ -11,13 +11,81 @@
 <meta property="og:image" content="https://thefloorcollective.co.nz/images/og-image.jpg">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://thefloorcollective.co.nz/services.html">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23B5602A'/><text x='50' y='67' font-family='Georgia,serif' font-size='42' font-weight='700' fill='%23FDFCFA' text-anchor='middle' letter-spacing='-1'>TFC</text></svg>">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23B5602A'/%3E%3Ctext x='50' y='67' font-family='Georgia,serif' font-size='42' font-weight='700' fill='%23FDFCFA' text-anchor='middle' letter-spacing='-1'%3ETFC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<style>
+/* SERVICES PAGE STYLES */
+.page-hero-services { background:var(--charcoal); padding:60px 48px; }
+.page-hero-services-inner { max-width:var(--max-w); margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:end; }
+.page-hero-eyebrow { font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:var(--terra); display:flex; align-items:center; gap:14px; margin-bottom:20px; }
+.page-hero-eyebrow::before { content:''; width:28px; height:1px; background:var(--terra); display:block; }
+.page-hero-title { font-family:var(--font-display); font-size:clamp(40px,5vw,64px); font-weight:400; line-height:1.05; color:var(--warm-white); letter-spacing:-0.01em; }
+.page-hero-title em { font-style:italic; color:var(--terra); }
+.page-hero-body { font-size:16px; font-weight:300; color:rgba(255,255,255,0.45); line-height:1.75; }
+
+.section-divider { background:var(--linen); padding:48px 48px 0; }
+.section-divider-inner { max-width:var(--max-w); margin:0 auto; }
+.section-divider h2 { font-family:var(--font-display); font-size:13px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted); padding-bottom:16px; border-bottom:1px solid var(--border); }
+
+.service-detail { display:grid; grid-template-columns:1fr 1fr; min-height:500px; }
+.service-detail.reverse { direction:rtl; }
+.service-detail.reverse > * { direction:ltr; }
+.service-detail-img { position:relative; overflow:hidden; min-height:420px; }
+.service-detail-img img { width:100%; height:100%; object-fit:cover; position:absolute; inset:0; }
+.service-detail-content { padding:72px 60px; display:flex; flex-direction:column; justify-content:center; }
+.bg-linen { background:var(--linen); }
+.bg-warm { background:var(--warm-white); }
+.bg-sand { background:var(--sand); }
+.bg-charcoal { background:var(--charcoal); }
+.bg-charcoal .section-title { color:var(--warm-white); }
+.bg-charcoal .eyebrow { color:rgba(255,255,255,0.35); }
+.bg-charcoal .eyebrow::before { background:rgba(255,255,255,0.35); }
+.service-detail-title { font-family:var(--font-display); font-size:clamp(28px,3vw,40px); font-weight:400; line-height:1.1; color:var(--charcoal); margin-bottom:20px; }
+.service-detail-title em { font-style:italic; color:var(--terra); }
+.service-body { font-size:15px; font-weight:300; color:var(--mid); line-height:1.8; margin-bottom:16px; }
+.service-body.on-dark { color:rgba(255,255,255,0.55); }
+.service-includes { margin:24px 0; }
+.service-includes-title { font-size:10px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted); margin-bottom:14px; }
+.service-includes-title.on-dark { color:rgba(255,255,255,0.3); }
+.includes-list { list-style:none; display:flex; flex-direction:column; gap:10px; }
+.includes-list li { display:flex; align-items:flex-start; gap:12px; font-size:14px; font-weight:300; color:var(--mid); line-height:1.5; }
+.includes-list li.on-dark { color:rgba(255,255,255,0.55); }
+.includes-list li::before { content:''; width:5px; height:5px; background:var(--terra); border-radius:50%; margin-top:7px; flex-shrink:0; }
+.img-ph { width:100%; height:100%; position:absolute; inset:0; display:flex; align-items:flex-end; padding:32px; }
+.img-ph-s6 { background:linear-gradient(160deg,#5C7A3E 0%,#3A5225 100%); }
+.img-ph-s7 { background:linear-gradient(160deg,#4A6B8A 0%,#2A4560 100%); }
+.img-caption { font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.3); }
+
+.finishes-section { background:var(--sand); padding:80px 48px; }
+.finishes-section-inner { max-width:var(--max-w); margin:0 auto; }
+.finishes-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:var(--border); margin-top:48px; }
+.finish-card { background:var(--sand); padding:36px 32px; }
+.finish-name { font-family:var(--font-display); font-size:22px; font-weight:600; color:var(--charcoal); margin-bottom:10px; }
+.finish-desc { font-size:14px; font-weight:300; color:var(--mid); line-height:1.7; }
+.finish-tag { display:inline-block; margin-top:16px; font-size:10px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:var(--terra); border:1px solid rgba(181,96,42,0.3); padding:4px 10px; }
+
+@media(max-width:1024px) {
+  .page-hero-services-inner { grid-template-columns:1fr; gap:28px; }
+  .service-detail { grid-template-columns:1fr; }
+  .service-detail.reverse { direction:ltr; }
+  .service-detail-img { min-height:320px; }
+  .service-detail-content { padding:48px; }
+  .finishes-grid { grid-template-columns:1fr 1fr; }
+}
+@media(max-width:768px) {
+  .page-hero-services { padding:48px 20px; }
+  .service-detail-content { padding:48px 20px; }
+  .finishes-section { padding:60px 20px; }
+  .finishes-grid { grid-template-columns:1fr; }
+  .section-divider { padding:32px 20px 0; }
+}
+</style>
 </head>
 <body>
+<!-- NAV: identical across all 5 pages — edit all files when changing nav -->
 <header style="position:sticky;top:0;z-index:1000;font-family:'DM Sans',system-ui,sans-serif;">
   <!-- Top bar -->
   <div style="background:#25D366;border-bottom:1px solid rgba(0,0,0,0.1);">
@@ -65,7 +133,7 @@
 <div class="page-hero-services">
   <div class="page-hero-services-inner">
   <div>
-    <p class="page-hero-eyebrow" aria-hidden="true">What we do</p>
+    <p class="page-hero-eyebrow">What we do</p>
     <h1 class="page-hero-title">Services built around <em>your floor</em></h1>
   </div>
 </div>
@@ -82,7 +150,7 @@
       <img src="images/service-timber.jpg" alt="Timber floor installation Queenstown" loading="lazy">
     </div>
     <div class="service-detail-content bg-warm fade-up">
-      <p class="eyebrow" aria-hidden="true">Service 01</p>
+      <p class="eyebrow">Service 01</p>
       <h2 class="service-detail-title" id="timber-heading">Timber Floor <em>Installation</em></h2>
       <p class="service-body">Solid hardwood and engineered timber floors installed to the highest standard. We prepare the subfloor properly before a single board goes down — because a great floor starts beneath the surface.</p>
       <p class="service-body">We work with your chosen supplier or can recommend trusted local timber yards in Queenstown.</p>
@@ -108,7 +176,7 @@
       <img src="images/service-laminate.jpg" alt="Laminate flooring installation" loading="lazy">
     </div>
     <div class="service-detail-content bg-linen fade-up">
-      <p class="eyebrow" aria-hidden="true">Service 02</p>
+      <p class="eyebrow">Service 02</p>
       <h2 class="service-detail-title" id="laminate-heading">Laminate <em>Flooring</em></h2>
       <p class="service-body">Residential and commercial grade laminate — installed to manufacturer specification. We offer supply and install, or installation only if you've already sourced your product.</p>
       <p class="service-body">Commercial grade laminate is an excellent option for rental properties, offices, and high-traffic areas where durability matters as much as appearance.</p>
@@ -134,7 +202,7 @@
       <img src="images/service-sanding.jpg" alt="Floor sanding Queenstown" loading="lazy">
     </div>
     <div class="service-detail-content bg-sand fade-up">
-      <p class="eyebrow" aria-hidden="true">Service 03</p>
+      <p class="eyebrow">Service 03</p>
       <h2 class="service-detail-title" id="sanding-heading">Sanding & <em>Finishing</em></h2>
       <p class="service-body">Dustless sanding equipment means minimal disruption to your home and family. Once sanded, we help you choose the right finish for your floor and your lifestyle.</p>
       <div class="service-includes">
@@ -157,7 +225,7 @@
       <img src="images/service-repairs.jpg" alt="Floor repairs Queenstown" loading="lazy">
     </div>
     <div class="service-detail-content bg-charcoal fade-up">
-      <p class="eyebrow" aria-hidden="true">Service 04</p>
+      <p class="eyebrow">Service 04</p>
       <h2 class="service-detail-title" id="repairs-heading" style="color:var(--warm-white);">Repairs & <em>Restoration</em></h2>
       <p class="service-body on-dark">Worn, damaged, or tired floors don't always need replacing. We assess what's there and restore it — board replacement, gap filling, re-coating, and colour matching to make repairs seamless.</p>
       <div class="service-includes">
@@ -181,7 +249,7 @@
       <img src="images/service-stairs.jpg" alt="Staircase flooring Queenstown" loading="lazy">
     </div>
     <div class="service-detail-content bg-warm fade-up">
-      <p class="eyebrow" aria-hidden="true">Service 05</p>
+      <p class="eyebrow">Service 05</p>
       <h2 class="service-detail-title" id="staircases-heading">Staircase <em>Flooring</em></h2>
       <p class="service-body">Stairs are often the first thing people see when they walk into a home. We clad treads, risers, and nosings in timber that matches or complements your floor.</p>
       <div class="service-includes">
@@ -211,7 +279,7 @@
       </div>
     </div>
     <div class="service-detail-content bg-linen fade-up">
-      <p class="eyebrow" aria-hidden="true">Service 06</p>
+      <p class="eyebrow">Service 06</p>
       <h2 class="service-detail-title" id="decking-heading">Nail-Free Timber <em>Decking</em></h2>
       <p class="service-body">We install the ShadowDeck™ nail-free timber decking system — a premium hidden fastener solution that creates a seamless, screw-free surface. No visible nails or screws. Barefoot friendly. Built to last outdoors.</p>
       <p class="service-body">Pre-grooved Kwila hardwood boards clip into hidden fasteners for a clean, professional finish that allows the timber to naturally expand and contract with the seasons.</p>
@@ -239,7 +307,7 @@
       </div>
     </div>
     <div class="service-detail-content bg-sand fade-up">
-      <p class="eyebrow" aria-hidden="true">Service 07</p>
+      <p class="eyebrow">Service 07</p>
       <h2 class="service-detail-title" id="framing-heading">Aluminium Deck <em>Framing</em></h2>
       <p class="service-body">We install the SuperSpan™ aluminium subframing system — the professional's choice for outdoor decking. Lightweight, corrosion-resistant, and PS1 certified by EQ Struc for building consent applications.</p>
       <p class="service-body">The clever design lets you switch between timber decking and tiles without changing your framing. Height-adjustable Nurajack pedestals make installation fast, precise, and up to 80% faster than traditional timber framing.</p>
@@ -261,7 +329,7 @@
 
 <section class="finishes-section" aria-labelledby="finishes-heading">
   <div class="finishes-section-inner">
-  <p class="eyebrow" aria-hidden="true">Floor finishes</p>
+  <p class="eyebrow">Floor finishes</p>
   <h2 class="section-title" id="finishes-heading">The right finish <em>makes the floor</em></h2>
   <div class="finishes-grid">
     <article class="finish-card fade-up">
@@ -283,6 +351,7 @@
   </div>
 </section>
 
+</main>
 <div class="cta-band">
   <div class="cta-band-inner">
   <h2 class="cta-band-title">Not sure which service you need? <em>Let's talk it through.</em></h2>
@@ -321,7 +390,6 @@
   </div>
   </div>
 </footer>
-</main>
 <script src="js/shared.js"></script>
 </body>
 </html>
