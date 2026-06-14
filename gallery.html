@@ -82,7 +82,7 @@
         WhatsApp us
       </a>
       <span style="color:rgba(255,255,255,0.4);font-size:11px;">|</span>
-      <a href="contact.html" style="font-size:12px;font-weight:600;color:#fff;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;">Get a Quote</a>
+      <button onclick="openQuoteModal()" style="font-size:12px;font-weight:600;color:#fff;letter-spacing:0.08em;text-transform:uppercase;background:none;border:none;cursor:pointer;font-family:'DM Sans',system-ui,sans-serif;">Get Quote</button>
     </div>
   </div>
   <!-- Main nav bar -->
@@ -106,22 +106,24 @@
   </div>
   <!-- Mobile menu -->
   <div id="tfcMobileMenu" style="display:none;background:#FDFCFA;border-top:1px solid rgba(40,37,32,0.1);padding:12px 24px 20px;">
-    <a href="services.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">Services</a>
-    <a href="gallery.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">Our Work</a>
-    <a href="about.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">About</a>
-    <a href="contact.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">Get a Quote</a>
+    <a href="about.html" style="font-size:13px;font-weight:400;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;">About</a>
+        <a href="services.html" style="font-size:13px;font-weight:400;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;">Services</a>
+        <a href="gallery.html" style="font-size:13px;font-weight:400;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;">Our Work</a>
+        <button onclick="openQuoteModal()" style="font-size:12px;font-weight:500;color:#FDFCFA;letter-spacing:0.08em;text-transform:uppercase;padding:10px 24px;background:#282520;border:none;cursor:pointer;font-family:'DM Sans',system-ui,sans-serif;">Get Quote</button>
     <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener" style="display:block;padding:13px 0;font-size:14px;color:#25D366;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;">WhatsApp us</a>
   </div>
   <style>@media(max-width:860px){#mainNav{display:none!important;}#tfcBurger{display:flex!important;}}</style>
 </header>
-<script>function toggleTFCMenu(){var m=document.getElementById("tfcMobileMenu");m.style.display=m.style.display==="block"?"none":"block";}</script>
+<script>function toggleTFCMenu(){var m=document.getElementById("tfcMobileMenu");m.style.display=m.style.display==="block"?"none":"block";}
+function openQuoteModal(){var m=document.getElementById("quoteModal");m.style.display="flex";document.body.style.overflow="hidden";}
+function closeQuoteModal(){var m=document.getElementById("quoteModal");m.style.display="none";document.body.style.overflow="";}</script>
 
 <main id="main-content">
 <div class="page-hero-gallery">
   <div class="page-hero-gallery-inner">
-  <p class="page-hero-eyebrow">Portfolio</p>
-  <h1 class="page-hero-title">The finish <em>speaks for itself</em></h1>
-  <p class="page-hero-body">Every project we take on, we're proud to put our name to — indoors and out.</p>
+  <p class="page-hero-eyebrow">Our work</p>
+  <h1 class="page-hero-title">Project <em>Gallery</em></h1>
+  <p class="page-hero-body">Flooring and decking projects.</p>
   </div>
 </div>
 
@@ -138,7 +140,7 @@
   <div class="gallery-section-inner">
   <div class="masonry-grid" id="galleryGrid">
     <article class="masonry-item fade-up" data-category="installation">
-      <img src="images/gallery-timber-1.jpg" alt="Solid hardwood timber floor installation" class="masonry-img" loading="lazy">
+      <img src="images/gallery-timber-1.jpg" alt="Timber floor installation Queenstown" class="masonry-img" loading="lazy">
       <div class="masonry-overlay"><p class="masonry-label">Queenstown Residence</p><p class="masonry-tag">Solid timber installation</p></div>
     </article>
     <article class="masonry-item fade-up" data-category="sanding">
@@ -212,7 +214,7 @@
 <div class="cta-band">
   <div class="cta-band-inner">
   <h2 class="cta-band-title">Like what you see? <em>Let's talk about your floor.</em></h2>
-  <a href="contact.html" class="btn btn-light">Get a Free Quote →</a>
+  <button onclick="openQuoteModal()" class="btn btn-light">Get Quote</button>
   </div>
 </div>
 
@@ -222,12 +224,15 @@
     <div>
       <p class="footer-logo-main">The Flooring Collective</p>
       <p class="footer-logo-sub">Queenstown Floor Specialists</p>
-      <p class="footer-tagline">Specialist timber floor installation, sanding, restoration and outdoor decking. Queenstown, New Zealand.</p>
+      <p class="footer-tagline">Floor installation and restoration for residential and commercial properties across Queenstown.</p>
     </div>
     <nav aria-label="Footer navigation">
       <p class="footer-col-title">Navigation</p>
       <ul class="footer-links" role="list">
-        <li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Our Work</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Get a Quote</a></li>
+        <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Our Work</a></li>
       </ul>
     </nav>
     <div>
@@ -252,6 +257,42 @@ function filterGallery(category, btn) {
     item.classList.toggle('hidden', category !== 'all' && item.dataset.category !== category);
   });
 }
+</script>
+
+<!-- QUOTE MODAL -->
+<div id="quoteModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" style="display:none;position:fixed;inset:0;background:rgba(40,37,32,0.7);z-index:2000;align-items:center;justify-content:center;padding:20px;">
+  <div style="background:#FDFCFA;max-width:560px;width:100%;max-height:90vh;overflow-y:auto;padding:48px;position:relative;">
+    <button onclick="closeQuoteModal()" aria-label="Close" style="position:absolute;top:16px;right:20px;background:none;border:none;font-size:24px;cursor:pointer;color:#6B6260;">&times;</button>
+    <h2 style="font-family:'Cormorant Garamond',Georgia,serif;font-size:28px;font-weight:400;color:#282520;margin-bottom:6px;" id="modalTitle">Get a quote</h2>
+    <p style="font-size:14px;font-weight:300;color:#5A5550;margin-bottom:28px;">Tell us about your project and we'll be in touch within one business day.</p>
+    <form id="quoteForm" action="https://formspree.io/f/xdavladk" method="POST">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+        <div style="margin-bottom:16px;"><label style="display:block;font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#6B6260;margin-bottom:8px;">First name *</label><input style="width:100%;background:#FAF8F4;border:1px solid rgba(40,37,32,0.1);color:#282520;padding:12px 14px;font-size:14px;outline:none;" type="text" name="first_name" required placeholder="Jane"></div>
+        <div style="margin-bottom:16px;"><label style="display:block;font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#6B6260;margin-bottom:8px;">Last name *</label><input style="width:100%;background:#FAF8F4;border:1px solid rgba(40,37,32,0.1);color:#282520;padding:12px 14px;font-size:14px;outline:none;" type="text" name="last_name" required placeholder="Smith"></div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+        <div style="margin-bottom:16px;"><label style="display:block;font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#6B6260;margin-bottom:8px;">Phone *</label><input style="width:100%;background:#FAF8F4;border:1px solid rgba(40,37,32,0.1);color:#282520;padding:12px 14px;font-size:14px;outline:none;" type="tel" name="phone" required placeholder="021 XXX XXXX"></div>
+        <div style="margin-bottom:16px;"><label style="display:block;font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#6B6260;margin-bottom:8px;">Email *</label><input style="width:100%;background:#FAF8F4;border:1px solid rgba(40,37,32,0.1);color:#282520;padding:12px 14px;font-size:14px;outline:none;" type="email" name="email" required placeholder="jane@email.com"></div>
+      </div>
+      <div style="margin-bottom:16px;"><label style="display:block;font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#6B6260;margin-bottom:8px;">Service</label><select style="width:100%;background:#FAF8F4;border:1px solid rgba(40,37,32,0.1);color:#282520;padding:12px 14px;font-size:14px;outline:none;" name="service"><option value="">Select a service</option><option>Installation</option><option>Sanding & Finishing</option><option>Staircase</option><option>Timber Decking</option><option>Aluminium Deck Framing</option><option>Not sure yet</option></select></div>
+      <div style="margin-bottom:16px;"><label style="display:block;font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#6B6260;margin-bottom:8px;">Tell us about your project</label><textarea style="width:100%;background:#FAF8F4;border:1px solid rgba(40,37,32,0.1);color:#282520;padding:12px 14px;font-size:14px;outline:none;resize:vertical;min-height:100px;" name="message" placeholder="Location, floor area, timeframe…"></textarea></div>
+      <input type="hidden" name="_subject" value="Quote Request — The Flooring Collective">
+      <button type="submit" style="width:100%;background:#282520;color:#FDFCFA;border:none;padding:14px;font-size:13px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;font-family:'DM Sans',system-ui,sans-serif;">Send quote request →</button>
+      <p style="font-size:12px;color:#6B6260;margin-top:10px;">Free quote. No obligation. We'll be in touch within one business day.</p>
+    </form>
+    <div id="quoteSuccess" style="display:none;background:#F2EDE4;border-left:3px solid #B5602A;padding:16px 20px;margin-top:16px;font-size:14px;color:#282520;">✓ Thanks — we'll be in touch within one business day.</div>
+  </div>
+</div>
+<script>
+function openQuoteModal(){var m=document.getElementById("quoteModal");m.style.display="flex";document.body.style.overflow="hidden";}
+function closeQuoteModal(){var m=document.getElementById("quoteModal");m.style.display="none";document.body.style.overflow="";}
+document.addEventListener("keydown",function(e){if(e.key==="Escape")closeQuoteModal();});
+document.getElementById("quoteForm").addEventListener("submit",async function(e){
+  e.preventDefault();var btn=this.querySelector("button[type=submit]");btn.textContent="Sending…";btn.disabled=true;
+  try{var r=await fetch(this.action,{method:"POST",body:new FormData(this),headers:{"Accept":"application/json"}});
+  if(r.ok){this.style.display="none";document.getElementById("quoteSuccess").style.display="block";}
+  else{btn.textContent="Send quote request →";btn.disabled=false;}}catch(err){btn.textContent="Send quote request →";btn.disabled=false;}
+});
 </script>
 </body>
 </html>

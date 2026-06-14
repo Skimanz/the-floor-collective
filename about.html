@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About — The Flooring Collective | Queenstown Floor Specialists</title>
-<meta name="description" content="The Flooring Collective — Queenstown-based specialist floor installers focused exclusively on timber installation, sanding, restoration and outdoor decking.">
+<meta name="description" content="The Flooring Collective — Queenstown-based floor installers offering engineered timber installation, sanding, restoration and outdoor decking.">
 <link rel="canonical" href="https://flooringcollective.co.nz/about.html">
 <meta property="og:title" content="About — The Flooring Collective">
-<meta property="og:description" content="Queenstown-based specialist floor installers. Every job handled personally, with care and attention to detail from start to finish.">
+<meta property="og:description" content="Queenstown-based floor installers offering engineered timber installation, sanding, restoration and decking.">
 <meta property="og:image" content="https://flooringcollective.co.nz/images/og-image.jpg">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://flooringcollective.co.nz/about.html">
@@ -93,7 +93,7 @@
         WhatsApp us
       </a>
       <span style="color:rgba(255,255,255,0.4);font-size:11px;">|</span>
-      <a href="contact.html" style="font-size:12px;font-weight:600;color:#fff;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;">Get a Quote</a>
+      <button onclick="openQuoteModal()" style="font-size:12px;font-weight:600;color:#fff;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;background:none;border:none;cursor:pointer;">Get Quote</button>
     </div>
   </div>
   <!-- Main nav bar -->
@@ -120,12 +120,14 @@
     <a href="services.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">Services</a>
     <a href="gallery.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">Our Work</a>
     <a href="about.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">About</a>
-    <a href="contact.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">Get a Quote</a>
-    <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener" style="display:block;padding:13px 0;font-size:14px;color:#25D366;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;">WhatsApp us</a>
+        <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener" style="display:block;padding:13px 0;font-size:14px;color:#25D366;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;">WhatsApp us</a>
   </div>
   <style>@media(max-width:860px){#mainNav{display:none!important;}#tfcBurger{display:flex!important;}}</style>
 </header>
-<script>function toggleTFCMenu(){var m=document.getElementById("tfcMobileMenu");m.style.display=m.style.display==="block"?"none":"block";}</script>
+<script>function toggleTFCMenu(){var m=document.getElementById("tfcMobileMenu");m.style.display=m.style.display==="block"?"none":"block";}
+function openQuoteModal(){document.getElementById("quoteModal").classList.add("open");document.body.style.overflow="hidden";}
+function closeQuoteModal(){document.getElementById("quoteModal").classList.remove("open");document.body.style.overflow="";}
+document.addEventListener("keydown",function(e){if(e.key==="Escape")closeQuoteModal();});</script>
 
 <main id="main-content">
 <div class="page-hero-about">
@@ -142,10 +144,8 @@
 <div class="about-copy">
   <p class="about-copy-label" aria-hidden="true">Our story</p>
   <div class="fade-up">
-    <p class="about-pull-quote">"A floor you'll love for decades."</p>
-    <p class="about-para">The Flooring Collective is a Queenstown-based flooring specialist focused exclusively on timber floor installation, sanding, and restoration for residential and commercial properties.</p>
-    <p class="about-para">Every job is handled personally, with care and attention to detail from start to finish.</p>
-    <p class="about-para">We bring specialist trade experience to every project — the kind of attention to detail that results in a floor you'll love for decades.</p>
+    <p class="about-pull-quote">"Local and straightforward."</p>
+    <p class="about-para">The Flooring Collective is a Queenstown-based flooring business offering engineered timber installation, floor sanding and restoration, and outdoor decking for residential and commercial properties.</p>
   </div>
 </div>
 </div>
@@ -160,22 +160,22 @@
 <section class="values" aria-labelledby="values-heading">
   <div class="values-inner">
   <p class="eyebrow">How we work</p>
-  <h2 class="section-title" id="values-heading">Built on <em>craft</em></h2>
+  <h2 class="section-title" id="values-heading">Our <em>approach</em></h2>
   <div class="values-grid">
     <article class="value-card fade-up">
       <p class="value-num" aria-hidden="true">01</p>
-      <h3 class="value-name">Specialist focus</h3>
-      <p class="value-desc">We do one thing — floors. That focus means deeper knowledge, sharper skill, and better results on every job.</p>
+      <h3 class="value-name">Focused</h3>
+      <p class="value-desc">We focus on flooring. That means we know it well and do it properly.</p>
     </article>
     <article class="value-card fade-up">
       <p class="value-num" aria-hidden="true">02</p>
-      <h3 class="value-name">Personal service</h3>
-      <p class="value-desc">Every job is handled with the same care and attention. You deal directly with the person doing the work — from quote to completion.</p>
+      <h3 class="value-name">Reliable</h3>
+      <p class="value-desc">We show up, we finish, we clean up.</p>
     </article>
     <article class="value-card fade-up">
       <p class="value-num" aria-hidden="true">03</p>
-      <h3 class="value-name">Honest advice</h3>
-      <p class="value-desc">We'll tell you what your floor actually needs — whether that's a full replacement, a sand and re-coat, or something in between.</p>
+      <h3 class="value-name">Straightforward</h3>
+      <p class="value-desc">No jargon, no upselling, just the job.</p>
     </article>
   </div>
   </div>
@@ -184,10 +184,10 @@
 <section class="why" aria-labelledby="why-heading">
   <div class="why-inner">
   <div>
-    <p class="why-eyebrow">Why specialist matters</p>
-    <h2 class="why-title" id="why-heading">The difference <em>specialist</em> makes</h2>
+    <p class="why-eyebrow">What to expect</p>
+    <h2 class="why-title" id="why-heading">What you can <em>expect</em></h2>
     <p class="why-body">Flooring looks straightforward until something goes wrong. A floor installed without proper subfloor preparation, correct expansion gaps, or the right finish for the timber species will show problems within a year or two.</p>
-    <p class="why-body">Specialist knowledge means we understand timber behaviour, moisture management, and finish chemistry — not just how to lay boards.</p>
+    <p class="why-body">We focus on flooring — installation, sanding, staircase and decking for residential and commercial properties across Queenstown.</p>
     <ul class="why-list">
       <li>Correct subfloor assessment and preparation before any board goes down</li>
       <li>Species-appropriate finish selection for long-term performance</li>
@@ -200,7 +200,7 @@
     <div class="why-block-1"></div>
     <div class="why-block-2"></div>
     <div class="why-block-3"></div>
-    <div class="why-quote"><p class="why-quote-text">"Flooring is all we do — and it shows in the finish."</p></div>
+    <div class="why-quote"><p class="why-quote-text">"Local, reliable, and straightforward."</p></div>
   </div>
   </div>
 </section>
@@ -208,8 +208,8 @@
 </main>
 <div class="cta-band">
   <div class="cta-band-inner">
-  <h2 class="cta-band-title">Ready to talk about <em>your floor?</em></h2>
-  <a href="contact.html" class="btn btn-light">Get a Free Quote →</a>
+  <h2 class="cta-band-title">Ready to <em>get started?</em></h2>
+  <button onclick="openQuoteModal()" class="btn btn-light">Get Quote</button>
   </div>
 </div>
 
@@ -219,12 +219,15 @@
     <div>
       <p class="footer-logo-main">The Flooring Collective</p>
       <p class="footer-logo-sub">Queenstown Floor Specialists</p>
-      <p class="footer-tagline">Specialist timber floor installation, sanding, restoration and outdoor decking. Queenstown, New Zealand.</p>
+      <p class="footer-tagline">Floor installation and restoration for residential and commercial properties across Queenstown.</p>
     </div>
     <nav aria-label="Footer navigation">
       <p class="footer-col-title">Navigation</p>
       <ul class="footer-links" role="list">
-        <li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Our Work</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Get a Quote</a></li>
+        <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Our Work</a></li>
       </ul>
     </nav>
     <div>
@@ -241,5 +244,43 @@
   </div>
 </footer>
 <script src="js/shared.js"></script>
+
+<!-- QUOTE MODAL -->
+<div class="modal-overlay" id="quoteModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" onclick="if(event.target===this)closeQuoteModal()" style="display:none;position:fixed;inset:0;background:rgba(40,37,32,0.7);z-index:2000;align-items:center;justify-content:center;padding:20px;">
+  <div style="background:#FDFCFA;max-width:560px;width:100%;max-height:90vh;overflow-y:auto;padding:48px;position:relative;">
+    <button onclick="closeQuoteModal()" aria-label="Close" style="position:absolute;top:16px;right:20px;background:none;border:none;font-size:24px;cursor:pointer;color:#6B6260;">&times;</button>
+    <h2 style="font-family:'Cormorant Garamond',Georgia,serif;font-size:28px;font-weight:400;color:#282520;margin-bottom:6px;" id="modalTitle">Get a quote</h2>
+    <p style="font-size:14px;font-weight:300;color:#5A5550;margin-bottom:28px;">Tell us about your project and we'll be in touch within one business day.</p>
+    <form id="quoteForm" action="https://formspree.io/f/xdavladk" method="POST">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+        <div style="margin-bottom:16px;"><label style="display:block;font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#6B6260;margin-bottom:8px;" for="q_first">First name *</label><input style="width:100%;background:#FAF8F4;border:1px solid rgba(40,37,32,0.1);color:#282520;padding:12px 14px;font-family:'DM Sans',system-ui,sans-serif;font-size:14px;outline:none;" id="q_first" type="text" name="first_name" required placeholder="Jane"></div>
+        <div style="margin-bottom:16px;"><label style="display:block;font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#6B6260;margin-bottom:8px;" for="q_last">Last name *</label><input style="width:100%;background:#FAF8F4;border:1px solid rgba(40,37,32,0.1);color:#282520;padding:12px 14px;font-family:'DM Sans',system-ui,sans-serif;font-size:14px;outline:none;" id="q_last" type="text" name="last_name" required placeholder="Smith"></div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+        <div style="margin-bottom:16px;"><label style="display:block;font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#6B6260;margin-bottom:8px;" for="q_phone">Phone *</label><input style="width:100%;background:#FAF8F4;border:1px solid rgba(40,37,32,0.1);color:#282520;padding:12px 14px;font-family:'DM Sans',system-ui,sans-serif;font-size:14px;outline:none;" id="q_phone" type="tel" name="phone" required placeholder="021 XXX XXXX"></div>
+        <div style="margin-bottom:16px;"><label style="display:block;font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#6B6260;margin-bottom:8px;" for="q_email">Email *</label><input style="width:100%;background:#FAF8F4;border:1px solid rgba(40,37,32,0.1);color:#282520;padding:12px 14px;font-family:'DM Sans',system-ui,sans-serif;font-size:14px;outline:none;" id="q_email" type="email" name="email" required placeholder="jane@email.com"></div>
+      </div>
+      <div style="margin-bottom:16px;"><label style="display:block;font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#6B6260;margin-bottom:8px;" for="q_service">Service</label><select style="width:100%;background:#FAF8F4;border:1px solid rgba(40,37,32,0.1);color:#282520;padding:12px 14px;font-family:'DM Sans',system-ui,sans-serif;font-size:14px;outline:none;" id="q_service" name="service"><option value="">Select a service</option><option>Installation</option><option>Sanding & Finishing</option><option>Staircase</option><option>Timber Decking</option><option>Aluminium Deck Framing</option><option>Not sure yet</option></select></div>
+      <div style="margin-bottom:16px;"><label style="display:block;font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#6B6260;margin-bottom:8px;" for="q_message">Tell us about your project</label><textarea style="width:100%;background:#FAF8F4;border:1px solid rgba(40,37,32,0.1);color:#282520;padding:12px 14px;font-family:'DM Sans',system-ui,sans-serif;font-size:14px;outline:none;resize:vertical;min-height:100px;" id="q_message" name="message" placeholder="Location, floor area, timeframe…"></textarea></div>
+      <input type="hidden" name="_subject" value="Quote Request — The Flooring Collective">
+      <button type="submit" style="width:100%;background:#282520;color:#FDFCFA;border:none;padding:14px;font-family:'DM Sans',system-ui,sans-serif;font-size:13px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;">Send quote request →</button>
+      <p style="font-size:12px;color:#6B6260;margin-top:10px;">Free quote. No obligation. We'll be in touch within one business day.</p>
+    </form>
+    <div id="quoteSuccess" style="display:none;background:#F2EDE4;border-left:3px solid #B5602A;padding:16px 20px;margin-top:16px;font-size:14px;color:#282520;">✓ Thanks — we'll be in touch within one business day.</div>
+  </div>
+</div>
+<script>
+document.getElementById("quoteModal").style.display="none";
+document.getElementById("quoteModal").addEventListener("click",function(e){if(e.target===this)closeQuoteModal();});
+document.getElementById("quoteForm").addEventListener("submit",async function(e){
+  e.preventDefault();var btn=this.querySelector("button[type=submit]");btn.textContent="Sending…";btn.disabled=true;
+  try{var r=await fetch(this.action,{method:"POST",body:new FormData(this),headers:{"Accept":"application/json"}});
+  if(r.ok){this.style.display="none";document.getElementById("quoteSuccess").style.display="block";}
+  else{btn.textContent="Send quote request →";btn.disabled=false;}}
+  catch(err){btn.textContent="Send quote request →";btn.disabled=false;}
+});
+function openQuoteModal(){var m=document.getElementById("quoteModal");m.style.display="flex";document.body.style.overflow="hidden";}
+function closeQuoteModal(){var m=document.getElementById("quoteModal");m.style.display="none";document.body.style.overflow="";}
+</script>
 </body>
 </html>

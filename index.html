@@ -3,18 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Flooring Collective — Timber Floor Specialists, Queenstown</title>
-<meta name="description" content="Queenstown's timber floor specialists. Installation, sanding, finishing, repairs, staircase and outdoor decking for residential and commercial properties.">
+<title>The Flooring Collective — Floor Installation & Restoration, Queenstown</title>
+<meta name="description" content="Queenstown floor installation and restoration. Engineered timber, floor sanding, staircase, timber decking and aluminium deck framing for residential and commercial properties.">
 <link rel="canonical" href="https://flooringcollective.co.nz/">
 <link rel="preload" as="image" href="images/hero.jpg">
-<meta property="og:title" content="The Flooring Collective — Timber Floor Specialists, Queenstown">
-<meta property="og:description" content="Specialist timber floor installation, sanding, and restoration for residential and commercial properties across Queenstown.">
+<meta property="og:title" content="The Flooring Collective — Floor Installation & Restoration, Queenstown">
+<meta property="og:description" content="Flooring installation, sanding, and restoration for residential and commercial properties across Queenstown.">
 <meta property="og:image" content="https://flooringcollective.co.nz/images/og-image.jpg">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://flooringcollective.co.nz/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="robots" content="index, follow">
-
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23B5602A'/%3E%3Ctext x='50' y='67' font-family='Georgia,serif' font-size='42' font-weight='700' fill='%23FDFCFA' text-anchor='middle' letter-spacing='-1'%3ETFC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,7 +41,7 @@
 .hero-badge-label { font-size:11px; color:var(--muted); letter-spacing:0.06em; margin-top:4px; }
 
 .services-strip { background:var(--charcoal); border-top:1px solid rgba(255,255,255,0.06); }
-.services-strip-grid { max-width:var(--max-w); margin:0 auto; padding:0 48px; display:grid; grid-template-columns:repeat(7,1fr); }
+.services-strip-grid { max-width:var(--max-w); margin:0 auto; padding:0 48px; display:grid; grid-template-columns:repeat(5,1fr); }
 .strip-item { padding:24px 16px; display:flex; align-items:center; gap:10px; border-right:1px solid rgba(255,255,255,0.08); }
 .strip-item:first-child { padding-left:0; }
 .strip-item:last-child { border-right:none; }
@@ -56,28 +55,26 @@
 .about-img-accent { position:absolute; bottom:0; right:0; width:45%; height:45%; object-fit:cover; border:6px solid var(--warm-white); }
 .about-pull { position:absolute; bottom:60px; left:-20px; background:var(--charcoal); padding:20px 28px; max-width:200px; }
 .about-pull-text { font-family:var(--font-display); font-size:15px; font-style:italic; line-height:1.5; color:rgba(255,255,255,0.85); }
+.about-provide { font-size:11px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted); margin-bottom:12px; }
 .about-para { font-size:15px; font-weight:300; color:var(--mid); line-height:1.8; margin-bottom:20px; }
 
 .services-section { background:var(--linen); }
 .services-section-inner { max-width:var(--max-w); margin:0 auto; padding:100px 48px; }
 .services-header { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:end; margin-bottom:60px; }
-.services-subhead { font-family:var(--font-display); font-size:13px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted); margin-bottom:20px; padding-bottom:12px; border-bottom:1px solid var(--border); margin-top:40px; }
-.services-subhead:first-of-type { margin-top:0; }
+.services-provide { font-size:11px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted); margin-bottom:12px; }
 .services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:var(--border); }
 .service-card { background:var(--linen); padding:44px 36px; transition:background 0.25s; position:relative; }
 .service-card:hover { background:var(--sand); }
 .service-card::after { content:''; position:absolute; top:0; left:0; right:0; height:2px; background:transparent; transition:background 0.25s; }
 .service-card:hover::after { background:var(--terra); }
 .service-card--cta { background:var(--charcoal); display:flex; flex-direction:column; justify-content:center; align-items:flex-start; }
-.service-card--cta:hover { background:#1a1714; }
+.service-card--cta:hover { background:var(--charcoal-dark); }
 .service-card--cta::after { display:none; }
 .service-card--cta-text { font-family:var(--font-display); font-size:22px; font-weight:400; color:var(--warm-white); line-height:1.3; margin-bottom:24px; font-style:italic; }
 .service-icon-wrap { width:40px; height:40px; margin-bottom:24px; display:flex; align-items:center; justify-content:center; }
 .service-icon-wrap svg { width:32px; height:32px; stroke:var(--terra); fill:none; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
 .service-name { font-family:var(--font-display); font-size:22px; font-weight:600; color:var(--charcoal); margin-bottom:12px; line-height:1.2; }
 .service-desc { font-size:14px; font-weight:300; color:var(--mid); line-height:1.7; }
-.service-tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:20px; }
-.tag { font-size:10px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:var(--terra); border:1px solid rgba(181,96,42,0.25); padding:4px 10px; }
 
 .gallery-preview { background:var(--charcoal); padding:100px 48px; }
 .gallery-preview .eyebrow { color:rgba(255,255,255,0.35); }
@@ -98,17 +95,24 @@
 .gallery-overlay-label { font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0); transition:color 0.3s; }
 .gallery-item:hover .gallery-overlay-label, .gallery-item:focus-within .gallery-overlay-label { color:rgba(255,255,255,0.8); }
 
-.process-section { background:var(--sand); padding:100px 48px; }
-.process-inner { max-width:var(--max-w); margin:0 auto; }
-.process-header { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:end; margin-bottom:72px; }
-.process-steps { display:grid; grid-template-columns:repeat(4,1fr); position:relative; }
-.process-steps::before { content:''; position:absolute; top:16px; left:8px; right:8px; height:1px; background:var(--border); }
-.process-step { padding:0 8px; }
-.step-marker { width:32px; height:32px; border:1px solid var(--border); background:var(--warm-white); display:flex; align-items:center; justify-content:center; margin-bottom:28px; position:relative; z-index:1; }
-.step-num { font-family:var(--font-display); font-size:14px; font-weight:600; color:var(--terra); }
-.step-title { font-family:var(--font-display); font-size:20px; font-weight:600; color:var(--charcoal); margin-bottom:10px; line-height:1.2; }
-.step-desc { font-size:13px; font-weight:300; color:var(--mid); line-height:1.7; }
-
+/* MODAL */
+.modal-overlay { display:none; position:fixed; inset:0; background:rgba(40,37,32,0.7); z-index:2000; align-items:center; justify-content:center; padding:20px; }
+.modal-overlay.open { display:flex; }
+.modal-box { background:var(--warm-white); max-width:560px; width:100%; max-height:90vh; overflow-y:auto; padding:48px; position:relative; }
+.modal-close { position:absolute; top:16px; right:20px; background:none; border:none; font-size:24px; cursor:pointer; color:var(--muted); line-height:1; }
+.modal-close:hover { color:var(--charcoal); }
+.modal-title { font-family:var(--font-display); font-size:28px; font-weight:400; color:var(--charcoal); margin-bottom:6px; }
+.modal-sub { font-size:14px; font-weight:300; color:var(--mid); margin-bottom:28px; }
+.form-row { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.form-group { margin-bottom:16px; }
+.form-label { display:block; font-size:10px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted); margin-bottom:8px; }
+.form-input,.form-select,.form-textarea { width:100%; background:var(--linen); border:1px solid var(--border); color:var(--charcoal); padding:12px 14px; font-family:var(--font-body); font-size:14px; font-weight:300; outline:none; transition:border-color 0.2s; }
+.form-input:focus,.form-select:focus,.form-textarea:focus { border-color:var(--terra); }
+.form-textarea { resize:vertical; min-height:100px; }
+.form-submit { width:100%; background:var(--charcoal); color:var(--warm-white); border:none; padding:14px; font-family:var(--font-body); font-size:13px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; transition:background 0.2s; margin-top:8px; }
+.form-submit:hover { background:var(--terra); }
+.form-note { font-size:12px; color:var(--muted); margin-top:10px; }
+.success-msg { display:none; background:var(--sand); border-left:3px solid var(--terra); padding:16px 20px; margin-top:16px; font-size:14px; color:var(--charcoal); }
 
 @media(prefers-reduced-motion:reduce){.gallery-img,.gallery-overlay,.gallery-overlay-label,.service-card,.service-card::after{transition:none;}}
 @media(max-width:1024px) {
@@ -118,7 +122,6 @@
   .about-intro-grid { grid-template-columns:1fr; gap:48px; }
   .about-intro-visual { height:360px; }
   .services-header { grid-template-columns:1fr; gap:20px; }
-  .process-header { grid-template-columns:1fr; gap:20px; }
   .gallery-grid { grid-template-columns:1fr 1fr; grid-template-rows:auto; }
   .gallery-item:first-child { grid-row:auto; }
 }
@@ -134,9 +137,8 @@
   .services-grid { grid-template-columns:1fr; }
   .gallery-preview { padding:72px 20px; }
   .gallery-grid { grid-template-columns:1fr 1fr; }
-  .process-section { padding:72px 20px; }
-  .process-steps { grid-template-columns:1fr 1fr; gap:40px; }
-  .process-steps::before { display:none; }
+  .form-row { grid-template-columns:1fr; }
+  .modal-box { padding:32px 24px; }
 }
 </style>
 <script type="application/ld+json">
@@ -144,7 +146,7 @@
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "The Flooring Collective",
-  "description": "Specialist timber floor installation, sanding, finishing, repairs, staircase and outdoor decking in Queenstown, NZ",
+  "description": "Floor installation and restoration in Queenstown — engineered timber, sanding, staircase, timber decking and aluminium deck framing.",
   "url": "https://flooringcollective.co.nz",
   "telephone": "+6421754626",
   "address": {
@@ -158,12 +160,10 @@
   "openingHours": "Mo-Fr 07:00-17:00"
 }
 </script>
-
 </head>
 <body>
-<!-- NAV: identical across all 5 pages — edit all files when changing nav -->
+<!-- NAV: identical across all pages — edit all files when changing nav -->
 <header style="position:sticky;top:0;z-index:1000;font-family:'DM Sans',system-ui,sans-serif;">
-  <!-- Top bar -->
   <div style="background:#25D366;border-bottom:1px solid rgba(0,0,0,0.1);">
     <div style="max-width:1280px;margin:0 auto;padding:0 48px;height:38px;display:flex;align-items:center;justify-content:flex-end;gap:16px;">
       <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener" style="font-size:12px;font-weight:600;color:#fff;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;display:flex;align-items:center;gap:8px;">
@@ -171,10 +171,9 @@
         WhatsApp us
       </a>
       <span style="color:rgba(255,255,255,0.4);font-size:11px;">|</span>
-      <a href="contact.html" style="font-size:12px;font-weight:600;color:#fff;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;">Get a Quote</a>
+      <button onclick="openQuoteModal()" style="font-size:12px;font-weight:600;color:#fff;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;background:none;border:none;cursor:pointer;">Get Quote</button>
     </div>
   </div>
-  <!-- Main nav bar -->
   <div style="background:#FDFCFA;border-bottom:1px solid rgba(40,37,32,0.12);">
     <div style="max-width:1280px;margin:0 auto;padding:0 48px;height:62px;display:flex;align-items:center;justify-content:space-between;">
       <a href="index.html" style="display:flex;flex-direction:column;line-height:1.1;text-decoration:none;">
@@ -182,9 +181,10 @@
         <span style="font-size:10px;font-weight:400;color:#6B6260;letter-spacing:0.14em;text-transform:uppercase;">Queenstown Floor Specialists</span>
       </a>
       <nav id="mainNav" style="display:flex;align-items:center;gap:4px;">
-        <a href="services.html" style="font-size:13px;font-weight:400;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;border-bottom:2px solid transparent;">Services</a>
-        <a href="gallery.html" style="font-size:13px;font-weight:400;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;border-bottom:2px solid transparent;">Our Work</a>
-        <a href="about.html" style="font-size:13px;font-weight:400;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;border-bottom:2px solid transparent;">About</a>
+        <a href="about.html" style="font-size:13px;font-weight:400;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;">About</a>
+        <a href="services.html" style="font-size:13px;font-weight:400;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;">Services</a>
+        <a href="gallery.html" style="font-size:13px;font-weight:400;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;">Our Work</a>
+        <button onclick="openQuoteModal()" style="font-size:12px;font-weight:500;color:#FDFCFA;letter-spacing:0.08em;text-transform:uppercase;padding:10px 24px;background:#282520;border:none;cursor:pointer;font-family:'DM Sans',system-ui,sans-serif;">Get Quote</button>
       </nav>
       <button onclick="toggleTFCMenu()" aria-label="Open menu" id="tfcBurger" style="display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;">
         <span style="width:24px;height:2px;background:#282520;display:block;"></span>
@@ -193,17 +193,72 @@
       </button>
     </div>
   </div>
-  <!-- Mobile menu -->
   <div id="tfcMobileMenu" style="display:none;background:#FDFCFA;border-top:1px solid rgba(40,37,32,0.1);padding:12px 24px 20px;">
+    <a href="about.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">About</a>
     <a href="services.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">Services</a>
     <a href="gallery.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">Our Work</a>
-    <a href="about.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">About</a>
-    <a href="contact.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">Get a Quote</a>
     <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener" style="display:block;padding:13px 0;font-size:14px;color:#25D366;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;">WhatsApp us</a>
+    <button onclick="openQuoteModal();toggleTFCMenu();" style="display:block;width:100%;padding:13px 0;font-size:14px;color:#B5602A;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;background:none;border:none;cursor:pointer;text-align:left;font-family:'DM Sans',system-ui,sans-serif;">Get Quote</button>
   </div>
   <style>@media(max-width:860px){#mainNav{display:none!important;}#tfcBurger{display:flex!important;}}</style>
 </header>
-<script>function toggleTFCMenu(){var m=document.getElementById("tfcMobileMenu");m.style.display=m.style.display==="block"?"none":"block";}</script>
+<script>
+function toggleTFCMenu(){var m=document.getElementById("tfcMobileMenu");m.style.display=m.style.display==="block"?"none":"block";}
+function openQuoteModal(){document.getElementById('quoteModal').classList.add('open');document.body.style.overflow='hidden';}
+function closeQuoteModal(){document.getElementById('quoteModal').classList.remove('open');document.body.style.overflow='';}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeQuoteModal();});
+</script>
+
+<!-- QUOTE MODAL -->
+<div class="modal-overlay" id="quoteModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" onclick="if(event.target===this)closeQuoteModal()">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeQuoteModal()" aria-label="Close">&times;</button>
+    <h2 class="modal-title" id="modalTitle">Get a quote</h2>
+    <p class="modal-sub">Tell us about your project and we'll be in touch within one business day.</p>
+    <form id="quoteForm" action="https://formspree.io/f/xdavladk" method="POST">
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="q_first">First name *</label>
+          <input class="form-input" id="q_first" type="text" name="first_name" required placeholder="Jane" autocomplete="given-name">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="q_last">Last name *</label>
+          <input class="form-input" id="q_last" type="text" name="last_name" required placeholder="Smith" autocomplete="family-name">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="q_phone">Phone *</label>
+          <input class="form-input" id="q_phone" type="tel" name="phone" required placeholder="021 XXX XXXX" autocomplete="tel">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="q_email">Email *</label>
+          <input class="form-input" id="q_email" type="email" name="email" required placeholder="jane@email.com" autocomplete="email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="q_service">Service</label>
+        <select class="form-select" id="q_service" name="service">
+          <option value="">Select a service</option>
+          <option>Installation</option>
+          <option>Sanding & Finishing</option>
+          <option>Staircase</option>
+          <option>Timber Decking</option>
+          <option>Aluminium Deck Framing</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="q_message">Tell us about your project</label>
+        <textarea class="form-textarea" id="q_message" name="message" placeholder="Location, floor area, timeframe…"></textarea>
+      </div>
+      <input type="hidden" name="_subject" value="Quote Request — The Flooring Collective">
+      <button type="submit" class="form-submit">Send quote request →</button>
+      <p class="form-note">Free quote. No obligation. We'll be in touch within one business day.</p>
+    </form>
+    <div class="success-msg" id="quoteSuccess">✓ Thanks — we'll be in touch within one business day.</div>
+  </div>
+</div>
 
 <main id="main-content">
 
@@ -211,19 +266,19 @@
   <div class="hero-left">
     <p class="hero-eyebrow">Queenstown Floor Specialists</p>
     <h1 class="hero-title" id="hero-heading">Floors that transform <em>your space</em></h1>
-    <p class="hero-body">Specialist timber floor installation, sanding, and restoration for residential and commercial properties across Queenstown.</p>
+    <p class="hero-body">Flooring installation, sanding, and restoration for residential and commercial properties across Queenstown.</p>
     <div class="hero-actions">
-      <a href="contact.html" class="btn btn-dark">Get a Free Quote</a>
+      <button onclick="openQuoteModal()" class="btn btn-dark">Get Quote</button>
       <a href="services.html" class="btn btn-outline">Our Services</a>
     </div>
-    <div class="hero-services" aria-label="Key specialties">
+    <div class="hero-services">
       <div class="hero-service-item">
-        <p class="hero-service-label">Specialty</p>
-        <p class="hero-service-name">Timber Installation</p>
+        <p class="hero-service-label">Type</p>
+        <p class="hero-service-name">Installation</p>
       </div>
       <div class="hero-service-item">
         <p class="hero-service-label">Finish</p>
-        <p class="hero-service-name">Sanding & Coating</p>
+        <p class="hero-service-name">Sanding & Restoration</p>
       </div>
       <div class="hero-service-item">
         <p class="hero-service-label">Location</p>
@@ -232,111 +287,82 @@
     </div>
   </div>
   <div class="hero-right">
-    <img src="images/hero.jpg" alt="Beautiful timber floor installation Queenstown" class="hero-img" loading="eager" fetchpriority="high" width="1800" height="1200">
+    <img src="images/hero.jpg" alt="Engineered timber floor installation Queenstown" class="hero-img" loading="eager" fetchpriority="high" width="1800" height="1200">
     <div class="hero-badge">
       <div class="hero-badge-num">100%</div>
-      <div class="hero-badge-label">Specialist installation</div>
+      <div class="hero-badge-label">Local Queenstown team</div>
     </div>
   </div>
 </section>
 
-<div class="services-strip" aria-label="Services overview"><div class="services-strip-grid">
-  <div class="strip-item"><div class="strip-dot" aria-hidden="true"></div><span class="strip-label">Timber Installation</span></div>
-  <div class="strip-item"><div class="strip-dot" aria-hidden="true"></div><span class="strip-label">Laminate Flooring</span></div>
-  <div class="strip-item"><div class="strip-dot" aria-hidden="true"></div><span class="strip-label">Sanding & Finishing</span></div>
-  <div class="strip-item"><div class="strip-dot" aria-hidden="true"></div><span class="strip-label">Repairs & Restoration</span></div>
-  <div class="strip-item"><div class="strip-dot" aria-hidden="true"></div><span class="strip-label">Staircase Flooring</span></div>
-  <div class="strip-item"><div class="strip-dot" aria-hidden="true"></div><span class="strip-label">Timber Decking</span></div>
-  <div class="strip-item"><div class="strip-dot" aria-hidden="true"></div><span class="strip-label">Deck Framing</span></div>
-</div></div>
+<div class="services-strip" aria-label="Services overview">
+  <div class="services-strip-grid">
+    <div class="strip-item"><div class="strip-dot"></div><span class="strip-label">Installation</span></div>
+    <div class="strip-item"><div class="strip-dot"></div><span class="strip-label">Sanding & Finishing</span></div>
+    <div class="strip-item"><div class="strip-dot"></div><span class="strip-label">Staircase</span></div>
+    <div class="strip-item"><div class="strip-dot"></div><span class="strip-label">Timber Decking</span></div>
+    <div class="strip-item"><div class="strip-dot"></div><span class="strip-label">Aluminium Deck Framing</span></div>
+  </div>
+</div>
 
 <section class="about-intro" aria-labelledby="about-heading">
   <div class="about-intro-grid">
-  <div class="about-intro-visual fade-up" aria-hidden="true">
-    <img src="images/about-main.jpg" alt="" class="about-img-main" loading="lazy">
-    <img src="images/about-detail.jpg" alt="" class="about-img-accent" loading="lazy">
-    <div class="about-pull">
-      <p class="about-pull-text">"A floor you'll love for decades."</p>
+    <div class="about-intro-visual fade-up">
+      <img src="images/about-main.jpg" alt="Flooring installation in progress" class="about-img-main" loading="lazy">
+      <img src="images/about-detail.jpg" alt="Floor detail close-up" class="about-img-accent" loading="lazy">
+      <div class="about-pull">
+        <p class="about-pull-text">"Local and straightforward."</p>
+      </div>
     </div>
-  </div>
-  <div class="about-intro-content fade-up">
-    <p class="eyebrow">Who we are</p>
-    <h2 class="section-title" id="about-heading">Focused on <em>one thing</em></h2>
-    <p class="about-para">The Flooring Collective is a Queenstown-based flooring specialist focused exclusively on timber floor installation, sanding, and restoration for residential and commercial properties.</p>
-    <p class="about-para">Every job is handled personally, with care and attention to detail from start to finish.</p>
-    <p class="about-para">We bring specialist trade experience to every project — the kind of attention to detail that results in a floor you'll love for decades.</p>
-    <a href="about.html" class="about-link">More about us</a>
-  </div>
+    <div class="fade-up">
+      <p class="about-provide">We provide</p>
+      <h2 class="section-title" id="about-heading">Floor Installation <em>and Restoration</em></h2>
+      <p class="about-para">The Flooring Collective provides quality flooring solutions throughout Queenstown, offering engineered timber, hardwood, hybrid, laminate and luxury vinyl plank flooring, floor sanding and restoration, plus timber and composite decking with aluminium deck framing for residential and commercial projects.</p>
+      <a href="about.html" class="about-link">About us</a>
+    </div>
   </div>
 </section>
 
 <section class="services-section" aria-labelledby="services-heading">
   <div class="services-section-inner">
-  <div class="services-header">
-    <div>
-      <p class="eyebrow">What we do</p>
-      <h2 class="section-title" id="services-heading">Every service,<br><em>expertly done</em></h2>
+    <div class="services-header">
+      <div>
+        <p class="services-provide">We offer</p>
+        <h2 class="section-title" id="services-heading">Flooring <em>Services</em></h2>
+      </div>
+      <p class="section-body">Indoor and outdoor flooring services across Queenstown for residential and commercial properties.</p>
     </div>
-    <p class="section-body">From first board to final coat — indoors and out — we handle every stage of your project with precision and care.</p>
-  </div>
-
-  <p class="services-subhead">Indoor Flooring</p>
-  <div class="services-grid">
-    <article class="service-card fade-up">
-      <div class="service-icon-wrap"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="6" width="5" height="20" rx="0.5"/><rect x="11" y="6" width="5" height="20" rx="0.5"/><rect x="18" y="6" width="5" height="20" rx="0.5"/><rect x="25" y="6" width="3" height="20" rx="0.5"/></svg></div>
-      <h3 class="service-name">Timber Installation</h3>
-      <p class="service-desc">Expert installation of solid hardwood and engineered timber floors. Subfloor preparation included — we ensure the base is right before a single board goes down.</p>
-      <div class="service-tags"><span class="tag">Solid hardwood</span><span class="tag">Engineered</span><span class="tag">Subfloor prep</span></div>
-    </article>
-    <article class="service-card fade-up">
-      <div class="service-icon-wrap"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="7" width="26" height="4" rx="0.5"/><rect x="3" y="14" width="26" height="4" rx="0.5"/><rect x="3" y="21" width="26" height="4" rx="0.5"/></svg></div>
-      <h3 class="service-name">Laminate Flooring</h3>
-      <p class="service-desc">Residential and commercial grade laminate — installed to manufacturer specification. Supply and install available.</p>
-      <div class="service-tags"><span class="tag">Residential grade</span><span class="tag">Commercial grade</span><span class="tag">Supply & install</span></div>
-    </article>
-    <article class="service-card fade-up">
-      <div class="service-icon-wrap"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="20" width="24" height="6" rx="0.5"/><path d="M8 20 L8 8 Q8 6 10 6 L22 6 Q24 6 24 8 L24 20"/><line x1="12" y1="14" x2="20" y2="14"/></svg></div>
-      <h3 class="service-name">Sanding & Finishing</h3>
-      <p class="service-desc">Dustless sanding equipment protects your home. Oil, polyurethane, or hardwax — we help you choose the right finish for your floor and lifestyle.</p>
-      <div class="service-tags"><span class="tag">Dustless sanding</span><span class="tag">Oil finish</span><span class="tag">Polyurethane</span><span class="tag">Hardwax</span></div>
-    </article>
-    <article class="service-card fade-up">
-      <div class="service-icon-wrap"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 26 L6 10 L14 10 L14 16 L22 16 L22 10 L26 10 L26 26"/><line x1="4" y1="26" x2="28" y2="26"/><rect x="10" y="20" width="12" height="6"/></svg></div>
-      <h3 class="service-name">Repairs & Restoration</h3>
-      <p class="service-desc">Worn, damaged, or tired floors brought back to life. Board replacement, gap filling, re-coating, and colour matching — we make repairs seamless.</p>
-      <div class="service-tags"><span class="tag">Board replacement</span><span class="tag">Gap filling</span><span class="tag">Re-coating</span></div>
-    </article>
-    <article class="service-card fade-up">
-      <div class="service-icon-wrap"><svg viewBox="0 0 32 32" aria-hidden="true"><polyline points="4,26 4,20 10,20 10,14 16,14 16,8 22,8 22,4 28,4"/><line x1="4" y1="26" x2="28" y2="26"/></svg></div>
-      <h3 class="service-name">Staircase Flooring</h3>
-      <p class="service-desc">Stairs are the centrepiece of any home. We clad treads, risers, and nosings in matching or complementary timber to complete the look from floor to floor.</p>
-      <div class="service-tags"><span class="tag">Treads & risers</span><span class="tag">Nosings</span><span class="tag">Timber matching</span></div>
-    </article>
-    <div class="service-card service-card--cta fade-up">
-      <p class="service-card--cta-text">"Not sure what your floor needs?"</p>
-      <a href="contact.html" class="btn btn-light">Ask us →</a>
+    <div class="services-grid">
+      <article class="service-card fade-up">
+        <div class="service-icon-wrap"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="6" width="5" height="20" rx="0.5"/><rect x="11" y="6" width="5" height="20" rx="0.5"/><rect x="18" y="6" width="5" height="20" rx="0.5"/><rect x="25" y="6" width="3" height="20" rx="0.5"/></svg></div>
+        <h3 class="service-name">Installation</h3>
+        <p class="service-desc">Installation of engineered timber floors. Subfloor preparation included — we ensure the base is right before a single board goes down.</p>
+      </article>
+      <article class="service-card fade-up">
+        <div class="service-icon-wrap"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="20" width="24" height="6" rx="0.5"/><path d="M8 20 L8 8 Q8 6 10 6 L22 6 Q24 6 24 8 L24 20"/><line x1="12" y1="14" x2="20" y2="14"/></svg></div>
+        <h3 class="service-name">Sanding & Finishing</h3>
+        <p class="service-desc">Sanding and finishing. Oil, polyurethane, or hardwax — we help you choose the right finish for your floor and lifestyle.</p>
+      </article>
+      <article class="service-card fade-up">
+        <div class="service-icon-wrap"><svg viewBox="0 0 32 32" aria-hidden="true"><polyline points="4,26 4,20 10,20 10,14 16,14 16,8 22,8 22,4 28,4"/><line x1="4" y1="26" x2="28" y2="26"/></svg></div>
+        <h3 class="service-name">Staircase</h3>
+        <p class="service-desc">Stair treads, risers, and nosings in matching or complementary timber to complete the look from floor to floor.</p>
+      </article>
+      <article class="service-card fade-up">
+        <div class="service-icon-wrap"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="18" width="28" height="4" rx="0.5"/><rect x="2" y="24" width="28" height="4" rx="0.5"/><rect x="2" y="12" width="28" height="4" rx="0.5"/><line x1="8" y1="12" x2="8" y2="28"/><line x1="16" y1="12" x2="16" y2="28"/><line x1="24" y1="12" x2="24" y2="28"/></svg></div>
+        <h3 class="service-name">Timber Decking</h3>
+        <p class="service-desc">Installation of nail-free timber decking system — hidden fasteners create a seamless, screw-free surface that is barefoot friendly.</p>
+      </article>
+      <article class="service-card fade-up">
+        <div class="service-icon-wrap"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="14" width="24" height="4" rx="0.5"/><rect x="4" y="20" width="24" height="4" rx="0.5"/><line x1="8" y1="8" x2="8" y2="14"/><line x1="16" y1="6" x2="16" y2="14"/><line x1="24" y1="8" x2="24" y2="14"/><circle cx="8" cy="26" r="2"/><circle cx="16" cy="26" r="2"/><circle cx="24" cy="26" r="2"/></svg></div>
+        <h3 class="service-name">Aluminium Deck Framing</h3>
+        <p class="service-desc">Installation of aluminium subframing system — lightweight, durable, and PS1 certified. Compatible with both timber decking and tiles.</p>
+      </article>
+      <div class="service-card service-card--cta fade-up">
+        <p class="service-card--cta-text">"Not sure what you need?"</p>
+        <button onclick="openQuoteModal()" class="btn btn-light">Get Quote →</button>
+      </div>
     </div>
-  </div>
-
-  <p class="services-subhead" style="margin-top:60px;">Outdoor Flooring Installations</p>
-  <div class="services-grid">
-    <article class="service-card fade-up">
-      <div class="service-icon-wrap"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="18" width="28" height="4" rx="0.5"/><rect x="2" y="24" width="28" height="4" rx="0.5"/><rect x="2" y="12" width="28" height="4" rx="0.5"/><line x1="8" y1="12" x2="8" y2="28"/><line x1="16" y1="12" x2="16" y2="28"/><line x1="24" y1="12" x2="24" y2="28"/></svg></div>
-      <h3 class="service-name">Nail-Free Timber Decking</h3>
-      <p class="service-desc">Installation of the ShadowDeck™ nail-free timber decking system — hidden fasteners create a seamless, screw-free surface with a premium finish that's barefoot friendly and built to last outdoors.</p>
-      <div class="service-tags"><span class="tag">Hidden fasteners</span><span class="tag">Kwila timber</span><span class="tag">Install only</span></div>
-    </article>
-    <article class="service-card fade-up">
-      <div class="service-icon-wrap"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="14" width="24" height="4" rx="0.5"/><rect x="4" y="20" width="24" height="4" rx="0.5"/><line x1="8" y1="8" x2="8" y2="14"/><line x1="16" y1="6" x2="16" y2="14"/><line x1="24" y1="8" x2="24" y2="14"/><circle cx="8" cy="26" r="2"/><circle cx="16" cy="26" r="2"/><circle cx="24" cy="26" r="2"/></svg></div>
-      <h3 class="service-name">Aluminium Deck Framing</h3>
-      <p class="service-desc">Installation of the SuperSpan™ aluminium subframing system — lightweight, durable, and PS1 certified. Compatible with both timber decking and tiles, with height-adjustable Nurajack pedestals for a fast, precise finish.</p>
-      <div class="service-tags"><span class="tag">SuperSpan™</span><span class="tag">PS1 certified</span><span class="tag">Nurajack compatible</span></div>
-    </article>
-    <div class="service-card service-card--cta fade-up">
-      <p class="service-card--cta-text">"Planning an outdoor deck?"</p>
-      <a href="contact.html" class="btn btn-light">Talk to us →</a>
-    </div>
-  </div>
   </div>
 </section>
 
@@ -344,108 +370,88 @@
   <div class="gallery-header">
     <div>
       <p class="eyebrow">Our work</p>
-      <h2 class="section-title section-title--light" id="gallery-heading">The finish <em>speaks</em></h2>
-      <p class="section-body section-body--dim">Every job we're proud to put our name to.</p>
+      <h2 class="section-title section-title--light" id="gallery-heading">Our <em>Work</em></h2>
+      <p class="section-body section-body--dim">A selection of recent jobs in Queenstown.</p>
     </div>
-    <a href="gallery.html" class="gallery-header-link">View all work</a>
+    <a href="gallery.html" class="gallery-header-link">View all</a>
   </div>
   <div class="gallery-grid" role="list" aria-label="Project gallery">
     <div class="gallery-item" role="listitem">
-      <img src="images/gallery-timber-1.jpg" alt="Timber floor installation Queenstown" class="gallery-img" loading="lazy">
-      <div class="gallery-overlay"><span class="gallery-overlay-label">Timber installation</span></div>
+      <img src="images/gallery-timber-1.jpg" alt="Engineered timber floor installation Queenstown" class="gallery-img" loading="lazy">
+      <div class="gallery-overlay"><span class="gallery-overlay-label">Installation</span></div>
     </div>
     <div class="gallery-item" role="listitem">
-      <img src="images/gallery-sand-1.jpg" alt="Floor sanding and finishing" class="gallery-img" loading="lazy">
-      <div class="gallery-overlay"><span class="gallery-overlay-label">Sanding & finish</span></div>
+      <img src="images/gallery-sand-1.jpg" alt="Floor sanding and finishing Queenstown" class="gallery-img" loading="lazy">
+      <div class="gallery-overlay"><span class="gallery-overlay-label">Sanding & Finishing</span></div>
     </div>
     <div class="gallery-item" role="listitem">
-      <img src="images/gallery-stair-1.jpg" alt="Staircase timber flooring" class="gallery-img" loading="lazy">
+      <img src="images/gallery-stair-1.jpg" alt="Staircase timber flooring Queenstown" class="gallery-img" loading="lazy">
       <div class="gallery-overlay"><span class="gallery-overlay-label">Staircase</span></div>
     </div>
     <div class="gallery-item" role="listitem">
-      <img src="images/gallery-lam-1.jpg" alt="Laminate floor installation" class="gallery-img" loading="lazy">
-      <div class="gallery-overlay"><span class="gallery-overlay-label">Laminate</span></div>
+      <img src="images/gallery-lam-1.jpg" alt="Floor installation Queenstown" class="gallery-img" loading="lazy">
+      <div class="gallery-overlay"><span class="gallery-overlay-label">Installation</span></div>
     </div>
     <div class="gallery-item" role="listitem">
-      <img src="images/gallery-repair-1.jpg" alt="Floor restoration and repairs" class="gallery-img" loading="lazy">
+      <img src="images/gallery-repair-1.jpg" alt="Floor restoration Queenstown" class="gallery-img" loading="lazy">
       <div class="gallery-overlay"><span class="gallery-overlay-label">Restoration</span></div>
     </div>
   </div>
 </section>
 
-<section class="process-section" aria-labelledby="process-heading">
-  <div class="process-inner">
-  <div class="process-header">
-    <div>
-      <p class="eyebrow">How it works</p>
-      <h2 class="section-title" id="process-heading">Simple from <em>start to finish</em></h2>
-    </div>
-    <p class="section-body">No surprises, no hidden costs. Just a straightforward process that gets your floor done right.</p>
-  </div>
-  <ol class="process-steps" aria-label="Our process">
-    <li class="process-step fade-up">
-      <div class="step-marker" aria-hidden="true"><span class="step-num">1</span></div>
-      <h3 class="step-title">Free site visit</h3>
-      <p class="step-desc">We come to you, assess the space, and talk through your options and budget — at no cost.</p>
-    </li>
-    <li class="process-step fade-up">
-      <div class="step-marker" aria-hidden="true"><span class="step-num">2</span></div>
-      <h3 class="step-title">Written quote</h3>
-      <p class="step-desc">A clear, itemised quote covering materials, labour, and timeline. No surprises.</p>
-    </li>
-    <li class="process-step fade-up">
-      <div class="step-marker" aria-hidden="true"><span class="step-num">3</span></div>
-      <h3 class="step-title">Installation</h3>
-      <p class="step-desc">We get to work. Your home is protected and left clean at the end of each day.</p>
-    </li>
-    <li class="process-step fade-up">
-      <div class="step-marker" aria-hidden="true"><span class="step-num">4</span></div>
-      <h3 class="step-title">Final walkthrough</h3>
-      <p class="step-desc">We walk through together. You're happy, we're done. It's that simple.</p>
-    </li>
-  </ol>
-  </div>
-</section>
-
 </main>
+
 <div class="cta-band">
   <div class="cta-band-inner">
-  <h2 class="cta-band-title">Ready for a floor you'll <em>love for decades?</em></h2>
-  <a href="contact.html" class="btn btn-light">Get a Free Quote →</a>
+    <h2 class="cta-band-title">Ready to <em>get started?</em></h2>
+    <button onclick="openQuoteModal()" class="btn btn-light">Get Quote</button>
   </div>
 </div>
 
 <footer>
   <div class="footer-inner">
-  <div class="footer-top">
-    <div>
-      <p class="footer-logo-main">The Flooring Collective</p>
-      <p class="footer-logo-sub">Queenstown Floor Specialists</p>
-      <p class="footer-tagline">Specialist timber floor installation, sanding, restoration and outdoor decking. Queenstown, New Zealand.</p>
+    <div class="footer-top">
+      <div>
+        <p class="footer-logo-main">The Flooring Collective</p>
+        <p class="footer-logo-sub">Queenstown Floor Specialists</p>
+        <p class="footer-tagline">Floor installation and restoration for residential and commercial properties across Queenstown.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <p class="footer-col-title">Navigation</p>
+        <ul class="footer-links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Our Work</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="footer-col-title">Contact</p>
+        <p class="footer-contact-item"><a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener">WhatsApp us</a></p>
+        <p class="footer-contact-item"><a href="mailto:ashjohns@me.com?subject=Flooring%20Enquiry">Email us</a></p>
+        <p class="footer-contact-item">Queenstown, New Zealand</p>
+      </div>
     </div>
-    <nav aria-label="Footer navigation">
-      <p class="footer-col-title">Navigation</p>
-      <ul class="footer-links" role="list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="gallery.html">Our Work</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Get a Quote</a></li>
-      </ul>
-    </nav>
-    <div>
-      <p class="footer-col-title">Contact</p>
-      <p class="footer-contact-item"><a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener">WhatsApp us</a></p>
-      <p class="footer-contact-item"><a href="mailto:ashjohns@me.com?subject=Flooring%20Enquiry">Email us</a></p>
-      <p class="footer-contact-item">Queenstown, New Zealand</p>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 The Flooring Collective. All rights reserved.</span>
+      <span class="footer-credit">Site by <a href="https://strandmedia.co.nz">Strand Media</a></span>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <span class="footer-copy">© 2026 The Flooring Collective. All rights reserved.</span>
-    <span class="footer-credit">Site by <a href="https://strandmedia.co.nz">Strand Media</a></span>
-  </div>
   </div>
 </footer>
 <script src="js/shared.js"></script>
+<script>
+document.getElementById('quoteForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = this.querySelector('.form-submit');
+  btn.textContent = 'Sending…'; btn.disabled = true;
+  try {
+    const r = await fetch(this.action, {method:'POST', body:new FormData(this), headers:{'Accept':'application/json'}});
+    if (r.ok) {
+      this.style.display = 'none';
+      document.getElementById('quoteSuccess').style.display = 'block';
+    } else { btn.textContent = 'Send quote request →'; btn.disabled = false; }
+  } catch(err) { btn.textContent = 'Send quote request →'; btn.disabled = false; }
+});
+</script>
 </body>
 </html>
