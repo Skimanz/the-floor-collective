@@ -128,70 +128,75 @@ function closeQuoteModal(){var m=document.getElementById("quoteModal");m.style.d
 </div>
 
 <div class="filter-bar" role="group" aria-label="Filter gallery by service">
-  <button class="filter-btn active" onclick="filterGallery('all',this)" aria-pressed="true">All Work</button>
+  <button class="filter-btn active" onclick="filterGallery('all',this)" aria-pressed="true">All</button>
   <button class="filter-btn" onclick="filterGallery('installation',this)" aria-pressed="false">Installation</button>
   <button class="filter-btn" onclick="filterGallery('sanding',this)" aria-pressed="false">Sanding & Finishing</button>
-  <button class="filter-btn" onclick="filterGallery('repairs',this)" aria-pressed="false">Repairs</button>
-  <button class="filter-btn" onclick="filterGallery('staircases',this)" aria-pressed="false">Staircases</button>
-  <button class="filter-btn" onclick="filterGallery('decking',this)" aria-pressed="false">Decking</button>
+  <button class="filter-btn" onclick="filterGallery('staircases',this)" aria-pressed="false">Staircase</button>
+  <button class="filter-btn" onclick="filterGallery('decking',this)" aria-pressed="false">Timber Decking</button>
 </div>
 
 <section class="gallery-section" aria-label="Project gallery">
   <div class="gallery-section-inner">
   <div class="masonry-grid" id="galleryGrid">
     <article class="masonry-item fade-up" data-category="installation">
-      <img src="images/gallery-timber-1.jpg" alt="Timber floor installation Queenstown" class="masonry-img" loading="lazy">
-      <div class="masonry-overlay"><p class="masonry-label">Queenstown Residence</p><p class="masonry-tag">Solid timber installation</p></div>
+      <img src="images/gallery-timber-1.jpg" alt="Engineered timber floor installation Queenstown" class="masonry-img" loading="lazy">
+      <div class="masonry-overlay"><p class="masonry-label">Queenstown Residence</p><p class="masonry-tag">Installation</p></div>
+    </article>
+    <article class="masonry-item fade-up" data-category="decking">
+      <img src="images/gallery-deck-3.jpg" alt="Timber decking with Remarkables backdrop, 29 Myles Way Queenstown" class="masonry-img" loading="lazy">
+      <div class="masonry-overlay"><p class="masonry-label">29 Myles Way</p><p class="masonry-tag">Timber Decking</p></div>
     </article>
     <article class="masonry-item fade-up" data-category="sanding">
-      <img src="images/gallery-sand-1.jpg" alt="Floor sanding and oil finish" class="masonry-img" loading="lazy">
-      <div class="masonry-overlay"><p class="masonry-label">28 Myles Way</p><p class="masonry-tag">Sanding & oil finish</p></div>
+      <img src="images/gallery-sand-1.jpg" alt="Floor sanding and finishing Queenstown" class="masonry-img" loading="lazy">
+      <div class="masonry-overlay"><p class="masonry-label">28 Myles Way</p><p class="masonry-tag">Sanding & Finishing</p></div>
     </article>
-    <article class="masonry-item fade-up" data-category="installation">
-      <img src="images/gallery-lam-1.jpg" alt="Commercial laminate installation" class="masonry-img" loading="lazy">
-      <div class="masonry-overlay"><p class="masonry-label">Auckland Rental Unit</p><p class="masonry-tag">Commercial laminate</p></div>
+    <article class="masonry-item fade-up" data-category="decking">
+      <img src="images/gallery-deck-5.jpg" alt="Finished timber deck Beaumont Quarter" class="masonry-img" loading="lazy">
+      <div class="masonry-overlay"><p class="masonry-label">Beaumont Quarter</p><p class="masonry-tag">Timber Decking</p></div>
     </article>
     <article class="masonry-item fade-up" data-category="staircases">
-      <img src="images/gallery-stair-1.jpg" alt="Staircase timber cladding" class="masonry-img" loading="lazy">
-      <div class="masonry-overlay"><p class="masonry-label">Fisher Point Drive</p><p class="masonry-tag">Staircase cladding</p></div>
+      <img src="images/gallery-stair-1.jpg" alt="Staircase timber installation Queenstown" class="masonry-img" loading="lazy">
+      <div class="masonry-overlay"><p class="masonry-label">Fisher Point Drive</p><p class="masonry-tag">Staircase</p></div>
+    </article>
+    <article class="masonry-item fade-up" data-category="decking">
+      <img src="images/gallery-deck-4.jpg" alt="Finished timber deck corner 29 Myles Way" class="masonry-img" loading="lazy">
+      <div class="masonry-overlay"><p class="masonry-label">29 Myles Way</p><p class="masonry-tag">Timber Decking</p></div>
     </article>
     <article class="masonry-item fade-up" data-category="sanding">
       <img src="images/gallery-sand-2.jpg" alt="Floor sanding Queenstown" class="masonry-img" loading="lazy">
-      <div class="masonry-overlay"><p class="masonry-label">28 Myles Way</p><p class="masonry-tag">Sanding & finish</p></div>
-    </article>
-    <article class="masonry-item fade-up" data-category="repairs">
-      <img src="images/gallery-repair-1.jpg" alt="Floor restoration Avondale" class="masonry-img" loading="lazy">
-      <div class="masonry-overlay"><p class="masonry-label">Avondale</p><p class="masonry-tag">Board restoration</p></div>
+      <div class="masonry-overlay"><p class="masonry-label">28 Myles Way</p><p class="masonry-tag">Sanding & Finishing</p></div>
     </article>
     <article class="masonry-item fade-up" data-category="installation">
       <img src="images/gallery-timber-2.jpg" alt="Engineered timber floor installation" class="masonry-img" loading="lazy">
-      <div class="masonry-overlay"><p class="masonry-label">Felton Mathew</p><p class="masonry-tag">Engineered timber</p></div>
+      <div class="masonry-overlay"><p class="masonry-label">Felton Mathew</p><p class="masonry-tag">Installation</p></div>
     </article>
-    <article class="masonry-item fade-up" data-category="installation">
-      <img src="images/gallery-lam-2.jpg" alt="Residential laminate installation" class="masonry-img" loading="lazy">
-      <div class="masonry-overlay"><p class="masonry-label">Auckland Rental Unit</p><p class="masonry-tag">Residential laminate</p></div>
+    <article class="masonry-item fade-up" data-category="decking">
+      <img src="images/gallery-deck-6.jpg" alt="Timber deck close-up Beaumont Quarter" class="masonry-img" loading="lazy">
+      <div class="masonry-overlay"><p class="masonry-label">Beaumont Quarter</p><p class="masonry-tag">Timber Decking</p></div>
+    </article>
+    <article class="masonry-item fade-up" data-category="decking">
+      <img src="images/gallery-deck-1.jpg" alt="Decking installation in progress" class="masonry-img" loading="lazy">
+      <div class="masonry-overlay"><p class="masonry-label">Decking installation</p><p class="masonry-tag">Timber Decking</p></div>
     </article>
     <article class="masonry-item fade-up" data-category="sanding">
       <img src="images/gallery-sand-3.jpg" alt="Floor sanding in progress" class="masonry-img" loading="lazy">
-      <div class="masonry-overlay"><p class="masonry-label">Felton Mathew</p><p class="masonry-tag">Sanding in progress</p></div>
+      <div class="masonry-overlay"><p class="masonry-label">Felton Mathew</p><p class="masonry-tag">Sanding & Finishing</p></div>
     </article>
     <article class="masonry-item fade-up" data-category="installation">
-      <img src="images/gallery-timber-3.jpg" alt="Finished timber floor 204 FPD" class="masonry-img" loading="lazy">
-      <div class="masonry-overlay"><p class="masonry-label">Fisher Point Drive</p><p class="masonry-tag">Timber installation</p></div>
-    </article>
-    <article class="masonry-item fade-up" data-category="installation">
-      <img src="images/gallery-lam-3.jpg" alt="Laminate floor installation 109FPD" class="masonry-img" loading="lazy">
-      <div class="masonry-overlay"><p class="masonry-label">Fisher Point Drive</p><p class="masonry-tag">Laminate installation</p></div>
-    </article>
-    <article class="masonry-item fade-up" data-category="repairs">
-      <img src="images/gallery-repair-2.jpg" alt="Floor repair and restoration" class="masonry-img" loading="lazy">
-      <div class="masonry-overlay"><p class="masonry-label">204 Fisher Point</p><p class="masonry-tag">Restoration</p></div>
+      <img src="images/gallery-timber-3.jpg" alt="Finished timber floor Fisher Point Drive" class="masonry-img" loading="lazy">
+      <div class="masonry-overlay"><p class="masonry-label">Fisher Point Drive</p><p class="masonry-tag">Installation</p></div>
     </article>
     <article class="masonry-item fade-up" data-category="decking">
-      <div class="masonry-ph gp5" style="aspect-ratio:4/3;">
-        <!-- Replace with: <img src="images/gallery-deck-1.jpg" alt="Nail-free timber decking installation" class="masonry-img" loading="lazy"> -->
-      </div>
-      <div class="masonry-overlay"><p class="masonry-label">Decking project</p><p class="masonry-tag">Nail-free timber decking</p></div>
+      <img src="images/gallery-deck-7.jpg" alt="Finished timber deck Orakei" class="masonry-img" loading="lazy">
+      <div class="masonry-overlay"><p class="masonry-label">Orakei</p><p class="masonry-tag">Timber Decking</p></div>
+    </article>
+    <article class="masonry-item fade-up" data-category="decking">
+      <img src="images/gallery-deck-2.jpg" alt="Nurajack aluminium deck framing" class="masonry-img" loading="lazy">
+      <div class="masonry-overlay"><p class="masonry-label">Aluminium framing</p><p class="masonry-tag">Deck Framing</p></div>
+    </article>
+    <article class="masonry-item fade-up" data-category="installation">
+      <img src="images/gallery-repair-1.jpg" alt="Floor restoration Queenstown" class="masonry-img" loading="lazy">
+      <div class="masonry-overlay"><p class="masonry-label">Avondale</p><p class="masonry-tag">Restoration</p></div>
     </article>
   </div>
   </div>
