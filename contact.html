@@ -4,269 +4,202 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact Us — The Flooring Collective | Queenstown</title>
-<meta name="description" content="Get a free, no-obligation quote for timber floor installation, sanding, laminate, repairs, staircase and decking in Queenstown. We respond within one business day.">
+<meta name="description" content="Get in touch with The Flooring Collective for a flooring or decking quote in Queenstown. WhatsApp, email, or fill in our quote request form.">
 <link rel="canonical" href="https://flooringcollective.co.nz/contact.html">
 <meta property="og:title" content="Contact Us — The Flooring Collective">
-<meta property="og:description" content="Free, no-obligation flooring quote in Queenstown. WhatsApp or email us today.">
+<meta property="og:description" content="Get in touch for a flooring or decking quote in Queenstown.">
 <meta property="og:image" content="https://flooringcollective.co.nz/images/og-image.jpg">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://flooringcollective.co.nz/contact.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index, follow">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23B5602A'/%3E%3Ctext x='50' y='67' font-family='Georgia,serif' font-size='42' font-weight='700' fill='%23FDFCFA' text-anchor='middle' letter-spacing='-1'%3ETFC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <style>
-/* CONTACT PAGE STYLES */
-.contact-wrap { max-width:var(--max-w); margin:0 auto; display:grid; grid-template-columns:1fr 1fr; min-height:calc(100vh - 100px); }
-.contact-left { background:var(--charcoal); padding:80px 60px 80px 48px; display:flex; flex-direction:column; justify-content:space-between; }
-.contact-eyebrow { font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:rgba(255,255,255,0.3); display:flex; align-items:center; gap:14px; margin-bottom:20px; }
-.contact-eyebrow::before { content:''; width:28px; height:1px; background:rgba(255,255,255,0.3); display:block; }
-.contact-title { font-family:var(--font-display); font-size:clamp(36px,4vw,56px); font-weight:400; color:var(--warm-white); line-height:1.05; margin-bottom:24px; }
+.contact-wrap { max-width:var(--max-w); margin:0 auto; display:grid; grid-template-columns:1fr 1.2fr; min-height:calc(100vh - 100px); }
+.contact-left { background:var(--charcoal); padding:80px 60px; display:flex; flex-direction:column; justify-content:center; }
+.contact-eyebrow { font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:var(--terra); display:flex; align-items:center; gap:14px; margin-bottom:24px; }
+.contact-eyebrow::before { content:''; width:28px; height:1px; background:var(--terra); display:block; }
+.contact-title { font-family:var(--font-display); font-size:clamp(34px,4vw,48px); font-weight:400; line-height:1.1; color:var(--warm-white); margin-bottom:20px; }
 .contact-title em { font-style:italic; color:var(--terra); }
-.contact-body { font-size:15px; font-weight:300; color:rgba(255,255,255,0.45); line-height:1.8; max-width:380px; margin-bottom:52px; }
-.contact-details { display:flex; flex-direction:column; gap:28px; }
-.contact-detail-label { font-size:10px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.25); margin-bottom:6px; }
-.contact-detail-value { font-size:15px; font-weight:300; color:rgba(255,255,255,0.65); }
-.contact-detail-value a { color:rgba(255,255,255,0.65); transition:color 0.2s; }
-.contact-detail-value a:hover { color:var(--warm-white); }
-.contact-quick { display:flex; gap:12px; margin-top:40px; }
-.btn-whatsapp { display:inline-flex; align-items:center; gap:8px; background:#25D366; color:white; padding:12px 24px; font-family:var(--font-body); font-size:13px; font-weight:500; letter-spacing:0.06em; text-transform:uppercase; transition:opacity 0.2s; text-decoration:none; }
-.btn-whatsapp:hover { opacity:0.9; }
-.btn-email { display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.1); color:var(--warm-white); padding:12px 24px; font-family:var(--font-body); font-size:13px; font-weight:500; letter-spacing:0.06em; text-transform:uppercase; transition:background 0.2s; text-decoration:none; }
-.btn-email:hover { background:rgba(255,255,255,0.18); }
-.contact-service-list { margin-top:60px; padding-top:52px; border-top:1px solid rgba(255,255,255,0.08); }
-.contact-service-list-title { font-size:10px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.2); margin-bottom:16px; }
-.stags { display:flex; flex-wrap:wrap; gap:8px; }
-.stag { font-size:11px; font-weight:400; letter-spacing:0.06em; color:rgba(255,255,255,0.35); border:1px solid rgba(255,255,255,0.1); padding:6px 14px; }
-.contact-right { background:var(--warm-white); padding:80px 48px 80px 60px; display:flex; flex-direction:column; justify-content:center; }
-.form-title { font-family:var(--font-display); font-size:28px; font-weight:400; color:var(--charcoal); margin-bottom:8px; }
-.form-subtitle { font-size:14px; font-weight:300; color:var(--mid); margin-bottom:6px; }
-.form-required-note { font-size:11px; color:var(--muted); margin-bottom:32px; }
-.form-row { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
-.form-group { margin-bottom:20px; }
-.form-label { display:block; font-size:10px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted); margin-bottom:8px; }
-.form-input,.form-select,.form-textarea { width:100%; background:var(--linen); border:1px solid var(--border); color:var(--charcoal); padding:13px 16px; font-family:var(--font-body); font-size:14px; font-weight:300; outline:none; transition:border-color 0.2s; -webkit-appearance:none; }
-.form-input:focus,.form-select:focus,.form-textarea:focus { border-color:var(--terra); }
-.form-textarea { resize:vertical; min-height:120px; }
-.form-fieldset { border:none; margin:0 0 20px; padding:0; }
-.form-fieldset legend { font-size:10px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted); margin-bottom:12px; display:block; width:100%; }
-.checkbox-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
-.checkbox-item { display:flex; align-items:center; gap:10px; font-size:13px; font-weight:300; color:var(--mid); cursor:pointer; }
-.checkbox-item input[type="checkbox"] { width:16px; height:16px; accent-color:var(--terra); cursor:pointer; flex-shrink:0; }
-.form-submit { width:100%; background:var(--charcoal); color:var(--warm-white); border:none; padding:16px; font-family:var(--font-body); font-size:13px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; transition:background 0.2s; margin-top:8px; }
-.form-submit:hover { background:var(--terra); }
-.form-note { font-size:12px; font-weight:300; color:var(--muted); margin-top:12px; }
-.success-msg { display:none; background:var(--sand); border-left:3px solid var(--terra); padding:20px 24px; margin-top:20px; }
-.success-msg p { font-size:14px; font-weight:400; color:var(--charcoal); }
+.contact-body { font-size:15px; font-weight:300; color:rgba(255,255,255,0.5); line-height:1.8; margin-bottom:36px; }
+.contact-details { margin-bottom:36px; }
+.contact-detail-item { font-size:14px; color:rgba(255,255,255,0.55); margin-bottom:10px; }
+.contact-quick { display:flex; gap:12px; flex-wrap:wrap; margin-bottom:40px; }
+.quick-btn { display:inline-flex; align-items:center; gap:8px; font-size:12px; font-weight:500; letter-spacing:0.06em; text-transform:uppercase; padding:12px 22px; border:1px solid rgba(255,255,255,0.2); color:var(--warm-white); transition:all 0.2s; }
+.quick-btn:hover { border-color:var(--terra); background:rgba(181,96,42,0.1); }
+.service-tags { display:flex; flex-wrap:wrap; gap:8px; }
+.service-tag { font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:rgba(255,255,255,0.45); border:1px solid rgba(255,255,255,0.15); padding:6px 12px; }
 
-@media(max-width:1024px) {
-  .contact-wrap { grid-template-columns:1fr; }
-  .contact-left { padding:60px 48px; }
-  .contact-right { padding:60px 48px; }
+.contact-right { background:var(--linen); padding:80px 60px; display:flex; flex-direction:column; justify-content:center; }
+.form-title { font-family:var(--font-display); font-size:26px; font-weight:400; color:var(--charcoal); margin-bottom:8px; }
+.form-sub { font-size:14px; font-weight:300; color:var(--mid); margin-bottom:32px; }
+.form-row { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.form-group { margin-bottom:16px; }
+.form-label { display:block; font-size:10px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted); margin-bottom:8px; }
+.form-input, .form-textarea, .form-select { width:100%; background:var(--warm-white); border:1px solid var(--border); color:var(--charcoal); padding:12px 14px; font-size:14px; font-family:var(--font-body); outline:none; }
+.form-input:focus, .form-textarea:focus, .form-select:focus { border-color:var(--terra); }
+.form-textarea { resize:vertical; min-height:90px; }
+.svc-checks { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:20px; }
+.svc-check-label { display:flex; align-items:center; gap:8px; font-size:13px; color:var(--mid); background:var(--warm-white); border:1px solid var(--border); padding:8px 14px; cursor:pointer; }
+.svc-check-label input { accent-color:var(--terra); }
+.form-submit { width:100%; }
+.form-fine { font-size:12px; color:var(--muted); margin-top:12px; }
+.success-msg { display:none; background:var(--sand); border-left:3px solid var(--terra); padding:16px 20px; margin-top:16px; font-size:14px; color:var(--charcoal); }
+
+@media(max-width:1024px){
+  .contact-wrap{ grid-template-columns:1fr; }
+  .contact-left, .contact-right{ padding:56px var(--pad); }
 }
-@media(max-width:768px) {
-  .contact-left { padding:48px 20px; }
-  .contact-right { padding:48px 20px; }
-  .form-row { grid-template-columns:1fr; }
-  .checkbox-grid { grid-template-columns:1fr; }
-  .contact-quick { flex-direction:column; }
+@media(max-width:768px){
+  .form-row{ grid-template-columns:1fr; }
 }
 </style>
 </head>
 <body>
-<!-- NAV: identical across all 5 pages — edit all files when changing nav -->
+<!-- NAV: identical across all pages — edit all files when changing -->
 <header style="position:sticky;top:0;z-index:1000;font-family:'DM Sans',system-ui,sans-serif;">
-  <!-- Top bar -->
   <div style="background:#25D366;border-bottom:1px solid rgba(0,0,0,0.1);">
     <div style="max-width:1280px;margin:0 auto;padding:0 48px;height:38px;display:flex;align-items:center;justify-content:flex-end;gap:16px;">
-      <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener" style="font-size:12px;font-weight:600;color:#fff;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;display:flex;align-items:center;gap:8px;">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.862L.057 23.428a.5.5 0 0 0 .609.61l5.648-1.453A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.877 9.877 0 0 1-5.031-1.378l-.36-.214-3.733.96.99-3.645-.235-.374A9.872 9.872 0 0 1 2.106 12C2.106 6.527 6.527 2.106 12 2.106c5.473 0 9.894 4.421 9.894 9.894 0 5.473-4.421 9.894-9.894 9.894z"/></svg>
-        WhatsApp us
-      </a>
+      <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener" style="font-size:12px;font-weight:600;color:#fff;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;display:flex;align-items:center;gap:8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.862L.057 23.428a.5.5 0 0 0 .609.61l5.648-1.453A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.877 9.877 0 0 1-5.031-1.378l-.36-.214-3.733.96.99-3.645-.235-.374A9.872 9.872 0 0 1 2.106 12C2.106 6.527 6.527 2.106 12 2.106c5.473 0 9.894 4.421 9.894 9.894 0 5.473-4.421 9.894-9.894 9.894z"/></svg>WhatsApp us</a>
       <span style="color:rgba(255,255,255,0.4);font-size:11px;">|</span>
       <a href="contact.html" style="font-size:12px;font-weight:600;color:#fff;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;">Contact Us</a>
     </div>
   </div>
-  <!-- Main nav bar -->
   <div style="background:#FDFCFA;border-bottom:1px solid rgba(40,37,32,0.12);">
     <div style="max-width:1280px;margin:0 auto;padding:0 48px;height:62px;display:flex;align-items:center;justify-content:space-between;">
       <a href="index.html" style="display:flex;flex-direction:column;line-height:1.1;text-decoration:none;">
-        <span style="font-family:'Cormorant Garamond',Georgia,serif;font-size:20px;font-weight:600;color:#282520;letter-spacing:0.01em;">The Flooring Collective</span>
-        <span style="font-size:10px;font-weight:400;color:#6B6260;letter-spacing:0.14em;text-transform:uppercase;">Queenstown Floor Specialists</span>
+        <span style="font-family:'Cormorant Garamond',Georgia,serif;font-size:20px;font-weight:600;color:#282520;">The Flooring Collective</span>
+        <span style="font-size:10px;color:#6B6260;letter-spacing:0.14em;text-transform:uppercase;">Queenstown Floor Specialists</span>
       </a>
       <nav id="mainNav" style="display:flex;align-items:center;gap:4px;">
-        <a href="services.html" style="font-size:13px;font-weight:400;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;border-bottom:2px solid transparent;">Services</a>
-        <a href="gallery.html" style="font-size:13px;font-weight:400;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;border-bottom:2px solid transparent;">Our Work</a>
-        <a href="about.html" style="font-size:13px;font-weight:400;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;border-bottom:2px solid transparent;">About</a>
+        <a href="about.html" style="font-size:13px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;">About</a>
+        <a href="services.html" style="font-size:13px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;">Services</a>
+        <a href="gallery.html" style="font-size:13px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;">Our Work</a>
+        <a href="contact.html" style="font-size:12px;font-weight:500;color:#FDFCFA;letter-spacing:0.08em;text-transform:uppercase;padding:10px 24px;background:#282520;text-decoration:none;">Contact Us</a>
       </nav>
-      <button onclick="toggleTFCMenu()" aria-label="Open menu" id="tfcBurger" style="display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;">
+      <button onclick="toggleNav()" id="navBurger" aria-label="Open menu" style="display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;">
         <span style="width:24px;height:2px;background:#282520;display:block;"></span>
         <span style="width:24px;height:2px;background:#282520;display:block;"></span>
         <span style="width:24px;height:2px;background:#282520;display:block;"></span>
       </button>
     </div>
   </div>
-  <!-- Mobile menu -->
-  <div id="tfcMobileMenu" style="display:none;background:#FDFCFA;border-top:1px solid rgba(40,37,32,0.1);padding:12px 24px 20px;">
+  <div id="mobileNav" style="display:none;background:#FDFCFA;border-top:1px solid rgba(40,37,32,0.1);padding:12px 24px 20px;">
+    <a href="about.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">About</a>
     <a href="services.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">Services</a>
     <a href="gallery.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">Our Work</a>
-    <a href="about.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">About</a>
-    <a href="contact.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">Get a Quote</a>
-    <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener" style="display:block;padding:13px 0;font-size:14px;color:#25D366;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;">WhatsApp us</a>
+    <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener" style="display:block;padding:13px 0;font-size:14px;color:#25D366;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(40,37,32,0.08);">WhatsApp us</a>
+    <a href="contact.html" style="display:block;padding:13px 0;font-size:14px;color:#B5602A;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;">Contact Us</a>
   </div>
-  <style>@media(max-width:860px){#mainNav{display:none!important;}#tfcBurger{display:flex!important;}}</style>
+  <style>@media(max-width:860px){#mainNav{display:none!important;}#navBurger{display:flex!important;}}</style>
 </header>
-<script>function toggleTFCMenu(){var m=document.getElementById("tfcMobileMenu");m.style.display=m.style.display==="block"?"none":"block";}</script>
+<script>function toggleNav(){var m=document.getElementById("mobileNav");m.style.display=m.style.display==="block"?"none":"block";}</script>
 
 <main id="main-content">
 <div class="contact-wrap">
   <div class="contact-left">
-    <div>
-      <p class="contact-eyebrow">Free quote</p>
-      <h1 class="contact-title">Let's talk about your <em>floor</em></h1>
-      <p class="contact-body">Fill in the form or reach out directly — we'll be in touch within one business day to arrange a free site visit. No obligations.</p>
-      <address class="contact-details">
-        <div>
-          <p class="contact-detail-label">Response time</p>
-          <p class="contact-detail-value">Within one business day</p>
-        </div>
-        <div>
-          <p class="contact-detail-label">Location</p>
-          <p class="contact-detail-value">Queenstown, New Zealand</p>
-        </div>
-      </address>
-      <div class="contact-quick">
-        <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" class="btn-whatsapp" target="_blank" rel="noopener">WhatsApp us</a>
-        <a href="mailto:ashjohns@me.com?subject=Flooring%20Enquiry" class="btn-email">Email us</a>
-      </div>
+    <p class="contact-eyebrow">Get in touch</p>
+    <h1 class="contact-title">Let's talk about <em>your floor</em></h1>
+    <p class="contact-body">Send us a few details about your project and we'll be in touch within one business day. Or reach us directly via WhatsApp or email.</p>
+    <div class="contact-details">
+      <p class="contact-detail-item">Queenstown, New Zealand</p>
     </div>
-    <div class="contact-service-list">
-      <p class="contact-service-list-title">Services</p>
-      <div class="stags">
-        <span class="stag">Timber Installation</span>
-        <span class="stag">Laminate</span>
-        <span class="stag">Sanding & Finishing</span>
-        <span class="stag">Repairs</span>
-        <span class="stag">Staircases</span>
-        <span class="stag">Timber Decking</span>
-        <span class="stag">Deck Framing</span>
-      </div>
+    <div class="contact-quick">
+      <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener" class="quick-btn">WhatsApp us</a>
+      <a href="mailto:ashjohns@me.com?subject=Flooring%20Enquiry" class="quick-btn">Email us</a>
+    </div>
+    <div class="service-tags">
+      <span class="service-tag">Installation</span>
+      <span class="service-tag">Sanding & Finishing</span>
+      <span class="service-tag">Staircase</span>
+      <span class="service-tag">Timber Decking</span>
+      <span class="service-tag">Aluminium Deck Framing</span>
     </div>
   </div>
 
   <div class="contact-right">
-    <h2 class="form-title">Request a free quote</h2>
-    <p class="form-subtitle">Tell us about your project and we'll come to you.</p>
-    <p class="form-required-note">* Required fields</p>
+    <h2 class="form-title">Request a quote</h2>
+    <p class="form-sub">Free quote. No obligation. We'll be in touch within one business day.</p>
     <form id="contactForm" action="https://formspree.io/f/xdavladk" method="POST">
       <div class="form-row">
-        <div class="form-group">
-          <label class="form-label" for="first_name">First name *</label>
-          <input class="form-input" id="first_name" type="text" name="first_name" required placeholder="Jane" autocomplete="given-name">
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="last_name">Last name *</label>
-          <input class="form-input" id="last_name" type="text" name="last_name" required placeholder="Smith" autocomplete="family-name">
+        <div class="form-group"><label class="form-label">First name *</label><input class="form-input" type="text" name="first_name" required placeholder="Jane"></div>
+        <div class="form-group"><label class="form-label">Last name *</label><input class="form-input" type="text" name="last_name" required placeholder="Smith"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Phone *</label><input class="form-input" type="tel" name="phone" required placeholder="021 XXX XXXX"></div>
+        <div class="form-group"><label class="form-label">Email *</label><input class="form-input" type="email" name="email" required placeholder="jane@email.com"></div>
+      </div>
+      <div class="form-group"><label class="form-label">Property address</label><input class="form-input" type="text" name="address" placeholder="Street, Queenstown"></div>
+      <div class="form-group">
+        <label class="form-label">Service(s) required</label>
+        <div class="svc-checks">
+          <label class="svc-check-label"><input type="checkbox" name="service" value="Installation"> Installation</label>
+          <label class="svc-check-label"><input type="checkbox" name="service" value="Sanding & Finishing"> Sanding & Finishing</label>
+          <label class="svc-check-label"><input type="checkbox" name="service" value="Staircase"> Staircase</label>
+          <label class="svc-check-label"><input type="checkbox" name="service" value="Timber Decking"> Timber Decking</label>
+          <label class="svc-check-label"><input type="checkbox" name="service" value="Aluminium Deck Framing"> Aluminium Deck Framing</label>
         </div>
       </div>
       <div class="form-row">
-        <div class="form-group">
-          <label class="form-label" for="phone">Phone *</label>
-          <input class="form-input" id="phone" type="tel" name="phone" required placeholder="021 XXX XXXX" autocomplete="tel">
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="email">Email *</label>
-          <input class="form-input" id="email" type="email" name="email" required placeholder="jane@email.com" autocomplete="email">
-        </div>
+        <div class="form-group"><label class="form-label">Approx. floor area (m²)</label><input class="form-input" type="text" name="floor_area" placeholder="e.g. 45"></div>
+        <div class="form-group"><label class="form-label">Preferred timeframe</label><input class="form-input" type="text" name="timeframe" placeholder="e.g. Within 2 months"></div>
       </div>
-      <div class="form-group">
-        <label class="form-label" for="address">Property address</label>
-        <input class="form-input" id="address" type="text" name="address" placeholder="e.g. 12 Example Street, Queenstown" autocomplete="street-address">
-      </div>
-      <fieldset class="form-fieldset">
-        <legend>Service required (select all that apply)</legend>
-        <div class="checkbox-grid">
-          <label class="checkbox-item"><input type="checkbox" name="service" value="Timber installation"> Timber installation</label>
-          <label class="checkbox-item"><input type="checkbox" name="service" value="Laminate flooring"> Laminate flooring</label>
-          <label class="checkbox-item"><input type="checkbox" name="service" value="Sanding and finishing"> Sanding & finishing</label>
-          <label class="checkbox-item"><input type="checkbox" name="service" value="Repairs and restoration"> Repairs & restoration</label>
-          <label class="checkbox-item"><input type="checkbox" name="service" value="Staircase flooring"> Staircase flooring</label>
-          <label class="checkbox-item"><input type="checkbox" name="service" value="Nail-free timber decking"> Nail-free decking</label>
-          <label class="checkbox-item"><input type="checkbox" name="service" value="Aluminium deck framing"> Deck framing</label>
-          <label class="checkbox-item"><input type="checkbox" name="service" value="Not sure yet"> Not sure yet</label>
-        </div>
-      </fieldset>
-      <div class="form-group">
-        <label class="form-label" for="area">Approximate floor area (m²)</label>
-        <input class="form-input" id="area" type="text" name="area" placeholder="e.g. 60m²">
-      </div>
-      <div class="form-group">
-        <label class="form-label" for="message">Anything else we should know?</label>
-        <textarea class="form-textarea" id="message" name="message" placeholder="Timeframe, existing floor type, other details…"></textarea>
-      </div>
-      <input type="hidden" name="_subject" value="Flooring Enquiry — The Flooring Collective">
-      <button type="submit" class="form-submit">Send quote request →</button>
-      <p class="form-note">Free site visit. No obligation. We'll be in touch within one business day.</p>
+      <div class="form-group"><label class="form-label">Tell us about your project</label><textarea class="form-textarea" name="message" placeholder="Any other details that would help us understand the job…"></textarea></div>
+      <input type="hidden" name="_subject" value="Quote Request — The Flooring Collective">
+      <button type="submit" class="btn btn-dark form-submit">Send quote request →</button>
+      <p class="form-fine">Free quote. No obligation. We'll be in touch within one business day.</p>
     </form>
-    <div class="success-msg" id="successMsg" role="alert">
-      <p>✓ Thanks — we'll be in touch within one business day to arrange your free site visit.</p>
-    </div>
-  </div>
+    <div id="successMsg" class="success-msg">✓ Thanks — we'll be in touch within one business day.</div>
   </div>
 </div>
-
 </main>
+
 <footer>
   <div class="footer-inner">
-  <div class="footer-top">
-    <div>
-      <p class="footer-logo-main">The Flooring Collective</p>
-      <p class="footer-logo-sub">Queenstown Floor Specialists</p>
-      <p class="footer-tagline">Specialist timber floor installation, sanding, restoration and outdoor decking. Queenstown, New Zealand.</p>
+    <div class="footer-top">
+      <div>
+        <p class="footer-logo-main">The Flooring Collective</p>
+        <p class="footer-logo-sub">Queenstown Floor Specialists</p>
+        <p class="footer-tagline">Floor installation and restoration for residential and commercial properties across Queenstown.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <p class="footer-col-title">Navigation</p>
+        <ul class="footer-links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Our Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="footer-col-title">Contact</p>
+        <p class="footer-contact-item"><a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener">WhatsApp us</a></p>
+        <p class="footer-contact-item"><a href="mailto:ashjohns@me.com?subject=Flooring%20Enquiry">Email us</a></p>
+        <p class="footer-contact-item">Queenstown, New Zealand</p>
+      </div>
     </div>
-    <nav aria-label="Footer navigation">
-      <p class="footer-col-title">Navigation</p>
-      <ul class="footer-links" role="list">
-        <li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Our Work</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Get a Quote</a></li>
-      </ul>
-    </nav>
-    <div>
-      <p class="footer-col-title">Contact</p>
-      <p class="footer-contact-item"><a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener">WhatsApp us</a></p>
-      <p class="footer-contact-item"><a href="mailto:ashjohns@me.com?subject=Flooring%20Enquiry">Email us</a></p>
-      <p class="footer-contact-item">Queenstown, New Zealand</p>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 The Flooring Collective. All rights reserved.</span>
+      <span class="footer-credit">Site by <a href="https://strandmedia.co.nz">Strand Media</a></span>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <span class="footer-copy">© 2026 The Flooring Collective. All rights reserved.</span>
-    <span class="footer-credit">Site by <a href="https://strandmedia.co.nz">Strand Media</a></span>
-  </div>
   </div>
 </footer>
 <script src="js/shared.js"></script>
 <script>
-document.getElementById('contactForm').addEventListener('submit', async function(e) {
+document.getElementById('contactForm').addEventListener('submit', async function(e){
   e.preventDefault();
-  const form = e.target;
-  const btn = form.querySelector('.form-submit');
-  btn.textContent = 'Sending…';
-  btn.disabled = true;
+  var btn = this.querySelector('.form-submit');
+  btn.textContent = 'Sending…'; btn.disabled = true;
   try {
-    const r = await fetch(form.action, { method:'POST', body:new FormData(form), headers:{'Accept':'application/json'} });
-    if (r.ok) {
-      form.style.display = 'none';
-      document.getElementById('successMsg').style.display = 'block';
-    } else {
-      btn.textContent = 'Send quote request →';
-      btn.disabled = false;
-      alert('Something went wrong. Please WhatsApp or email us directly.');
-    }
-  } catch(err) {
-    btn.textContent = 'Send quote request →';
-    btn.disabled = false;
-    alert('Something went wrong. Please WhatsApp or email us directly.');
-  }
+    var r = await fetch(this.action, {method:'POST', body:new FormData(this), headers:{'Accept':'application/json'}});
+    if (r.ok) { this.style.display = 'none'; document.getElementById('successMsg').style.display = 'block'; }
+    else { btn.textContent = 'Send quote request →'; btn.disabled = false; }
+  } catch(err) { btn.textContent = 'Send quote request →'; btn.disabled = false; }
 });
 </script>
 </body>

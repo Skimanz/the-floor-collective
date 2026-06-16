@@ -3,300 +3,188 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Our Work — The Flooring Collective | Queenstown Floor Gallery</title>
-<meta name="description" content="Gallery of timber floor installation, sanding, laminate, restoration and decking projects by The Flooring Collective in Queenstown.">
+<title>Project Gallery — The Flooring Collective | Queenstown</title>
+<meta name="description" content="Flooring and decking project gallery — installation, sanding and finishing, staircase, and timber decking work across Queenstown.">
 <link rel="canonical" href="https://flooringcollective.co.nz/gallery.html">
-<meta property="og:title" content="Our Work — The Flooring Collective">
-<meta property="og:description" content="Gallery of flooring projects in Queenstown — installation, sanding, repairs, staircase and decking.">
+<meta property="og:title" content="Project Gallery — The Flooring Collective">
+<meta property="og:description" content="Flooring and decking projects across Queenstown.">
 <meta property="og:image" content="https://flooringcollective.co.nz/images/og-image.jpg">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://flooringcollective.co.nz/gallery.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index, follow">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23B5602A'/%3E%3Ctext x='50' y='67' font-family='Georgia,serif' font-size='42' font-weight='700' fill='%23FDFCFA' text-anchor='middle' letter-spacing='-1'%3ETFC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <style>
-/* GALLERY PAGE STYLES */
-.page-hero-gallery { padding:60px 48px; border-bottom:1px solid var(--border); }
-.page-hero-gallery-inner { max-width:var(--max-w); margin:0 auto; }
-.page-hero-eyebrow { font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:var(--terra); display:flex; align-items:center; gap:14px; margin-bottom:20px; }
-.page-hero-eyebrow::before { content:''; width:28px; height:1px; background:var(--terra); display:block; }
-.page-hero-title { font-family:var(--font-display); font-size:clamp(40px,5vw,64px); font-weight:400; line-height:1.05; color:var(--charcoal); letter-spacing:-0.01em; }
-.page-hero-title em { font-style:italic; color:var(--terra); }
-.page-hero-body { font-size:16px; font-weight:300; color:var(--mid); line-height:1.75; margin-top:16px; max-width:520px; }
+.page-hero { background:var(--linen); padding:60px var(--pad) 0; }
+.page-hero-inner { max-width:var(--max-w); margin:0 auto; }
+.page-eyebrow { font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:var(--terra); display:flex; align-items:center; gap:14px; margin-bottom:20px; }
+.page-eyebrow::before { content:''; width:28px; height:1px; background:var(--terra); display:block; }
+.page-title { font-family:var(--font-display); font-size:clamp(40px,5vw,64px); font-weight:400; line-height:1.05; color:var(--charcoal); letter-spacing:-0.01em; }
+.page-title em { font-style:italic; color:var(--terra); }
+.page-body { font-size:16px; font-weight:300; color:var(--mid); line-height:1.75; margin-top:16px; }
 
-.filter-bar { padding:20px 48px; background:var(--warm-white); border-bottom:1px solid var(--border); }
-.filter-bar-inner { max-width:var(--max-w); margin:0 auto; display:flex; gap:8px; flex-wrap:wrap; }
-.filter-btn { font-family:var(--font-body); font-size:12px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; padding:8px 20px; border:1px solid var(--border); background:transparent; color:var(--mid); cursor:pointer; transition:all 0.2s; }
-.filter-btn:hover { border-color:var(--charcoal); color:var(--charcoal); }
+.filter-bar { background:var(--linen); padding:32px 0 0; border-bottom:1px solid var(--border); }
+.filter-bar-inner { max-width:var(--max-w); margin:0 auto; padding:0 var(--pad); display:flex; gap:10px; flex-wrap:wrap; padding-bottom:24px; }
+.filter-btn { font-family:var(--font-body); font-size:12px; font-weight:500; letter-spacing:0.06em; text-transform:uppercase; padding:10px 20px; border:1px solid var(--border); background:var(--warm-white); color:var(--mid); cursor:pointer; transition:all 0.2s; }
+.filter-btn:hover { border-color:var(--terra); color:var(--terra); }
 .filter-btn.active { background:var(--charcoal); color:var(--warm-white); border-color:var(--charcoal); }
 
-.gallery-section { padding:60px 48px 100px; }
-.gallery-section-inner { max-width:var(--max-w); margin:0 auto; }
-.masonry-grid { columns:3; column-gap:12px; }
-.masonry-item { break-inside:avoid; margin-bottom:12px; position:relative; overflow:hidden; cursor:pointer; transition:opacity 0.3s; }
-.masonry-item.hidden { opacity:0; height:0; margin:0; overflow:hidden; pointer-events:none; }
-.masonry-img { width:100%; display:block; transition:transform 0.5s ease; object-fit:cover; }
-.masonry-item:hover .masonry-img { transform:scale(1.04); }
-.masonry-overlay { position:absolute; inset:0; background:rgba(40,37,32,0); transition:background 0.3s; display:flex; flex-direction:column; justify-content:flex-end; padding:24px; }
-.masonry-item:hover .masonry-overlay { background:rgba(40,37,32,0.5); }
-.masonry-label { font-family:var(--font-display); font-size:18px; font-weight:600; color:rgba(255,255,255,0); transition:color 0.3s; line-height:1.2; }
-.masonry-item:hover .masonry-label { color:rgba(255,255,255,0.9); }
-.masonry-tag { font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0); transition:color 0.3s; margin-top:4px; }
-.masonry-item:hover .masonry-tag { color:rgba(255,255,255,0.55); }
-.gp5 { background:linear-gradient(160deg,#5C7A3E 0%,#3A5225 100%); aspect-ratio:4/3; }
+.masonry-sect { background:var(--linen); padding:48px var(--pad) 100px; }
+.masonry { max-width:var(--max-w); margin:0 auto; display:grid; grid-template-columns:repeat(3,1fr); gap:4px; }
+.m-item { overflow:hidden; position:relative; cursor:pointer; }
+.m-item img { width:100%; height:100%; object-fit:cover; display:block; transition:transform 0.5s; }
+.m-item:hover img { transform:scale(1.04); }
+.m-overlay { position:absolute; inset:0; background:rgba(40,37,32,0); display:flex; align-items:flex-end; padding:18px; transition:background 0.3s; }
+.m-item:hover .m-overlay { background:rgba(40,37,32,0.4); }
+.m-label { font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:transparent; transition:color 0.3s; }
+.m-item:hover .m-label { color:rgba(255,255,255,0.85); }
+.m-hide { display:none; }
 
-.video-section { background:var(--charcoal); padding:80px 48px; }
-.video-section-inner { max-width:var(--max-w); margin:0 auto; }
-.video-eyebrow { font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:rgba(255,255,255,0.3); display:flex; align-items:center; gap:14px; margin-bottom:20px; }
-.video-eyebrow::before { content:''; width:28px; height:1px; background:rgba(255,255,255,0.3); display:block; }
-.video-title { font-family:var(--font-display); font-size:clamp(28px,3.5vw,44px); font-weight:400; color:var(--warm-white); margin-bottom:36px; }
-.video-title em { font-style:italic; color:var(--terra); }
-.video-main { position:relative; background:#1a1410; aspect-ratio:16/9; overflow:hidden; }
-.video-placeholder { width:100%; height:100%; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:16px; background:linear-gradient(160deg,#3A2410 0%,#1A0E06 100%); }
-.video-play { width:64px; height:64px; border:2px solid rgba(255,255,255,0.3); border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer; background:transparent; }
-.video-play::after { content:''; width:0; height:0; border-style:solid; border-width:10px 0 10px 18px; border-color:transparent transparent transparent rgba(255,255,255,0.7); margin-left:4px; }
-.video-caption { font-size:12px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.3); }
-
-@media(max-width:1024px) { .masonry-grid { columns:2; } }
-@media(max-width:768px) {
-  .page-hero-gallery { padding:48px 20px; }
-  .filter-bar { padding:16px 20px; }
-  .gallery-section { padding:40px 20px 72px; }
-  .masonry-grid { columns:2; column-gap:8px; }
-  .masonry-item { margin-bottom:8px; }
-  .video-section { padding:60px 20px; }
+@media(max-width:1024px){ .masonry{ grid-template-columns:1fr 1fr; } }
+@media(max-width:768px){
+  .page-hero{ padding:48px var(--pad) 0; }
+  .filter-bar-inner{ padding:0 var(--pad); overflow-x:auto; flex-wrap:nowrap; }
+  .masonry-sect{ padding:36px var(--pad) 72px; }
+  .masonry{ grid-template-columns:1fr 1fr; }
 }
-@media(max-width:480px) { .masonry-grid { columns:1; } }
 </style>
 </head>
 <body>
-<!-- NAV: identical across all 5 pages — edit all files when changing nav -->
+<!-- NAV: identical across all pages — edit all files when changing -->
 <header style="position:sticky;top:0;z-index:1000;font-family:'DM Sans',system-ui,sans-serif;">
-  <!-- Top bar -->
   <div style="background:#25D366;border-bottom:1px solid rgba(0,0,0,0.1);">
     <div style="max-width:1280px;margin:0 auto;padding:0 48px;height:38px;display:flex;align-items:center;justify-content:flex-end;gap:16px;">
-      <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener" style="font-size:12px;font-weight:600;color:#fff;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;display:flex;align-items:center;gap:8px;">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.862L.057 23.428a.5.5 0 0 0 .609.61l5.648-1.453A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.877 9.877 0 0 1-5.031-1.378l-.36-.214-3.733.96.99-3.645-.235-.374A9.872 9.872 0 0 1 2.106 12C2.106 6.527 6.527 2.106 12 2.106c5.473 0 9.894 4.421 9.894 9.894 0 5.473-4.421 9.894-9.894 9.894z"/></svg>
-        WhatsApp us
-      </a>
+      <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener" style="font-size:12px;font-weight:600;color:#fff;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;display:flex;align-items:center;gap:8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.862L.057 23.428a.5.5 0 0 0 .609.61l5.648-1.453A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.877 9.877 0 0 1-5.031-1.378l-.36-.214-3.733.96.99-3.645-.235-.374A9.872 9.872 0 0 1 2.106 12C2.106 6.527 6.527 2.106 12 2.106c5.473 0 9.894 4.421 9.894 9.894 0 5.473-4.421 9.894-9.894 9.894z"/></svg>WhatsApp us</a>
       <span style="color:rgba(255,255,255,0.4);font-size:11px;">|</span>
       <a href="contact.html" style="font-size:12px;font-weight:600;color:#fff;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;">Contact Us</a>
     </div>
   </div>
-  <!-- Main nav bar -->
   <div style="background:#FDFCFA;border-bottom:1px solid rgba(40,37,32,0.12);">
     <div style="max-width:1280px;margin:0 auto;padding:0 48px;height:62px;display:flex;align-items:center;justify-content:space-between;">
       <a href="index.html" style="display:flex;flex-direction:column;line-height:1.1;text-decoration:none;">
-        <span style="font-family:'Cormorant Garamond',Georgia,serif;font-size:20px;font-weight:600;color:#282520;letter-spacing:0.01em;">The Flooring Collective</span>
-        <span style="font-size:10px;font-weight:400;color:#6B6260;letter-spacing:0.14em;text-transform:uppercase;">Queenstown Floor Specialists</span>
+        <span style="font-family:'Cormorant Garamond',Georgia,serif;font-size:20px;font-weight:600;color:#282520;">The Flooring Collective</span>
+        <span style="font-size:10px;color:#6B6260;letter-spacing:0.14em;text-transform:uppercase;">Queenstown Floor Specialists</span>
       </a>
       <nav id="mainNav" style="display:flex;align-items:center;gap:4px;">
-        <a href="services.html" style="font-size:13px;font-weight:400;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;border-bottom:2px solid transparent;">Services</a>
-        <a href="gallery.html" style="font-size:13px;font-weight:400;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;border-bottom:2px solid transparent;">Our Work</a>
-        <a href="about.html" style="font-size:13px;font-weight:400;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;border-bottom:2px solid transparent;">About</a>
+        <a href="about.html" style="font-size:13px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;">About</a>
+        <a href="services.html" style="font-size:13px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;">Services</a>
+        <a href="gallery.html" style="font-size:13px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;">Our Work</a>
+        <a href="contact.html" style="font-size:12px;font-weight:500;color:#FDFCFA;letter-spacing:0.08em;text-transform:uppercase;padding:10px 24px;background:#282520;text-decoration:none;">Contact Us</a>
       </nav>
-      <button onclick="toggleTFCMenu()" aria-label="Open menu" id="tfcBurger" style="display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;">
+      <button onclick="toggleNav()" id="navBurger" aria-label="Open menu" style="display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;">
         <span style="width:24px;height:2px;background:#282520;display:block;"></span>
         <span style="width:24px;height:2px;background:#282520;display:block;"></span>
         <span style="width:24px;height:2px;background:#282520;display:block;"></span>
       </button>
     </div>
   </div>
-  <!-- Mobile menu -->
-  <div id="tfcMobileMenu" style="display:none;background:#FDFCFA;border-top:1px solid rgba(40,37,32,0.1);padding:12px 24px 20px;">
-    <a href="about.html" style="font-size:13px;font-weight:400;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;">About</a>
-        <a href="services.html" style="font-size:13px;font-weight:400;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;">Services</a>
-        <a href="gallery.html" style="font-size:13px;font-weight:400;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;">Our Work</a>
-        <button onclick="openQuoteModal()" style="font-size:12px;font-weight:500;color:#FDFCFA;letter-spacing:0.08em;text-transform:uppercase;padding:10px 24px;background:#282520;border:none;cursor:pointer;font-family:'DM Sans',system-ui,sans-serif;">Get Quote</button>
-    <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener" style="display:block;padding:13px 0;font-size:14px;color:#25D366;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;">WhatsApp us</a>
+  <div id="mobileNav" style="display:none;background:#FDFCFA;border-top:1px solid rgba(40,37,32,0.1);padding:12px 24px 20px;">
+    <a href="about.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">About</a>
+    <a href="services.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">Services</a>
+    <a href="gallery.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">Our Work</a>
+    <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener" style="display:block;padding:13px 0;font-size:14px;color:#25D366;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(40,37,32,0.08);">WhatsApp us</a>
+    <a href="contact.html" style="display:block;padding:13px 0;font-size:14px;color:#B5602A;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;">Contact Us</a>
   </div>
-  <style>@media(max-width:860px){#mainNav{display:none!important;}#tfcBurger{display:flex!important;}}</style>
+  <style>@media(max-width:860px){#mainNav{display:none!important;}#navBurger{display:flex!important;}}</style>
 </header>
-<script>function toggleTFCMenu(){var m=document.getElementById("tfcMobileMenu");m.style.display=m.style.display==="block"?"none":"block";}
-function openQuoteModal(){var m=document.getElementById("quoteModal");m.style.display="flex";document.body.style.overflow="hidden";}
-function closeQuoteModal(){var m=document.getElementById("quoteModal");m.style.display="none";document.body.style.overflow="";}</script>
+<script>function toggleNav(){var m=document.getElementById("mobileNav");m.style.display=m.style.display==="block"?"none":"block";}</script>
 
 <main id="main-content">
-<div class="page-hero-gallery">
-  <div class="page-hero-gallery-inner">
-  <p class="page-hero-eyebrow">Our work</p>
-  <h1 class="page-hero-title">Project <em>Gallery</em></h1>
-  <p class="page-hero-body">Flooring and decking projects.</p>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <p class="page-eyebrow">Our work</p>
+    <h1 class="page-title">Project <em>Gallery</em></h1>
+    <p class="page-body">Flooring and decking projects.</p>
   </div>
 </div>
 
-<div class="filter-bar" role="group" aria-label="Filter gallery by service">
-  <button class="filter-btn active" onclick="filterGallery('all',this)" aria-pressed="true">All</button>
-  <button class="filter-btn" onclick="filterGallery('installation',this)" aria-pressed="false">Installation</button>
-  <button class="filter-btn" onclick="filterGallery('sanding',this)" aria-pressed="false">Sanding & Finishing</button>
-  <button class="filter-btn" onclick="filterGallery('staircases',this)" aria-pressed="false">Staircase</button>
-  <button class="filter-btn" onclick="filterGallery('decking',this)" aria-pressed="false">Timber Decking</button>
+<div class="filter-bar">
+  <div class="filter-bar-inner" role="tablist" aria-label="Filter projects">
+    <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+    <button class="filter-btn" data-filter="installation" role="tab" aria-selected="false">Installation</button>
+    <button class="filter-btn" data-filter="sanding" role="tab" aria-selected="false">Sanding & Finishing</button>
+    <button class="filter-btn" data-filter="staircase" role="tab" aria-selected="false">Staircase</button>
+    <button class="filter-btn" data-filter="decking" role="tab" aria-selected="false">Timber Decking</button>
+  </div>
 </div>
 
-<section class="gallery-section" aria-label="Project gallery">
-  <div class="gallery-section-inner">
-  <div class="masonry-grid" id="galleryGrid">
-    <article class="masonry-item fade-up" data-category="installation">
-      <img src="images/gallery-timber-1.jpg" alt="Engineered timber floor installation Queenstown" class="masonry-img" loading="lazy">
-      <div class="masonry-overlay"><p class="masonry-label">Queenstown Residence</p><p class="masonry-tag">Installation</p></div>
-    </article>
-    <article class="masonry-item fade-up" data-category="decking">
-      <img src="images/gallery-deck-3.jpg" alt="Timber decking with Remarkables backdrop, 29 Myles Way Queenstown" class="masonry-img" loading="lazy">
-      <div class="masonry-overlay"><p class="masonry-label">29 Myles Way</p><p class="masonry-tag">Timber Decking</p></div>
-    </article>
-    <article class="masonry-item fade-up" data-category="sanding">
-      <img src="images/gallery-sand-1.jpg" alt="Floor sanding and finishing Queenstown" class="masonry-img" loading="lazy">
-      <div class="masonry-overlay"><p class="masonry-label">28 Myles Way</p><p class="masonry-tag">Sanding & Finishing</p></div>
-    </article>
-    <article class="masonry-item fade-up" data-category="decking">
-      <img src="images/gallery-deck-5.jpg" alt="Finished timber deck Beaumont Quarter" class="masonry-img" loading="lazy">
-      <div class="masonry-overlay"><p class="masonry-label">Beaumont Quarter</p><p class="masonry-tag">Timber Decking</p></div>
-    </article>
-    <article class="masonry-item fade-up" data-category="staircases">
-      <img src="images/gallery-stair-1.jpg" alt="Staircase timber installation Queenstown" class="masonry-img" loading="lazy">
-      <div class="masonry-overlay"><p class="masonry-label">Fisher Point Drive</p><p class="masonry-tag">Staircase</p></div>
-    </article>
-    <article class="masonry-item fade-up" data-category="decking">
-      <img src="images/gallery-deck-4.jpg" alt="Finished timber deck corner 29 Myles Way" class="masonry-img" loading="lazy">
-      <div class="masonry-overlay"><p class="masonry-label">29 Myles Way</p><p class="masonry-tag">Timber Decking</p></div>
-    </article>
-    <article class="masonry-item fade-up" data-category="sanding">
-      <img src="images/gallery-sand-2.jpg" alt="Floor sanding Queenstown" class="masonry-img" loading="lazy">
-      <div class="masonry-overlay"><p class="masonry-label">28 Myles Way</p><p class="masonry-tag">Sanding & Finishing</p></div>
-    </article>
-    <article class="masonry-item fade-up" data-category="installation">
-      <img src="images/gallery-timber-2.jpg" alt="Engineered timber floor installation" class="masonry-img" loading="lazy">
-      <div class="masonry-overlay"><p class="masonry-label">Felton Mathew</p><p class="masonry-tag">Installation</p></div>
-    </article>
-    <article class="masonry-item fade-up" data-category="decking">
-      <img src="images/gallery-deck-6.jpg" alt="Timber deck close-up Beaumont Quarter" class="masonry-img" loading="lazy">
-      <div class="masonry-overlay"><p class="masonry-label">Beaumont Quarter</p><p class="masonry-tag">Timber Decking</p></div>
-    </article>
-    <article class="masonry-item fade-up" data-category="decking">
-      <img src="images/gallery-deck-1.jpg" alt="Decking installation in progress" class="masonry-img" loading="lazy">
-      <div class="masonry-overlay"><p class="masonry-label">Decking installation</p><p class="masonry-tag">Timber Decking</p></div>
-    </article>
-    <article class="masonry-item fade-up" data-category="sanding">
-      <img src="images/gallery-sand-3.jpg" alt="Floor sanding in progress" class="masonry-img" loading="lazy">
-      <div class="masonry-overlay"><p class="masonry-label">Felton Mathew</p><p class="masonry-tag">Sanding & Finishing</p></div>
-    </article>
-    <article class="masonry-item fade-up" data-category="installation">
-      <img src="images/gallery-timber-3.jpg" alt="Finished timber floor Fisher Point Drive" class="masonry-img" loading="lazy">
-      <div class="masonry-overlay"><p class="masonry-label">Fisher Point Drive</p><p class="masonry-tag">Installation</p></div>
-    </article>
-    <article class="masonry-item fade-up" data-category="decking">
-      <img src="images/gallery-deck-7.jpg" alt="Finished timber deck Orakei" class="masonry-img" loading="lazy">
-      <div class="masonry-overlay"><p class="masonry-label">Orakei</p><p class="masonry-tag">Timber Decking</p></div>
-    </article>
-    <article class="masonry-item fade-up" data-category="decking">
-      <img src="images/gallery-deck-2.jpg" alt="Nurajack aluminium deck framing" class="masonry-img" loading="lazy">
-      <div class="masonry-overlay"><p class="masonry-label">Aluminium framing</p><p class="masonry-tag">Deck Framing</p></div>
-    </article>
-    <article class="masonry-item fade-up" data-category="installation">
-      <img src="images/gallery-repair-1.jpg" alt="Floor restoration Queenstown" class="masonry-img" loading="lazy">
-      <div class="masonry-overlay"><p class="masonry-label">Avondale</p><p class="masonry-tag">Restoration</p></div>
-    </article>
-  </div>
-  </div>
-</section>
-
-<section class="video-section" aria-labelledby="video-heading">
-  <div class="video-section-inner">
-  <p class="video-eyebrow">Behind the craft</p>
-  <h2 class="video-title" id="video-heading">Watch the <em>process</em></h2>
-  <div class="video-main">
-    <div class="video-placeholder">
-      <button class="video-play" aria-label="Play floor sanding video"></button>
-      <p class="video-caption">Floor sanding — video coming soon</p>
-    </div>
-  </div>
+<section class="masonry-sect" aria-label="Project gallery">
+  <div class="masonry" id="masonryGrid">
+    <div class="m-item" data-cat="installation"><img src="images/gallery-lam-1.jpg" alt="Floor installation Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Installation</span></div></div>
+    <div class="m-item" data-cat="decking"><img src="images/gallery-deck-3.jpg" alt="Timber decking 29 Myles Way Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Timber Decking</span></div></div>
+    <div class="m-item" data-cat="staircase"><img src="images/gallery-stair-1.jpg" alt="Staircase flooring Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Staircase</span></div></div>
+    <div class="m-item" data-cat="sanding"><img src="images/gallery-sand-1.jpg" alt="Floor sanding Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Sanding & Finishing</span></div></div>
+    <div class="m-item" data-cat="installation"><img src="images/gallery-lam-2.jpg" alt="Floor installation Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Installation</span></div></div>
+    <div class="m-item" data-cat="decking"><img src="images/gallery-deck-4.jpg" alt="Timber decking 29 Myles Way Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Timber Decking</span></div></div>
+    <div class="m-item" data-cat="sanding"><img src="images/gallery-sand-2.jpg" alt="Floor sanding and finishing Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Sanding & Finishing</span></div></div>
+    <div class="m-item" data-cat="decking"><img src="images/gallery-deck-5.jpg" alt="Timber deck Beaumont Quarter Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Timber Decking</span></div></div>
+    <div class="m-item" data-cat="installation"><img src="images/gallery-lam-3.jpg" alt="Floor installation Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Installation</span></div></div>
+    <div class="m-item" data-cat="sanding"><img src="images/gallery-sand-3.jpg" alt="Floor sanding and finishing Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Sanding & Finishing</span></div></div>
+    <div class="m-item" data-cat="decking"><img src="images/gallery-deck-6.jpg" alt="Timber deck Beaumont Quarter Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Timber Decking</span></div></div>
+    <div class="m-item" data-cat="installation"><img src="images/gallery-timber-1.jpg" alt="Engineered timber floor installation Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Installation</span></div></div>
+    <div class="m-item" data-cat="decking"><img src="images/gallery-deck-7.jpg" alt="Timber deck Orakei Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Timber Decking</span></div></div>
+    <div class="m-item" data-cat="installation"><img src="images/gallery-timber-2.jpg" alt="Engineered timber floor installation Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Installation</span></div></div>
+    <div class="m-item" data-cat="installation"><img src="images/gallery-timber-3.jpg" alt="Engineered timber floor installation Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Installation</span></div></div>
   </div>
 </section>
 
 </main>
+
 <div class="cta-band">
   <div class="cta-band-inner">
-  <h2 class="cta-band-title">Like what you see? <em>Let's talk about your floor.</em></h2>
-  <a href="contact.html" class="btn btn-light">Contact Us</a>
+    <h2 class="cta-band-title">Like what you <em>see?</em></h2>
+    <a href="contact.html" class="btn btn-light">Contact Us</a>
   </div>
 </div>
 
 <footer>
   <div class="footer-inner">
-  <div class="footer-top">
-    <div>
-      <p class="footer-logo-main">The Flooring Collective</p>
-      <p class="footer-logo-sub">Queenstown Floor Specialists</p>
-      <p class="footer-tagline">Floor installation and restoration for residential and commercial properties across Queenstown.</p>
-    </div>
-    <nav aria-label="Footer navigation">
-      <p class="footer-col-title">Navigation</p>
-      <ul class="footer-links" role="list">
-        <li><a href="index.html">Home</a></li>
+    <div class="footer-top">
+      <div>
+        <p class="footer-logo-main">The Flooring Collective</p>
+        <p class="footer-logo-sub">Queenstown Floor Specialists</p>
+        <p class="footer-tagline">Floor installation and restoration for residential and commercial properties across Queenstown.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <p class="footer-col-title">Navigation</p>
+        <ul class="footer-links" role="list">
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="gallery.html">Our Work</a></li>
-      </ul>
-    </nav>
-    <div>
-      <p class="footer-col-title">Contact</p>
-      <p class="footer-contact-item"><a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener">WhatsApp us</a></p>
-      <p class="footer-contact-item"><a href="mailto:ashjohns@me.com?subject=Flooring%20Enquiry">Email us</a></p>
-      <p class="footer-contact-item">Queenstown, New Zealand</p>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="footer-col-title">Contact</p>
+        <p class="footer-contact-item"><a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener">WhatsApp us</a></p>
+        <p class="footer-contact-item"><a href="mailto:ashjohns@me.com?subject=Flooring%20Enquiry">Email us</a></p>
+        <p class="footer-contact-item">Queenstown, New Zealand</p>
+      </div>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <span class="footer-copy">© 2026 The Flooring Collective. All rights reserved.</span>
-    <span class="footer-credit">Site by <a href="https://strandmedia.co.nz">Strand Media</a></span>
-  </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 The Flooring Collective. All rights reserved.</span>
+      <span class="footer-credit">Site by <a href="https://strandmedia.co.nz">Strand Media</a></span>
+    </div>
   </div>
 </footer>
 <script src="js/shared.js"></script>
 <script>
-function filterGallery(category, btn) {
-  document.querySelectorAll('.filter-btn').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed','false'); });
-  btn.classList.add('active'); btn.setAttribute('aria-pressed','true');
-  document.querySelectorAll('.masonry-item').forEach(item => {
-    item.classList.toggle('hidden', category !== 'all' && item.dataset.category !== category);
+document.querySelectorAll('.filter-btn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    document.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+    btn.classList.add('active'); btn.setAttribute('aria-selected','true');
+    var filter = btn.getAttribute('data-filter');
+    document.querySelectorAll('.m-item').forEach(function(item){
+      if (filter === 'all' || item.getAttribute('data-cat') === filter) { item.classList.remove('m-hide'); }
+      else { item.classList.add('m-hide'); }
+    });
   });
-}
-</script>
-
-<!-- QUOTE MODAL -->
-<div id="quoteModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" style="display:none;position:fixed;inset:0;background:rgba(40,37,32,0.7);z-index:2000;align-items:center;justify-content:center;padding:20px;">
-  <div style="background:#FDFCFA;max-width:560px;width:100%;max-height:90vh;overflow-y:auto;padding:48px;position:relative;">
-    <button onclick="closeQuoteModal()" aria-label="Close" style="position:absolute;top:16px;right:20px;background:none;border:none;font-size:24px;cursor:pointer;color:#6B6260;">&times;</button>
-    <h2 style="font-family:'Cormorant Garamond',Georgia,serif;font-size:28px;font-weight:400;color:#282520;margin-bottom:6px;" id="modalTitle">Get a quote</h2>
-    <p style="font-size:14px;font-weight:300;color:#5A5550;margin-bottom:28px;">Tell us about your project and we'll be in touch within one business day.</p>
-    <form id="quoteForm" action="https://formspree.io/f/xdavladk" method="POST">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
-        <div style="margin-bottom:16px;"><label style="display:block;font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#6B6260;margin-bottom:8px;">First name *</label><input style="width:100%;background:#FAF8F4;border:1px solid rgba(40,37,32,0.1);color:#282520;padding:12px 14px;font-size:14px;outline:none;" type="text" name="first_name" required placeholder="Jane"></div>
-        <div style="margin-bottom:16px;"><label style="display:block;font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#6B6260;margin-bottom:8px;">Last name *</label><input style="width:100%;background:#FAF8F4;border:1px solid rgba(40,37,32,0.1);color:#282520;padding:12px 14px;font-size:14px;outline:none;" type="text" name="last_name" required placeholder="Smith"></div>
-      </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
-        <div style="margin-bottom:16px;"><label style="display:block;font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#6B6260;margin-bottom:8px;">Phone *</label><input style="width:100%;background:#FAF8F4;border:1px solid rgba(40,37,32,0.1);color:#282520;padding:12px 14px;font-size:14px;outline:none;" type="tel" name="phone" required placeholder="021 XXX XXXX"></div>
-        <div style="margin-bottom:16px;"><label style="display:block;font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#6B6260;margin-bottom:8px;">Email *</label><input style="width:100%;background:#FAF8F4;border:1px solid rgba(40,37,32,0.1);color:#282520;padding:12px 14px;font-size:14px;outline:none;" type="email" name="email" required placeholder="jane@email.com"></div>
-      </div>
-      <div style="margin-bottom:16px;"><label style="display:block;font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#6B6260;margin-bottom:8px;">Service</label><select style="width:100%;background:#FAF8F4;border:1px solid rgba(40,37,32,0.1);color:#282520;padding:12px 14px;font-size:14px;outline:none;" name="service"><option value="">Select a service</option><option>Installation</option><option>Sanding & Finishing</option><option>Staircase</option><option>Timber Decking</option><option>Aluminium Deck Framing</option><option>Not sure yet</option></select></div>
-      <div style="margin-bottom:16px;"><label style="display:block;font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#6B6260;margin-bottom:8px;">Tell us about your project</label><textarea style="width:100%;background:#FAF8F4;border:1px solid rgba(40,37,32,0.1);color:#282520;padding:12px 14px;font-size:14px;outline:none;resize:vertical;min-height:100px;" name="message" placeholder="Location, floor area, timeframe…"></textarea></div>
-      <input type="hidden" name="_subject" value="Quote Request — The Flooring Collective">
-      <button type="submit" style="width:100%;background:#282520;color:#FDFCFA;border:none;padding:14px;font-size:13px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;font-family:'DM Sans',system-ui,sans-serif;">Send quote request →</button>
-      <p style="font-size:12px;color:#6B6260;margin-top:10px;">Free quote. No obligation. We'll be in touch within one business day.</p>
-    </form>
-    <div id="quoteSuccess" style="display:none;background:#F2EDE4;border-left:3px solid #B5602A;padding:16px 20px;margin-top:16px;font-size:14px;color:#282520;">✓ Thanks — we'll be in touch within one business day.</div>
-  </div>
-</div>
-<script>
-function openQuoteModal(){var m=document.getElementById("quoteModal");m.style.display="flex";document.body.style.overflow="hidden";}
-function closeQuoteModal(){var m=document.getElementById("quoteModal");m.style.display="none";document.body.style.overflow="";}
-document.addEventListener("keydown",function(e){if(e.key==="Escape")closeQuoteModal();});
-document.getElementById("quoteForm").addEventListener("submit",async function(e){
-  e.preventDefault();var btn=this.querySelector("button[type=submit]");btn.textContent="Sending…";btn.disabled=true;
-  try{var r=await fetch(this.action,{method:"POST",body:new FormData(this),headers:{"Accept":"application/json"}});
-  if(r.ok){this.style.display="none";document.getElementById("quoteSuccess").style.display="block";}
-  else{btn.textContent="Send quote request →";btn.disabled=false;}}catch(err){btn.textContent="Send quote request →";btn.disabled=false;}
 });
 </script>
 </body>
