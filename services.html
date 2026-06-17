@@ -81,7 +81,7 @@
     <div style="max-width:1280px;margin:0 auto;padding:0 48px;height:38px;display:flex;align-items:center;justify-content:flex-end;gap:16px;">
       <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener" style="font-size:12px;font-weight:600;color:#fff;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;display:flex;align-items:center;gap:8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.862L.057 23.428a.5.5 0 0 0 .609.61l5.648-1.453A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.877 9.877 0 0 1-5.031-1.378l-.36-.214-3.733.96.99-3.645-.235-.374A9.872 9.872 0 0 1 2.106 12C2.106 6.527 6.527 2.106 12 2.106c5.473 0 9.894 4.421 9.894 9.894 0 5.473-4.421 9.894-9.894 9.894z"/></svg>WhatsApp us</a>
       <span style="color:rgba(255,255,255,0.4);font-size:11px;">|</span>
-      <a href="contact.html" style="font-size:12px;font-weight:600;color:#fff;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;">Contact Us</a>
+      <button onclick="openQuoteModal()" style="font-size:12px;font-weight:600;color:#fff;letter-spacing:0.08em;text-transform:uppercase;background:none;border:none;cursor:pointer;font-family:'DM Sans',system-ui,sans-serif;">Get Quote</button>
     </div>
   </div>
   <div style="background:#FDFCFA;border-bottom:1px solid rgba(40,37,32,0.12);">
@@ -94,7 +94,7 @@
         <a href="about.html" style="font-size:13px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;">About</a>
         <a href="services.html" style="font-size:13px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;">Services</a>
         <a href="gallery.html" style="font-size:13px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;">Our Work</a>
-        <a href="contact.html" style="font-size:12px;font-weight:500;color:#FDFCFA;letter-spacing:0.08em;text-transform:uppercase;padding:10px 24px;background:#282520;text-decoration:none;">Contact Us</a>
+        <button onclick="openQuoteModal()" style="font-size:12px;font-weight:500;color:#FDFCFA;letter-spacing:0.08em;text-transform:uppercase;padding:10px 24px;background:#282520;border:none;cursor:pointer;font-family:'DM Sans',system-ui,sans-serif;">Get Quote</button>
       </nav>
       <button onclick="toggleNav()" id="navBurger" aria-label="Open menu" style="display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;">
         <span style="width:24px;height:2px;background:#282520;display:block;"></span>
@@ -108,7 +108,7 @@
     <a href="services.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">Services</a>
     <a href="gallery.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">Our Work</a>
     <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener" style="display:block;padding:13px 0;font-size:14px;color:#25D366;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(40,37,32,0.08);">WhatsApp us</a>
-    <a href="contact.html" style="display:block;padding:13px 0;font-size:14px;color:#B5602A;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;">Contact Us</a>
+    <button onclick="openQuoteModal();toggleNav();" style="display:block;width:100%;padding:13px 0;font-size:14px;color:#B5602A;letter-spacing:0.06em;text-transform:uppercase;background:none;border:none;cursor:pointer;text-align:left;font-family:'DM Sans',system-ui,sans-serif;">Get Quote</button>
   </div>
   <style>@media(max-width:860px){#mainNav{display:none!important;}#navBurger{display:flex!important;}}</style>
 </header>
@@ -140,7 +140,7 @@
         <li>Glue-down and floating methods</li>
         <li>Expansion gap and skirting finishing</li>
       </ul>
-      <div style="margin-top:32px;"><a href="contact.html" class="btn btn-dark">Contact Us</a></div>
+      <div style="margin-top:32px;"><button onclick="openQuoteModal()" class="btn btn-dark">Get Quote</button></div>
     </div>
   </div>
 </div>
@@ -159,7 +159,7 @@
         <li>Oil, polyurethane or hardwax finish</li>
         <li>Edge and corner sanding</li>
       </ul>
-      <div style="margin-top:32px;"><a href="contact.html" class="btn btn-dark">Contact Us</a></div>
+      <div style="margin-top:32px;"><button onclick="openQuoteModal()" class="btn btn-dark">Get Quote</button></div>
     </div>
   </div>
 </div>
@@ -178,7 +178,7 @@
         <li>Timber matching to existing floors</li>
         <li>New build and retrofit</li>
       </ul>
-      <div style="margin-top:32px;"><a href="contact.html" class="btn btn-dark">Contact Us</a></div>
+      <div style="margin-top:32px;"><button onclick="openQuoteModal()" class="btn btn-dark">Get Quote</button></div>
     </div>
   </div>
 </div>
@@ -201,7 +201,7 @@
         <li>Picture framing and edge finishing</li>
         <li>Staircase tread installation</li>
       </ul>
-      <div style="margin-top:32px;"><a href="contact.html" class="btn btn-dark">Contact Us</a></div>
+      <div style="margin-top:32px;"><button onclick="openQuoteModal()" class="btn btn-dark">Get Quote</button></div>
     </div>
   </div>
 </div>
@@ -221,7 +221,7 @@
         <li>Compatible with timber decking and tiles</li>
         <li>30mm, 60mm and 120mm profile options</li>
       </ul>
-      <div style="margin-top:32px;"><a href="contact.html" class="btn btn-dark">Contact Us</a></div>
+      <div style="margin-top:32px;"><button onclick="openQuoteModal()" class="btn btn-dark">Get Quote</button></div>
     </div>
   </div>
 </div>
@@ -255,7 +255,7 @@
 <div class="cta-band">
   <div class="cta-band-inner">
     <h2 class="cta-band-title">Not sure which service you need? <em>Let's talk.</em></h2>
-    <a href="contact.html" class="btn btn-light">Contact Us</a>
+    <button onclick="openQuoteModal()" class="btn btn-light">Get Quote</button>
   </div>
 </div>
 
@@ -290,6 +290,44 @@
     </div>
   </div>
 </footer>
+<!-- QUOTE MODAL -->
+<div class="modal-overlay" id="quoteModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-box">
+    <button onclick="closeQuoteModal()" aria-label="Close" class="modal-close">&times;</button>
+    <h2 class="modal-title" id="modalTitle">Get a quote</h2>
+    <p class="modal-sub">Tell us about your project and we'll be in touch within one business day.</p>
+    <form id="quoteForm" action="https://formspree.io/f/xdavladk" method="POST">
+      <div class="modal-form-row">
+        <div class="modal-form-group"><label class="modal-form-label" for="q_first">First name *</label><input class="modal-form-input" id="q_first" type="text" name="first_name" required placeholder="Jane"></div>
+        <div class="modal-form-group"><label class="modal-form-label" for="q_last">Last name *</label><input class="modal-form-input" id="q_last" type="text" name="last_name" required placeholder="Smith"></div>
+      </div>
+      <div class="modal-form-row">
+        <div class="modal-form-group"><label class="modal-form-label" for="q_phone">Phone *</label><input class="modal-form-input" id="q_phone" type="tel" name="phone" required placeholder="021 XXX XXXX"></div>
+        <div class="modal-form-group"><label class="modal-form-label" for="q_email">Email *</label><input class="modal-form-input" id="q_email" type="email" name="email" required placeholder="jane@email.com"></div>
+      </div>
+      <div class="modal-form-group">
+        <label class="modal-form-label" for="q_service">Service</label>
+        <select class="modal-form-input" id="q_service" name="service">
+          <option value="">Select a service</option>
+          <option>Installation</option>
+          <option>Sanding & Finishing</option>
+          <option>Staircase</option>
+          <option>Timber Decking</option>
+          <option>Aluminium Deck Framing</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+      <div class="modal-form-group">
+        <label class="modal-form-label" for="q_message">Tell us about your project</label>
+        <textarea class="modal-form-input modal-form-textarea" id="q_message" name="message" placeholder="Location, floor area, timeframe…"></textarea>
+      </div>
+      <input type="hidden" name="_subject" value="Quote Request — The Flooring Collective">
+      <button type="submit" class="btn btn-dark modal-submit">Send quote request →</button>
+      <p class="modal-fine">Free quote. No obligation. We'll be in touch within one business day.</p>
+    </form>
+    <div id="quoteSuccess" class="modal-success">✓ Thanks — we'll be in touch within one business day.</div>
+  </div>
+</div>
 <script src="js/shared.js"></script>
 </body>
 </html>

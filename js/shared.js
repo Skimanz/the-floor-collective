@@ -1,6 +1,6 @@
-/* shared.js — The Flooring Collective v7
+/* shared.js — The Flooring Collective v8
    Note: Nav is self-contained inline in each HTML file.
-   This file handles only: fade-up scroll animations. */
+   This file handles: fade-up scroll animations + quote modal + quote form submit. */
 
 document.addEventListener('DOMContentLoaded', function () {
   // Fade-up on scroll — used across all pages
@@ -23,4 +23,52 @@ document.addEventListener('DOMContentLoaded', function () {
       el.classList.add('visible');
     });
   }
+
+  // Quote modal form submit — only runs if the modal/form exist on this page
+  var quoteForm = document.getElementById('quoteForm');
+  if (quoteForm) {
+    quoteForm.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      var btn = this.querySelector('button[type=submit]');
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+      try {
+        var r = await fetch(this.action, { method: 'POST', body: new FormData(this), headers: { 'Accept': 'application/json' } });
+        if (r.ok) {
+          this.style.display = 'none';
+          document.getElementById('quoteSuccess').style.display = 'block';
+        } else {
+          btn.textContent = 'Send quote request →';
+          btn.disabled = false;
+        }
+      } catch (err) {
+        btn.textContent = 'Send quote request →';
+        btn.disabled = false;
+      }
+    });
+  }
+
+  var modal = document.getElementById('quoteModal');
+  if (modal) {
+    modal.addEventListener('click', function(e) {
+      if (e.target === this) closeQuoteModal();
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeQuoteModal();
+    });
+  }
 });
+
+function openQuoteModal() {
+  var m = document.getElementById('quoteModal');
+  if (!m) return;
+  m.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeQuoteModal() {
+  var m = document.getElementById('quoteModal');
+  if (!m) return;
+  m.classList.remove('open');
+  document.body.style.overflow = '';
+}
