@@ -1,35 +1,59 @@
 /* =============================================
-   THE FLOOR COLLECTIVE — SHARED STYLESHEET
-   Shared only: reset, variables, typography,
-   buttons, CTA band, footer, animations.
-   Page-specific styles live inline in each HTML.
+   THE FLOORING COLLECTIVE — SHARED STYLESHEET
+   Rebuilt: single enforced spacing system.
+   Every section uses .section / .section-sm —
+   no page overrides padding independently.
 ============================================= */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
+  /* Colour */
   --sand:         #F2EDE4;
   --linen:        #FAF8F4;
   --warm-white:   #FDFCFA;
   --charcoal:     #282520;
+  --charcoal-dark:#1a1714;
   --mid:          #5A5550;
   --muted:        #6B6260;
   --terra:        #B5602A;
   --border:       rgba(40,37,32,0.1);
-  --max-w:        1280px;
-  --font-display:   'Cormorant Garamond', Georgia, serif;
-  --font-body:      'DM Sans', system-ui, sans-serif;
-  --charcoal-dark:  #1a1714;
-  --spacing-section: 100px;
-  --spacing-section-sm: 64px;
-  --spacing-page:    48px;
-  --pad:             var(--spacing-page);
+
+  /* Type */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
+
+  /* Layout */
+  --max-w:  1280px;
+  --pad:    48px;   /* horizontal page margin — referenced everywhere, defined once */
+
+  /* Vertical rhythm — the only two values any section padding may use */
+  --space-lg: 100px; /* primary content sections */
+  --space-sm: 64px;  /* heroes, dividers, intro bands */
+
+  /* Mobile equivalents — referenced by the single shared breakpoint below */
+  --space-lg-mobile: 64px;
+  --space-sm-mobile: 40px;
+  --pad-mobile: 24px;
 }
 
 html { scroll-behavior: smooth; }
 body { font-family: var(--font-body); background: var(--linen); color: var(--charcoal); font-size: 16px; line-height: 1.7; }
 img { display: block; max-width: 100%; }
 a { color: inherit; text-decoration: none; }
+
+/* ============ LAYOUT PRIMITIVES ============ */
+/* Every page section uses ONE of these two classes for vertical padding.
+   No page-specific inline <style> may redeclare padding on .section/.section-sm. */
+.section    { padding: var(--space-lg) var(--pad); }
+.section-sm { padding: var(--space-sm) var(--pad); }
+.inner      { max-width: var(--max-w); margin: 0 auto; }
+
+@media (max-width: 768px) {
+  :root { --pad: var(--pad-mobile); }
+  .section    { padding: var(--space-lg-mobile) var(--pad); }
+  .section-sm { padding: var(--space-sm-mobile) var(--pad); }
+}
 
 /* SKIP LINK */
 .skip-link { position: absolute; top: -100%; left: 0; background: var(--terra); color: var(--warm-white); padding: 12px 24px; font-size: 14px; font-weight: 500; z-index: 9999; transition: top 0.2s; }
@@ -44,24 +68,53 @@ a { color: inherit; text-decoration: none; }
 .btn-light { background: var(--warm-white); color: var(--terra); white-space: nowrap; }
 .btn-light:hover { background: var(--linen); }
 
-/* SHARED TYPOGRAPHY */
+/* SIGNATURE: plank-line eyebrow (replaces generic dash+label) */
 .eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--terra); display: flex; align-items: center; gap: 14px; margin-bottom: 20px; }
-.eyebrow::before { content: ''; width: 28px; height: 1px; background: var(--terra); display: block; flex-shrink: 0; }
+.eyebrow::before { content: ''; width: 36px; height: 3px; background: var(--terra); display: block; flex-shrink: 0; position: relative; }
+.eyebrow::after { content: ''; width: 6px; height: 3px; background: var(--terra); opacity: 0.35; display: block; flex-shrink: 0; }
+
 .section-title { font-family: var(--font-display); font-size: clamp(36px,4vw,54px); font-weight: 400; line-height: 1.1; color: var(--charcoal); letter-spacing: -0.01em; }
 .section-title em { font-style: italic; color: var(--terra); }
 .section-body { font-size: 16px; font-weight: 300; color: var(--mid); line-height: 1.75; max-width: 520px; }
+
 .about-link { display: inline-flex; align-items: center; gap: 10px; font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--terra); margin-top: 12px; transition: gap 0.2s; }
 .about-link:hover { gap: 16px; }
 .about-link::after { content: '→'; }
 
+/* HEADER / NAV — shared, identical markup on every page */
+.site-header { position: sticky; top: 0; z-index: 1000; font-family: var(--font-body); }
+.topbar { background: #25D366; border-bottom: 1px solid rgba(0,0,0,0.1); }
+.topbar-inner { max-width: var(--max-w); margin: 0 auto; padding: 0 var(--pad); height: 38px; display: flex; align-items: center; justify-content: flex-end; gap: 16px; }
+.topbar-link { font-size: 12px; font-weight: 600; color: #fff; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; display: flex; align-items: center; gap: 8px; background: none; border: none; cursor: pointer; font-family: var(--font-body); }
+.topbar-sep { color: rgba(255,255,255,0.4); font-size: 11px; }
+
+.navbar { background: var(--warm-white); border-bottom: 1px solid var(--border); }
+.navbar-inner { max-width: var(--max-w); margin: 0 auto; padding: 0 var(--pad); height: 62px; display: flex; align-items: center; justify-content: space-between; }
+.nav-logo { display: flex; flex-direction: column; line-height: 1.1; text-decoration: none; }
+.nav-logo-main { font-family: var(--font-display); font-size: 20px; font-weight: 600; color: var(--charcoal); }
+.nav-logo-sub { font-size: 10px; color: var(--muted); letter-spacing: 0.14em; text-transform: uppercase; }
+.nav-links { display: flex; align-items: center; gap: 4px; }
+.nav-links a { font-size: 13px; color: var(--mid); letter-spacing: 0.06em; text-transform: uppercase; padding: 8px 14px; text-decoration: none; }
+.nav-links a:hover { color: var(--terra); }
+.nav-burger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 8px; }
+.nav-burger span { width: 24px; height: 2px; background: var(--charcoal); display: block; }
+.mobile-nav { display: none; background: var(--warm-white); border-bottom: 1px solid var(--border); }
+.mobile-nav.open { display: block; }
+.mobile-nav a { display: block; padding: 14px var(--pad); font-size: 14px; color: var(--mid); letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; border-top: 1px solid var(--border); }
+
+@media (max-width: 860px) {
+  .nav-links { display: none; }
+  .nav-burger { display: flex; }
+}
+
 /* CTA BAND */
-.cta-band { background: var(--terra); padding: 72px 48px; }
+.cta-band { background: var(--terra); padding: 72px var(--pad); }
 .cta-band-inner { max-width: var(--max-w); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 40px; }
 .cta-band-title { font-family: var(--font-display); font-size: clamp(28px,3.5vw,44px); font-weight: 400; color: var(--warm-white); line-height: 1.1; max-width: 520px; }
 .cta-band-title em { font-style: italic; opacity: 0.75; }
 
 /* FOOTER */
-footer { background: var(--charcoal); padding: 60px 48px 36px; }
+footer { background: var(--charcoal); padding: 60px var(--pad) 36px; }
 .footer-inner { max-width: var(--max-w); margin: 0 auto; }
 .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 60px; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,0.08); margin-bottom: 32px; }
 .footer-logo-main { font-family: var(--font-display); font-size: 22px; font-weight: 600; color: var(--warm-white); margin-bottom: 6px; }
@@ -80,18 +133,17 @@ footer { background: var(--charcoal); padding: 60px 48px 36px; }
 .footer-credit a { color: rgba(255,255,255,0.35); transition: color 0.2s; }
 .footer-credit a:hover { color: rgba(255,255,255,0.7); }
 
+@media (max-width: 768px) {
+  .cta-band { padding: 60px var(--pad); flex-direction: column; align-items: flex-start; }
+  .cta-band-inner { flex-direction: column; align-items: flex-start; }
+  footer { padding: 48px var(--pad) 28px; }
+  .footer-top { grid-template-columns: 1fr; gap: 36px; }
+}
+
 /* ANIMATIONS */
 .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
 .fade-up.visible { opacity: 1; transform: translateY(0); }
 @media (prefers-reduced-motion: reduce) { .fade-up { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }
-
-/* SHARED RESPONSIVE */
-@media (max-width: 768px) {
-  .cta-band { padding: 60px 20px; }
-  .cta-band-inner { flex-direction: column; align-items: flex-start; }
-  footer { padding: 48px 20px 28px; }
-  .footer-top { grid-template-columns: 1fr; gap: 36px; }
-}
 
 /* QUOTE MODAL */
 .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(40,37,32,0.7); z-index: 2000; align-items: center; justify-content: center; padding: 20px; }

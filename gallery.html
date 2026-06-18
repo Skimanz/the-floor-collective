@@ -3,142 +3,117 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Project Gallery — The Flooring Collective | Queenstown</title>
-<meta name="description" content="Flooring and decking project gallery — installation, sanding and finishing, staircase, and timber decking work across Queenstown.">
+<title>Our Work — The Flooring Collective | Queenstown</title>
+<meta name="description" content="Recent flooring projects across Queenstown — engineered timber installation, floor sanding and restoration, and outdoor decking.">
 <link rel="canonical" href="https://flooringcollective.co.nz/gallery.html">
-<meta property="og:title" content="Project Gallery — The Flooring Collective">
-<meta property="og:description" content="Flooring and decking projects across Queenstown.">
+<meta property="og:title" content="Our Work — The Flooring Collective | Queenstown">
+<meta property="og:description" content="Recent flooring projects across Queenstown — engineered timber installation, floor sanding and restoration, and outdoor decking.">
 <meta property="og:image" content="https://flooringcollective.co.nz/images/og-image.jpg">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://flooringcollective.co.nz/gallery.html">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="robots" content="index, follow">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23B5602A'/%3E%3Ctext x='50' y='67' font-family='Georgia,serif' font-size='42' font-weight='700' fill='%23FDFCFA' text-anchor='middle' letter-spacing='-1'%3ETFC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <style>
-.page-hero { background:var(--linen); padding:var(--spacing-section-sm) var(--pad) 0; }
-.page-hero-inner { max-width:var(--max-w); margin:0 auto; }
-.page-eyebrow { font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:var(--terra); display:flex; align-items:center; gap:14px; margin-bottom:20px; }
-.page-eyebrow::before { content:''; width:28px; height:1px; background:var(--terra); display:block; }
-.page-title { font-family:var(--font-display); font-size:clamp(40px,5vw,64px); font-weight:400; line-height:1.05; color:var(--charcoal); letter-spacing:-0.01em; }
-.page-title em { font-style:italic; color:var(--terra); }
-.page-body { font-size:16px; font-weight:300; color:var(--mid); line-height:1.75; margin-top:16px; }
+.page-title { font-family: var(--font-display); font-size: clamp(40px,5vw,64px); font-weight: 400; line-height: 1.05; color: var(--charcoal); letter-spacing: -0.01em; }
+.page-title em { font-style: italic; color: var(--terra); }
+.page-body { font-size: 16px; font-weight: 300; color: var(--mid); line-height: 1.75; margin-top: 16px; }
 
-.filter-bar { background:var(--linen); padding:var(--spacing-section-sm) 0 0; border-bottom:1px solid var(--border); }
-.filter-bar-inner { max-width:var(--max-w); margin:0 auto; padding:0 var(--pad); display:flex; gap:10px; flex-wrap:wrap; padding-bottom:24px; }
-.filter-btn { font-family:var(--font-body); font-size:12px; font-weight:500; letter-spacing:0.06em; text-transform:uppercase; padding:10px 20px; border:1px solid var(--border); background:var(--warm-white); color:var(--mid); cursor:pointer; transition:all 0.2s; }
-.filter-btn:hover { border-color:var(--terra); color:var(--terra); }
-.filter-btn.active { background:var(--charcoal); color:var(--warm-white); border-color:var(--charcoal); }
+.filter-bar { background: var(--linen); border-bottom: 1px solid var(--border); }
+.filter-bar-inner { max-width: var(--max-w); margin: 0 auto; padding: 0 var(--pad) 24px; display: flex; gap: 10px; flex-wrap: wrap; }
+.filter-btn { font-family: var(--font-body); font-size: 12px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; padding: 10px 20px; border: 1px solid var(--border); background: var(--warm-white); color: var(--mid); cursor: pointer; transition: all 0.2s; }
+.filter-btn:hover { border-color: var(--terra); color: var(--terra); }
+.filter-btn.active { background: var(--charcoal); color: var(--warm-white); border-color: var(--charcoal); }
 
-.masonry-sect { background:var(--linen); padding:48px var(--pad) var(--spacing-section); }
-.masonry { max-width:var(--max-w); margin:0 auto; display:grid; grid-template-columns:repeat(3,1fr); gap:4px; }
-.m-item { overflow:hidden; position:relative; cursor:pointer; }
-.m-item img { width:100%; height:100%; object-fit:cover; display:block; transition:transform 0.5s; }
-.m-item:hover img { transform:scale(1.04); }
-.m-overlay { position:absolute; inset:0; background:rgba(40,37,32,0); display:flex; align-items:flex-end; padding:18px; transition:background 0.3s; }
-.m-item:hover .m-overlay { background:rgba(40,37,32,0.4); }
-.m-label { font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:transparent; transition:color 0.3s; }
-.m-item:hover .m-label { color:rgba(255,255,255,0.85); }
-.m-hide { display:none; }
+.masonry { max-width: var(--max-w); margin: 0 auto; display: grid; grid-template-columns: repeat(3,1fr); gap: 4px; }
+.m-item { position: relative; aspect-ratio: 4/3; overflow: hidden; }
+.m-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
+.m-item:hover img { transform: scale(1.05); }
+.m-overlay { position: absolute; inset: 0; background: rgba(40,37,32,0); display: flex; align-items: flex-end; padding: 18px; transition: background 0.3s; }
+.m-item:hover .m-overlay { background: rgba(40,37,32,0.55); }
+.m-label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: transparent; transition: color 0.3s; }
+.m-item:hover .m-label { color: rgba(255,255,255,0.9); }
 
-@media(max-width:1024px){ .masonry{ grid-template-columns:1fr 1fr; } }
-@media(max-width:768px){
-  .page-hero{ padding:48px var(--pad) 0; }
-  .filter-bar-inner{ padding:0 var(--pad); overflow-x:auto; flex-wrap:nowrap; }
-  .masonry-sect{ padding:36px var(--pad) 72px; }
-  .masonry{ grid-template-columns:1fr 1fr; }
-}
+@media (max-width: 1024px) { .masonry { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 768px) { .filter-bar-inner { overflow-x: auto; flex-wrap: nowrap; padding: 0 var(--pad) 20px; } }
 </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
 <!-- NAV: identical across all pages — edit all files when changing -->
-<header style="position:sticky;top:0;z-index:1000;font-family:'DM Sans',system-ui,sans-serif;">
-  <div style="background:#25D366;border-bottom:1px solid rgba(0,0,0,0.1);">
-    <div style="max-width:1280px;margin:0 auto;padding:0 48px;height:38px;display:flex;align-items:center;justify-content:flex-end;gap:16px;">
-      <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener" style="font-size:12px;font-weight:600;color:#fff;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;display:flex;align-items:center;gap:8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.862L.057 23.428a.5.5 0 0 0 .609.61l5.648-1.453A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.877 9.877 0 0 1-5.031-1.378l-.36-.214-3.733.96.99-3.645-.235-.374A9.872 9.872 0 0 1 2.106 12C2.106 6.527 6.527 2.106 12 2.106c5.473 0 9.894 4.421 9.894 9.894 0 5.473-4.421 9.894-9.894 9.894z"/></svg>WhatsApp us</a>
-      <span style="color:rgba(255,255,255,0.4);font-size:11px;">|</span>
-      <button onclick="openQuoteModal()" style="font-size:12px;font-weight:600;color:#fff;letter-spacing:0.08em;text-transform:uppercase;background:none;border:none;cursor:pointer;font-family:'DM Sans',system-ui,sans-serif;">Get Quote</button>
+<header class="site-header">
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener" class="topbar-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.862L.057 23.428a.5.5 0 0 0 .609.61l5.648-1.453A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.877 9.877 0 0 1-5.031-1.378l-.36-.214-3.733.96.99-3.645-.235-.374A9.872 9.872 0 0 1 2.106 12C2.106 6.527 6.527 2.106 12 2.106c5.473 0 9.894 4.421 9.894 9.894 0 5.473-4.421 9.894-9.894 9.894z"/></svg>WhatsApp us</a>
+      <span class="topbar-sep">|</span>
+      <button onclick="openQuoteModal()" class="topbar-link">Get Quote</button>
     </div>
   </div>
-  <div style="background:#FDFCFA;border-bottom:1px solid rgba(40,37,32,0.12);">
-    <div style="max-width:1280px;margin:0 auto;padding:0 48px;height:62px;display:flex;align-items:center;justify-content:space-between;">
-      <a href="index.html" style="display:flex;flex-direction:column;line-height:1.1;text-decoration:none;">
-        <span style="font-family:'Cormorant Garamond',Georgia,serif;font-size:20px;font-weight:600;color:#282520;">The Flooring Collective</span>
-        <span style="font-size:10px;color:#6B6260;letter-spacing:0.14em;text-transform:uppercase;">Queenstown Floor Specialists</span>
+  <div class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-main">The Flooring Collective</span>
+        <span class="nav-logo-sub">Queenstown Floor Specialists</span>
       </a>
-      <nav id="mainNav" style="display:flex;align-items:center;gap:4px;">
-        <a href="about.html" style="font-size:13px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;">About</a>
-        <a href="services.html" style="font-size:13px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;">Services</a>
-        <a href="gallery.html" style="font-size:13px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;">Our Work</a>
-        <a href="contact.html" style="font-size:13px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;padding:8px 14px;text-decoration:none;">Contact</a>
+      <nav class="nav-links">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Our Work</a>
+        <a href="contact.html">Contact</a>
       </nav>
-      <button onclick="toggleNav()" id="navBurger" aria-label="Open menu" style="display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;">
-        <span style="width:24px;height:2px;background:#282520;display:block;"></span>
-        <span style="width:24px;height:2px;background:#282520;display:block;"></span>
-        <span style="width:24px;height:2px;background:#282520;display:block;"></span>
+      <button class="nav-burger" onclick="toggleNav()" id="navBurger" aria-label="Open menu">
+        <span></span><span></span><span></span>
       </button>
     </div>
   </div>
-  <div id="mobileNav" style="display:none;background:#FDFCFA;border-top:1px solid rgba(40,37,32,0.1);padding:12px 24px 20px;">
-    <a href="about.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">About</a>
-    <a href="services.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">Services</a>
-    <a href="gallery.html" style="display:block;padding:13px 0;font-size:14px;color:#5A5550;letter-spacing:0.06em;text-transform:uppercase;border-bottom:1px solid rgba(40,37,32,0.08);text-decoration:none;">Our Work</a>
-    <a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener" style="display:block;padding:13px 0;font-size:14px;color:#25D366;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(40,37,32,0.08);">WhatsApp us</a>
-    <a href="contact.html" style="display:block;padding:13px 0;font-size:14px;color:#B5602A;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;">Contact Us</a>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Our Work</a>
+    <a href="contact.html">Contact</a>
   </div>
-  <style>@media(max-width:860px){#mainNav{display:none!important;}#navBurger{display:flex!important;}}</style>
 </header>
-<script>function toggleNav(){var m=document.getElementById("mobileNav");m.style.display=m.style.display==="block"?"none":"block";}</script>
 
 <main id="main-content">
 
-<div class="page-hero">
-  <div class="page-hero-inner">
-    <p class="page-eyebrow">Our work</p>
-    <h1 class="page-title">Project <em>Gallery</em></h1>
-    <p class="page-body">Flooring and decking projects.</p>
+<div class="section-sm" aria-label="Page heading">
+  <div class="inner">
+    <p class="eyebrow">Recent projects</p>
+    <h1 class="page-title">Our <em>Work</em></h1>
+    <p class="page-body">A selection of recent flooring projects across Queenstown.</p>
   </div>
 </div>
 
 <div class="filter-bar">
   <div class="filter-bar-inner" role="tablist" aria-label="Filter projects">
-    <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
-    <button class="filter-btn" data-filter="installation" role="tab" aria-selected="false">Installation</button>
-    <button class="filter-btn" data-filter="sanding" role="tab" aria-selected="false">Sanding & Finishing</button>
-    <button class="filter-btn" data-filter="staircase" role="tab" aria-selected="false">Staircase</button>
-    <button class="filter-btn" data-filter="decking" role="tab" aria-selected="false">Timber Decking</button>
+    <button class="filter-btn active">All</button>
+    <button class="filter-btn">Installation</button>
+    <button class="filter-btn">Restoration</button>
+    <button class="filter-btn">Decking</button>
   </div>
 </div>
 
-<section class="masonry-sect" aria-label="Project gallery">
-  <div class="masonry" id="masonryGrid">
-    <div class="m-item" data-cat="installation"><img src="images/gallery-lam-1.jpg" alt="Floor installation Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Installation</span></div></div>
-    <div class="m-item" data-cat="decking"><img src="images/gallery-deck-3.jpg" alt="Timber decking 29 Myles Way Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Timber Decking</span></div></div>
-    <div class="m-item" data-cat="staircase"><img src="images/gallery-stair-1.jpg" alt="Staircase flooring Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Staircase</span></div></div>
-    <div class="m-item" data-cat="sanding"><img src="images/gallery-sand-1.jpg" alt="Floor sanding Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Sanding & Finishing</span></div></div>
-    <div class="m-item" data-cat="installation"><img src="images/gallery-lam-2.jpg" alt="Floor installation Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Installation</span></div></div>
-    <div class="m-item" data-cat="decking"><img src="images/gallery-deck-4.jpg" alt="Timber decking 29 Myles Way Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Timber Decking</span></div></div>
-    <div class="m-item" data-cat="sanding"><img src="images/gallery-sand-2.jpg" alt="Floor sanding and finishing Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Sanding & Finishing</span></div></div>
-    <div class="m-item" data-cat="decking"><img src="images/gallery-deck-5.jpg" alt="Timber deck Beaumont Quarter Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Timber Decking</span></div></div>
-    <div class="m-item" data-cat="installation"><img src="images/gallery-lam-3.jpg" alt="Floor installation Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Installation</span></div></div>
-    <div class="m-item" data-cat="sanding"><img src="images/gallery-sand-3.jpg" alt="Floor sanding and finishing Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Sanding & Finishing</span></div></div>
-    <div class="m-item" data-cat="decking"><img src="images/gallery-deck-6.jpg" alt="Timber deck Beaumont Quarter Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Timber Decking</span></div></div>
-    <div class="m-item" data-cat="installation"><img src="images/gallery-timber-1.jpg" alt="Engineered timber floor installation Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Installation</span></div></div>
-    <div class="m-item" data-cat="decking"><img src="images/gallery-deck-7.jpg" alt="Timber deck Orakei Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Timber Decking</span></div></div>
-    <div class="m-item" data-cat="installation"><img src="images/gallery-timber-2.jpg" alt="Engineered timber floor installation Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Installation</span></div></div>
-    <div class="m-item" data-cat="installation"><img src="images/gallery-timber-3.jpg" alt="Engineered timber floor installation Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Installation</span></div></div>
+<div class="section">
+  <div class="masonry">
+    <a href="#" class="m-item fade-up"><img src="images/gallery-timber-1.jpg" alt="Engineered timber installation Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Installation</span></div></a>
+    <a href="#" class="m-item fade-up"><img src="images/gallery-sand-1.jpg" alt="Floor sanding and restoration Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Restoration</span></div></a>
+    <a href="#" class="m-item fade-up"><img src="images/gallery-deck-1.jpg" alt="Timber decking Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Decking</span></div></a>
+    <a href="#" class="m-item fade-up"><img src="images/gallery-lam-1.jpg" alt="Laminate flooring Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Installation</span></div></a>
+    <a href="#" class="m-item fade-up"><img src="images/gallery-deck-2.jpg" alt="Timber decking Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Decking</span></div></a>
+    <a href="#" class="m-item fade-up"><img src="images/gallery-sand-2.jpg" alt="Floor sanding and restoration Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Restoration</span></div></a>
+    <a href="#" class="m-item fade-up"><img src="images/gallery-timber-2.jpg" alt="Engineered timber installation Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Installation</span></div></a>
+    <a href="#" class="m-item fade-up"><img src="images/gallery-deck-3.jpg" alt="Timber decking Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Decking</span></div></a>
+    <a href="#" class="m-item fade-up"><img src="images/gallery-repair-1.jpg" alt="Floor repair Queenstown" loading="lazy"><div class="m-overlay"><span class="m-label">Restoration</span></div></a>
   </div>
-</section>
+</div>
 
 </main>
 
 <div class="cta-band">
   <div class="cta-band-inner">
     <h2 class="cta-band-title">Like what you <em>see?</em></h2>
-    <button onclick="openQuoteModal()" class="btn btn-light">Get Quote</button>
+    <button onclick="openQuoteModal()" class="btn btn-light">Get a free quote</button>
   </div>
 </div>
 
@@ -146,84 +121,64 @@
   <div class="footer-inner">
     <div class="footer-top">
       <div>
-        <p class="footer-logo-main">The Flooring Collective</p>
-        <p class="footer-logo-sub">Queenstown Floor Specialists</p>
-        <p class="footer-tagline">Floor installation and restoration for residential and commercial properties across Queenstown.</p>
+        <div class="footer-logo-main">The Flooring Collective</div>
+        <div class="footer-logo-sub">Queenstown Floor Specialists</div>
+        <p class="footer-tagline">Engineered timber installation, floor sanding and restoration, and outdoor decking for residential and commercial properties.</p>
       </div>
-      <nav aria-label="Footer navigation">
-        <p class="footer-col-title">Navigation</p>
-        <ul class="footer-links" role="list">
-          <li><a href="index.html">Home</a></li>
+      <div>
+        <div class="footer-col-title">Site</div>
+        <ul class="footer-links">
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="gallery.html">Our Work</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-      </nav>
+      </div>
       <div>
-        <p class="footer-col-title">Contact</p>
-        <p class="footer-contact-item"><a href="https://wa.me/64217546260?text=Flooring%20Enquiry" target="_blank" rel="noopener">WhatsApp us</a></p>
-        <p class="footer-contact-item"><a href="mailto:ashjohns@me.com?subject=Flooring%20Enquiry">Email us</a></p>
+        <div class="footer-col-title">Contact</div>
+        <p class="footer-contact-item"><a href="https://wa.me/64217546260">WhatsApp us</a></p>
+        <p class="footer-contact-item"><a href="mailto:ashjohns@me.com">ashjohns@me.com</a></p>
         <p class="footer-contact-item">Queenstown, New Zealand</p>
       </div>
     </div>
     <div class="footer-bottom">
-      <span class="footer-copy">© 2026 The Flooring Collective. All rights reserved.</span>
-      <span class="footer-credit">Site by <a href="https://strandmedia.co.nz">Strand Media</a></span>
+      <p class="footer-copy">© 2026 The Flooring Collective.</p>
+      <p class="footer-credit">Built by <a href="https://strandmedia.co.nz">Strand Media</a></p>
     </div>
   </div>
 </footer>
-<!-- QUOTE MODAL -->
+
 <div class="modal-overlay" id="quoteModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
   <div class="modal-box">
-    <button onclick="closeQuoteModal()" aria-label="Close" class="modal-close">&times;</button>
-    <h2 class="modal-title" id="modalTitle">Get a quote</h2>
-    <p class="modal-sub">Tell us about your project and we'll be in touch within one business day.</p>
-    <form id="quoteForm" action="https://formspree.io/f/xdavladk" method="POST">
+    <button class="modal-close" onclick="closeQuoteModal()" aria-label="Close">×</button>
+    <h3 class="modal-title" id="modalTitle">Get a free quote</h3>
+    <p class="modal-sub">Tell us a bit about your project and we'll get back to you.</p>
+    <form id="quoteForm" action="https://formspree.io/f/xdavladk" method="POST" onsubmit="handleQuoteSubmit(event)">
       <div class="modal-form-row">
-        <div class="modal-form-group"><label class="modal-form-label" for="q_first">First name *</label><input class="modal-form-input" id="q_first" type="text" name="first_name" required placeholder="Jane"></div>
-        <div class="modal-form-group"><label class="modal-form-label" for="q_last">Last name *</label><input class="modal-form-input" id="q_last" type="text" name="last_name" required placeholder="Smith"></div>
-      </div>
-      <div class="modal-form-row">
-        <div class="modal-form-group"><label class="modal-form-label" for="q_phone">Phone *</label><input class="modal-form-input" id="q_phone" type="tel" name="phone" required placeholder="021 XXX XXXX"></div>
-        <div class="modal-form-group"><label class="modal-form-label" for="q_email">Email *</label><input class="modal-form-input" id="q_email" type="email" name="email" required placeholder="jane@email.com"></div>
+        <div class="modal-form-group">
+          <label class="modal-form-label">Name</label>
+          <input class="modal-form-input" type="text" name="name" required>
+        </div>
+        <div class="modal-form-group">
+          <label class="modal-form-label">Phone</label>
+          <input class="modal-form-input" type="tel" name="phone" required>
+        </div>
       </div>
       <div class="modal-form-group">
-        <label class="modal-form-label" for="q_service">Service</label>
-        <select class="modal-form-input" id="q_service" name="service">
-          <option value="">Select a service</option>
-          <option>Installation</option>
-          <option>Sanding & Finishing</option>
-          <option>Staircase</option>
-          <option>Timber Decking</option>
-          <option>Aluminium Deck Framing</option>
-          <option>Not sure yet</option>
-        </select>
+        <label class="modal-form-label">Email</label>
+        <input class="modal-form-input" type="email" name="email" required>
       </div>
       <div class="modal-form-group">
-        <label class="modal-form-label" for="q_message">Tell us about your project</label>
-        <textarea class="modal-form-input modal-form-textarea" id="q_message" name="message" placeholder="Location, floor area, timeframe…"></textarea>
+        <label class="modal-form-label">What do you need?</label>
+        <textarea class="modal-form-input modal-form-textarea" name="message" placeholder="Tell us about your flooring project..."></textarea>
       </div>
-      <input type="hidden" name="_subject" value="Quote Request — The Flooring Collective">
-      <button type="submit" class="btn btn-dark modal-submit">Send quote request →</button>
-      <p class="modal-fine">Free quote. No obligation. We'll be in touch within one business day.</p>
+      <button type="submit" class="btn btn-dark modal-submit">Send request</button>
+      <p class="modal-fine">We'll respond within 1–2 business days.</p>
     </form>
-    <div id="quoteSuccess" class="modal-success">✓ Thanks — we'll be in touch within one business day.</div>
+    <div class="modal-success" id="modalSuccess">✓ Thanks — we'll be in touch soon.</div>
   </div>
 </div>
+
 <script src="js/shared.js"></script>
-<script>
-document.querySelectorAll('.filter-btn').forEach(function(btn){
-  btn.addEventListener('click', function(){
-    document.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
-    btn.classList.add('active'); btn.setAttribute('aria-selected','true');
-    var filter = btn.getAttribute('data-filter');
-    document.querySelectorAll('.m-item').forEach(function(item){
-      if (filter === 'all' || item.getAttribute('data-cat') === filter) { item.classList.remove('m-hide'); }
-      else { item.classList.add('m-hide'); }
-    });
-  });
-});
-</script>
 </body>
 </html>
