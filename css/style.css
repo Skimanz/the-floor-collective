@@ -23,6 +23,7 @@
   --spacing-section: 100px;
   --spacing-section-sm: 64px;
   --spacing-page:    48px;
+  --pad:             var(--spacing-page);
 }
 
 html { scroll-behavior: smooth; }
