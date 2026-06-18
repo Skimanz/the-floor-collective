@@ -21,6 +21,7 @@
   --font-body:      'DM Sans', system-ui, sans-serif;
   --charcoal-dark:  #1a1714;
   --spacing-section: 100px;
+  --spacing-section-sm: 64px;
   --spacing-page:    48px;
 }
 
